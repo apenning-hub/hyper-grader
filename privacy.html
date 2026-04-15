@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Hyper Grader</title>
+  <meta name="description" content="Hyper Grader privacy policy. Your data stays on your Mac." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: rgba(255,255,255,0.08);
+      --accent: #6366f1;
+      --text: #f0f0f5;
+      --muted: #8888a0;
+      --green: #34d399;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+    .nav-logo {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-back {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .page-header { margin-bottom: 3rem; }
+    .page-header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+    .page-header p { color: var(--muted); font-size: 0.875rem; }
+
+    .tldr {
+      background: linear-gradient(135deg, rgba(52,211,153,0.08) 0%, rgba(99,102,241,0.08) 100%);
+      border: 1px solid rgba(52,211,153,0.25);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .tldr h3 {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+    .tldr ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .tldr li {
+      font-size: 0.875rem;
+      color: var(--muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .tldr li::before { content: "✅"; flex-shrink: 0; }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 1.5rem 0 0.4rem;
+      color: var(--text);
+    }
+    p { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+    ul { margin: 0.5rem 0 0.75rem 1.25rem; }
+    li { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.3rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: var(--text); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    .permission-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin: 0.75rem 0;
+    }
+    .permission-block h4 {
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .permission-block dl { display: grid; grid-template-columns: 60px 1fr; gap: 0.2rem 0.75rem; }
+    .permission-block dt { font-size: 0.75rem; font-weight: 700; color: var(--accent); }
+    .permission-block dd { font-size: 0.8rem; color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Hyper Grader</a>
+  <a href="/" class="nav-back">← Back to home</a>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: April 2026</p>
+  </div>
+
+  <div class="tldr">
+    <h3>TL;DR — The short version</h3>
+    <ul>
+      <li>All your data is stored locally on your Mac</li>
+      <li>Speech recognition runs on-device — recordings never leave your computer</li>
+      <li>No tracking, analytics, or telemetry of any kind</li>
+      <li>If you use Claude API, data is sent to Anthropic only when you click Generate</li>
+      <li>Your API key is stored in macOS Keychain, not by us</li>
+      <li>We don't operate any servers. Your data is yours.</li>
+    </ul>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>Hyper Grader is designed with your privacy as a first principle. This policy explains exactly what the app does — and doesn't do — with your data.</p>
+
+  <h2>Data Storage</h2>
+  <h3>Local only</h3>
+  <p>All courses, assessments, rubrics, grading records, and student names are stored <strong>locally on your Mac</strong> in the standard macOS application container. None of this data is uploaded to any server, because we don't operate any servers.</p>
+
+  <h3>Speech recognition</h3>
+  <p>Voice transcription is performed <strong>entirely on-device</strong> using Apple's Speech Recognition framework. Voice recordings are processed locally and never leave your Mac. Transcripts are stored with your grading records, locally.</p>
+
+  <h3>API key storage</h3>
+  <p>If you use the Claude API integration, your API key is stored in <strong>macOS Keychain</strong> using system-level encryption. We never see your key.</p>
+
+  <h2>Optional Third-Party Services</h2>
+  <h3>Claude API (optional)</h3>
+  <p>If you choose to generate feedback using the Claude API, when you click "Generate" the following is sent to Anthropic's servers:</p>
+  <ul>
+    <li>Rubric criteria and your ratings</li>
+    <li>Voice note transcripts (if any)</li>
+    <li>Student name (if you've entered one)</li>
+    <li>Your feedback style configuration</li>
+  </ul>
+  <p>This data is used solely to generate feedback. <strong>You control when this happens</strong> — data is only sent when you explicitly click Generate with Claude API selected. Anthropic's privacy policy governs this transmission: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>.</p>
+
+  <h3>On-device AI (alternative)</h3>
+  <p>Hyper Grader supports Apple Intelligence as an alternative to the Claude API. When using on-device AI, <strong>no data leaves your Mac</strong> at all.</p>
+
+  <h2>File Import / Export</h2>
+  <p>When importing rubrics (e.g. from Canvas CSV) or exporting grade reports, all processing is local. Files are read from and written to locations you choose via the standard macOS file picker. No data is uploaded.</p>
+
+  <h2>What We Don't Collect</h2>
+  <ul>
+    <li>Student names or personal information</li>
+    <li>Grading data or feedback content</li>
+    <li>Voice recordings or transcripts</li>
+    <li>Usage analytics or telemetry</li>
+    <li>Crash reports (only shared with Apple if you opt in via TestFlight settings)</li>
+    <li>Your location</li>
+    <li>Device identifiers</li>
+  </ul>
+
+  <h2>Permissions</h2>
+
+  <div class="permission-block">
+    <h4>🎙️ Microphone</h4>
+    <dl>
+      <dt>Why</dt><dd>To record voice notes during grading</dd>
+      <dt>When</dt><dd>Only when you click "Record Voice Notes"</dd>
+      <dt>Data</dt><dd>Processed locally, never uploaded</dd>
+    </dl>
+  </div>
+
+  <div class="permission-block">
+    <h4>🗣️ Speech Recognition</h4>
+    <dl>
+      <dt>Why</dt><dd>To transcribe your voice notes to text</dd>
+      <dt>When</dt><dd>Only during voice recording</dd>
+      <dt>Data</dt><dd>Processed on-device via Apple's framework</dd>
+    </dl>
+  </div>
+
+  <div class="permission-block">
+    <h4>📁 File System</h4>
+    <dl>
+      <dt>Why</dt><dd>To import rubric CSVs and export grade reports</dd>
+      <dt>When</dt><dd>Only when you choose files via file picker</dd>
+      <dt>Data</dt><dd>Read/written locally only</dd>
+    </dl>
+  </div>
+
+  <div class="permission-block">
+    <h4>🌐 Network (optional)</h4>
+    <dl>
+      <dt>Why</dt><dd>To communicate with Claude API when that mode is selected</dd>
+      <dt>When</dt><dd>Only when you click "Generate" with Claude API selected</dd>
+      <dt>Data</dt><dd>See Claude API section above</dd>
+    </dl>
+  </div>
+
+  <h2>Student Data &amp; FERPA</h2>
+  <p>When you enter student names in the app, that data stays on your device. You are responsible for complying with applicable student privacy laws (FERPA, COPPA, GDPR, etc.) in your jurisdiction. If you use the Claude API, consider whether student names need to be included — the app works without them.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>The app is designed for educators and is not directed at children under 13. We do not knowingly collect any personal information from children.</p>
+
+  <h2>Your Control Over Your Data</h2>
+  <ul>
+    <li><strong>Access:</strong> All data is in the app's standard macOS container (accessible via Finder)</li>
+    <li><strong>Delete:</strong> Uninstalling the app removes all local data</li>
+    <li><strong>Export:</strong> Export grading records to CSV at any time from within the app</li>
+  </ul>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. The "Last updated" date at the top will reflect any changes. Material changes will be communicated within the app.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy? Email <a href="mailto:me@apenning.is">me@apenning.is</a>.</p>
+</main>
+
+<footer>
+  <div>&copy; 2026 Hyper Grader &middot; <a href="/">Home</a> &middot; <a href="mailto:me@apenning.is">Contact</a></div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyper Grader — AI-Powered Grading for Educators</title>
+  <meta name="description" content="Grade faster, feedback better. Hyper Grader turns your spoken notes into polished, personalised student feedback — powered by AI, entirely on your Mac." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: rgba(255,255,255,0.08);
+      --accent: #6366f1;
+      --accent-glow: rgba(99,102,241,0.35);
+      --text: #f0f0f5;
+      --muted: #8888a0;
+      --green: #34d399;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+    .nav-logo {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+    .badge {
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(99,102,241,0.4);
+      border-radius: 999px;
+      padding: 0.3rem 0.8rem;
+      margin-bottom: 1.75rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+      background: linear-gradient(135deg, #fff 0%, #a0a0c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .cta-group { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.925rem;
+      text-decoration: none;
+      box-shadow: 0 0 24px var(--accent-glow);
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.925rem;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover { border-color: rgba(255,255,255,0.2); transform: translateY(-1px); }
+
+    /* ── PLATFORM PILL ── */
+    .platform-note {
+      margin-top: 1.75rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .platform-note span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ── FEATURES ── */
+    .features {
+      max-width: 960px;
+      margin: 4rem auto 2rem;
+      padding: 0 2rem;
+    }
+    .section-label {
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover { border-color: rgba(99,102,241,0.4); }
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .feature-card h3 {
+      font-size: 0.975rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+    .feature-card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── PRIVACY STRIP ── */
+    .privacy-strip {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    .privacy-banner {
+      background: linear-gradient(135deg, rgba(52,211,153,0.08) 0%, rgba(99,102,241,0.08) 100%);
+      border: 1px solid rgba(52,211,153,0.2);
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .privacy-icon { font-size: 2rem; flex-shrink: 0; }
+    .privacy-text h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--green);
+    }
+    .privacy-text p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; }
+    .privacy-checks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .check-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--green);
+      background: rgba(52,211,153,0.1);
+      border-radius: 999px;
+      padding: 0.2rem 0.65rem;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how {
+      max-width: 760px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .how h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+    .how > p { color: var(--muted); font-size: 0.95rem; margin-bottom: 2.5rem; }
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      text-align: left;
+    }
+    .step {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .step h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .step p { font-size: 0.85rem; color: var(--muted); }
+
+    /* ── TESTFLIGHT CTA ── */
+    .testflight {
+      max-width: 600px;
+      margin: 4rem auto 6rem;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .testflight-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+    .testflight-card h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.6rem;
+    }
+    .testflight-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.75rem; }
+    .requirements {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1.75rem;
+      text-align: left;
+    }
+    .req {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .req::before { content: "›"; color: var(--accent); font-weight: 700; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+    .footer-links { display: flex; gap: 1.5rem; justify-content: center; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Hyper Grader</a>
+  <div class="nav-links">
+    <span class="badge">Beta</span>
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-chip">🎓 For Educators</div>
+  <h1>Grade faster.<br/>Feedback better.</h1>
+  <p>Hyper Grader turns your spoken marking notes into polished, personalised student feedback — powered by AI, right on your Mac.</p>
+  <div class="cta-group">
+    <a href="#testflight" class="btn-primary">Join the Beta →</a>
+    <a href="#how" class="btn-secondary">See how it works</a>
+  </div>
+  <p class="platform-note">
+    <span>🍎 macOS 15+ &nbsp;·&nbsp; Apple Intelligence or Claude API</span>
+  </p>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <p class="section-label">What it does</p>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🎙️</span>
+      <h3>Voice-powered grading</h3>
+      <p>Record voice notes while reviewing student work. On-device speech recognition transcribes everything in real time — no typing required.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">✨</span>
+      <h3>AI-generated feedback</h3>
+      <p>Choose between on-device Apple Intelligence or Claude API. Consistent, rubric-aligned feedback personalised for each student.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📋</span>
+      <h3>Flexible rubric management</h3>
+      <p>Create custom rubrics from scratch or import directly from Canvas CSV exports. Reuse across courses and terms.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📊</span>
+      <h3>Export to your gradebook</h3>
+      <p>Export grades and feedback to CSV in one click. Works with any gradebook system that accepts spreadsheets.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔒</span>
+      <h3>Privacy-first design</h3>
+      <p>All grading data stays on your Mac. Speech recognition runs on-device. You decide if and when anything leaves your computer.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">⚡</span>
+      <h3>Built for speed</h3>
+      <p>Keyboard shortcuts to move between students, batch student queues, consistency checker, and time-per-student tracking.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY BANNER -->
+<section class="privacy-strip">
+  <div class="privacy-banner">
+    <div class="privacy-icon">🛡️</div>
+    <div class="privacy-text">
+      <h3>Your data never leaves your Mac (unless you want it to)</h3>
+      <p>No accounts. No servers. No telemetry. Your students' data belongs to you and stays on your device. The only optional exception is generating feedback via the Claude API — and you control exactly when that happens.</p>
+      <div class="privacy-checks">
+        <span class="check-chip">✓ Local storage only</span>
+        <span class="check-chip">✓ On-device speech recognition</span>
+        <span class="check-chip">✓ No analytics</span>
+        <span class="check-chip">✓ No tracking</span>
+        <span class="check-chip">✓ API key in Keychain</span>
+        <span class="check-chip">✓ FERPA-friendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <h2>From spoken notes to student feedback in seconds</h2>
+  <p>A workflow designed to fit how you already grade — not replace it.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h4>Set up your course and rubric</h4>
+        <p>Create a course and assessment in the sidebar. Import your rubric from Canvas as a CSV, or build one from scratch. Takes under two minutes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h4>Select ratings and record your notes</h4>
+        <p>Click the rubric ratings for each criterion, then hit Record and speak naturally. Your words are transcribed on-device as you talk.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h4>Generate and copy feedback</h4>
+        <p>Hit Generate. AI turns your raw notes and ratings into a polished, professional comment. Copy it, move to the next student with ⌘→.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h4>Export when you're done</h4>
+        <p>All grades and feedback are saved automatically. When the batch is finished, export to CSV and paste into your gradebook.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTFLIGHT CTA -->
+<section class="testflight" id="testflight">
+  <div class="testflight-card">
+    <h2>Join the beta</h2>
+    <p>Hyper Grader is currently in early beta testing via TestFlight. Request access and help shape the app.</p>
+    <div class="requirements">
+      <div class="req">macOS 15 Sequoia or later</div>
+      <div class="req">Apple Intelligence recommended (macOS 15.1+)</div>
+      <div class="req">Or bring your own Anthropic API key</div>
+      <div class="req">Free during beta</div>
+    </div>
+    <a href="mailto:me@apenning.is?subject=Hyper Grader Beta Access" class="btn-primary" style="display:inline-flex;justify-content:center;width:100%;">
+      Request Beta Access →
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div>Hyper Grader &copy; 2026 &middot; Built for educators, by an educator.</div>
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:me@apenning.is">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
