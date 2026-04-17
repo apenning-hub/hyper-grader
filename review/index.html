@@ -141,18 +141,24 @@
         <!-- Download Files -->
         <div class="card">
             <h2>Sample Files</h2>
-            <p>Download these files to test the app's import features:</p>
+            <p>Download these files to test the app&rsquo;s import features:</p>
             <div style="margin-top: 16px;">
-                <a href="SampleRubric.csv" download class="download-btn">Download Sample Rubric CSV</a>
-                <a href="SampleData.hyper" download class="download-btn secondary">Download Sample Library (.hyper)</a>
+                <a href="SampleRubric.csv" download class="download-btn">Sample Rubric CSV</a>
+                <a href="SampleStudentList.csv" download class="download-btn">Sample Student List</a>
+                <a href="SampleData.hyper" download class="download-btn secondary">Sample Library (.hyper)</a>
             </div>
+            <p style="margin-top: 12px; font-size: 13px; color: #86868b;">
+                <strong>Rubric CSV</strong> &mdash; 4 criteria, 5 rating levels, 30 pts max<br>
+                <strong>Student List</strong> &mdash; 10 students for batch queue import<br>
+                <strong>Library file</strong> &mdash; 3 courses, 3 assessments, 9 graded records
+            </p>
         </div>
 
-        <!-- Quick Start -->
+        <!-- Testing Guide -->
         <div class="card">
             <h2>Testing Guide</h2>
 
-            <h3>1. First Launch</h3>
+            <h3>1. First Launch &amp; Onboarding</h3>
             <div class="step">
                 <span class="step-num">1</span>
                 <div class="step-content">Launch the app. A 3-page onboarding walkthrough appears. Click <strong>Next</strong> through all pages, then <strong>Get Started</strong>.</div>
@@ -161,76 +167,132 @@
             <h3>2. Create a Course &amp; Assessment</h3>
             <div class="step">
                 <span class="step-num">2</span>
-                <div class="step-content">Click the <strong>+</strong> button in the sidebar to create a course. Click the <strong>+</strong> next to the course name to add an assessment.</div>
+                <div class="step-content">Click the <strong>+</strong> button in the sidebar to create a course (e.g. &ldquo;English 101&rdquo;). Click the <strong>+</strong> next to the course name to add an assessment (e.g. &ldquo;Essay 1&rdquo;). The sidebar shows the course/assessment hierarchy.</div>
             </div>
 
             <h3>3. Import a Rubric</h3>
             <div class="step">
                 <span class="step-num">3</span>
-                <div class="step-content">Go to <strong>File &rarr; Import Rubric&hellip;</strong> (<span class="kbd">&#8679;&#8984;I</span>) and select the <code>SampleRubric.csv</code> you downloaded above. The rubric loads with 4 criteria.</div>
+                <div class="step-content">Go to <strong>File &rarr; Import Rubric&hellip;</strong> (<span class="kbd">&#8679;&#8984;I</span>) and select the <code>SampleRubric.csv</code>. The rubric loads with 4 criteria and 5 rating levels each. A green checkmark appears in the toolbar.</div>
             </div>
 
-            <h3>4. Grade a Student</h3>
+            <h3>4. Import a Student List</h3>
             <div class="step">
                 <span class="step-num">4</span>
-                <div class="step-content">Type a student name, click rating pills for each criterion, optionally record voice notes via the microphone button, then click <strong>Generate</strong> to produce AI feedback.</div>
+                <div class="step-content">Click the clipboard icon (<strong>Student Queue</strong>) in the student bar. Click <strong>Import File&hellip;</strong> and select <code>SampleStudentList.csv</code>. 10 student names appear in the preview. Click <strong>Save</strong>. A progress bar appears showing &ldquo;0 of 10&rdquo;.</div>
+            </div>
+
+            <h3>5. Grade a Student</h3>
+            <div class="step">
+                <span class="step-num">5</span>
+                <div class="step-content">The first student name from the queue auto-fills. Click rating pills for each criterion (color-coded: green = high, red = low). Optionally click <strong>Record Voice Notes</strong> to add spoken observations (requires microphone permission). Click <strong>Generate</strong> to produce AI feedback.</div>
             </div>
 
             <div class="note">
-                <strong>AI Model:</strong> On-device AI requires macOS 15.1+ with Apple Intelligence enabled. Alternatively, enter a Claude API key in <strong>Preferences</strong> (<span class="kbd">&#8984;,</span>). The app is fully functional for rubric import, grading, and export without AI.
+                <strong>AI Model:</strong> On-device AI requires macOS 16.0+ with Apple Intelligence enabled. Alternatively, enter a Claude API key in <strong>Preferences</strong> (<span class="kbd">&#8984;,</span>). The app is fully functional for rubric import, grading, and export without AI &mdash; simply type feedback manually.
             </div>
 
-            <h3>5. Navigate &amp; Export</h3>
-            <div class="step">
-                <span class="step-num">5</span>
-                <div class="step-content">Use <span class="kbd">&#8984;&rarr;</span> / <span class="kbd">&#8984;&larr;</span> to move between students. Click <strong>Export CSV</strong> in the toolbar to export grades.</div>
-            </div>
-
-            <h3>6. Import/Export Library</h3>
+            <h3>6. Navigate Between Students</h3>
             <div class="step">
                 <span class="step-num">6</span>
-                <div class="step-content"><strong>File &rarr; Export Library&hellip;</strong> (<span class="kbd">&#8679;&#8984;E</span>) saves all data as a <code>.hyper</code> file. <strong>File &rarr; Import Data&hellip;</strong> (<span class="kbd">&#8679;&#8984;O</span>) restores from a <code>.hyper</code> or <code>.json</code> file. You can test with the <code>SampleData.hyper</code> file above.</div>
+                <div class="step-content">Use <span class="kbd">&#8984;&rarr;</span> / <span class="kbd">&#8984;&larr;</span> to move between students. The student dropdown (person icon) shows grading history with scores. With a batch queue active, <strong>Next Student</strong> auto-advances to the next ungraded student.</div>
             </div>
+
+            <h3>7. Customize Feedback</h3>
+            <div class="step">
+                <span class="step-num">7</span>
+                <div class="step-content">Click the slider icon in the assessment bar to open <strong>Feedback Instructions</strong>. Configure tone (Encouraging/Balanced/Direct/Rigorous), length, format, focus areas, and voice. Add custom instructions. These are saved per-assessment.</div>
+            </div>
+
+            <h3>8. Export Grades</h3>
+            <div class="step">
+                <span class="step-num">8</span>
+                <div class="step-content">Click the share icon in the assessment bar to <strong>Export CSV</strong>. The exported file includes student names, per-criterion ratings, total scores, percentages, generated feedback, and voice transcripts.</div>
+            </div>
+
+            <h3>9. View Statistics &amp; Compare Students</h3>
+            <div class="step">
+                <span class="step-num">9</span>
+                <div class="step-content">Click the chart icon for <strong>Assessment Statistics</strong> (mean, median, per-criterion averages). Click the people icon to <strong>Compare Students</strong> side-by-side. Click the shield icon for a <strong>Feedback Consistency</strong> check. These require at least 2 graded students.</div>
+            </div>
+
+            <h3>10. Student Profiles &amp; Trajectory</h3>
+            <div class="step">
+                <span class="step-num">10</span>
+                <div class="step-content">Click the profile card icon to view a student&rsquo;s performance across all assessments in the course, including trend analysis and score history. Toggle the trajectory icon to include this context in AI prompts.</div>
+            </div>
+
+            <h3>11. Import/Export Library</h3>
+            <div class="step">
+                <span class="step-num">11</span>
+                <div class="step-content"><strong>File &rarr; Export Library&hellip;</strong> (<span class="kbd">&#8679;&#8984;E</span>) saves all data as a <code>.hyper</code> file. <strong>File &rarr; Import Data&hellip;</strong> (<span class="kbd">&#8679;&#8984;O</span>) restores from a <code>.hyper</code> or <code>.json</code> file. A preview sheet shows the summary and lets you choose Merge or Replace. Test with the <code>SampleData.hyper</code> file above.</div>
+            </div>
+
+            <h3>12. Assessment Locking</h3>
+            <div class="step">
+                <span class="step-num">12</span>
+                <div class="step-content">Right-click an assessment in the sidebar and select <strong>Lock Assessment</strong>. The grading view becomes read-only with a lock banner. Unlock from the banner or sidebar context menu.</div>
+            </div>
+        </div>
+
+        <!-- Keyboard Shortcuts -->
+        <div class="card">
+            <h2>Keyboard Shortcuts</h2>
+            <table class="format-table">
+                <tr><th>Action</th><th>Shortcut</th></tr>
+                <tr><td>Preferences</td><td><span class="kbd">&#8984;,</span></td></tr>
+                <tr><td>Export Library</td><td><span class="kbd">&#8679;&#8984;E</span></td></tr>
+                <tr><td>Import Data</td><td><span class="kbd">&#8679;&#8984;O</span></td></tr>
+                <tr><td>Import / Replace Rubric</td><td><span class="kbd">&#8679;&#8984;I</span></td></tr>
+                <tr><td>Next Student</td><td><span class="kbd">&#8984;&rarr;</span></td></tr>
+                <tr><td>Previous Student</td><td><span class="kbd">&#8984;&larr;</span></td></tr>
+            </table>
         </div>
 
         <!-- CSV Format Reference -->
         <div class="card">
-            <h2>Rubric CSV Format</h2>
-            <p>Each row defines one criterion. Columns repeat in groups of 3 for each rating level:</p>
+            <h2>File Format Reference</h2>
+            <h3>Rubric CSV</h3>
+            <p>Row 1 is a header. Each subsequent row defines one criterion:</p>
             <table class="format-table">
-                <tr>
-                    <th>Column</th>
-                    <th>Content</th>
-                </tr>
+                <tr><th>Column</th><th>Content</th></tr>
                 <tr><td>1</td><td>Rubric name</td></tr>
                 <tr><td>2</td><td>Criterion name</td></tr>
                 <tr><td>3</td><td>Criterion description</td></tr>
                 <tr><td>4</td><td>(empty)</td></tr>
                 <tr><td>5, 6, 7</td><td>Rating name, description, points</td></tr>
-                <tr><td>8, 9, 10</td><td>Next rating name, description, points</td></tr>
-                <tr><td>&hellip;</td><td>Repeat for additional rating levels</td></tr>
+                <tr><td>8, 9, 10</td><td>Next rating&hellip; (repeat for each level)</td></tr>
             </table>
-            <p style="margin-top: 8px; font-size: 14px; color: #86868b;">The sample CSV includes 4 criteria with 5 rating levels each (Excellent through Unsatisfactory).</p>
+            <p style="margin-top: 8px; font-size: 14px; color: #86868b;">Compatible with Canvas LMS rubric CSV exports.</p>
+
+            <h3>Student List CSV</h3>
+            <p>A CSV with a header containing &ldquo;name&rdquo; or &ldquo;student&rdquo;. Only the name column is used; other columns are ignored. Alternatively, a plain text file with one name per line.</p>
+
+            <h3>Library File (.hyper)</h3>
+            <p>A JSON envelope containing all courses, assessments, rubrics, and grading records. Created via <strong>File &rarr; Export Library</strong>. Can also import bare JSON arrays for backwards compatibility.</p>
         </div>
 
         <!-- Features Summary -->
         <div class="card">
             <h2>All Features</h2>
             <ul>
-                <li>Course and assessment organization</li>
-                <li>Rubric import from CSV</li>
-                <li>Voice note recording with on-device transcription</li>
+                <li>Course and assessment organization with sidebar navigation</li>
+                <li>Rubric import from Canvas-compatible CSV</li>
+                <li>Voice note recording with on-device speech transcription</li>
                 <li>AI feedback generation (on-device Apple Intelligence or Claude API)</li>
-                <li>Student navigation and grading history</li>
-                <li>Batch student queue management</li>
-                <li>Student performance profiles and trajectory tracking</li>
-                <li>Assessment statistics (mean, median, per-criterion)</li>
+                <li>Feedback customization: tone, length, format, focus areas, voice</li>
+                <li>Tone calibration sliders (encouragement, specificity, verbosity)</li>
+                <li>Feedback refinement and regeneration with custom prompts</li>
+                <li>Batch student queue from CSV or text file</li>
+                <li>Student navigation with grading history and scores</li>
+                <li>Student performance profiles and trajectory tracking across assessments</li>
+                <li>Assessment statistics (mean, median, min/max, per-criterion averages)</li>
                 <li>Comparative grading (side-by-side student comparison)</li>
-                <li>Feedback consistency checker</li>
-                <li>Feedback customization (tone, length, format, focus, voice)</li>
-                <li>Tone calibration sliders</li>
-                <li>CSV grade export</li>
-                <li>Library export/import (.hyper and .json)</li>
+                <li>AI-powered feedback consistency checker</li>
+                <li>Assessment locking (read-only mode)</li>
+                <li>CSV grade export with scores, feedback, and transcripts</li>
+                <li>Library export/import (.hyper and .json) with merge/replace options</li>
+                <li>Finder file association for .hyper files</li>
                 <li>Keyboard shortcuts throughout</li>
             </ul>
         </div>
@@ -241,10 +303,11 @@
             <ul>
                 <li>No account or login required</li>
                 <li>On-device AI mode: no data leaves the Mac</li>
-                <li>API key stored in macOS Keychain</li>
-                <li>Student names anonymized in AI prompts</li>
-                <li>Speech transcription is on-device only</li>
-                <li>Microphone access requested at first recording</li>
+                <li>Claude API key stored securely in macOS Keychain</li>
+                <li>Student names anonymized in all AI prompts</li>
+                <li>Speech transcription is fully on-device</li>
+                <li>Microphone permission requested only at first recording</li>
+                <li>All data stored locally; no telemetry or analytics</li>
             </ul>
         </div>
 
