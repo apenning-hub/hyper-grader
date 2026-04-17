@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Grader - App Review Resources</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #86868b;
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            color: #1d1d1f;
+        }
+        .card p, .card li {
+            font-size: 15px;
+            color: #424245;
+        }
+        .card ul, .card ol {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+        .card li { margin-bottom: 6px; }
+        .download-btn {
+            display: inline-block;
+            background: #0071e3;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            margin: 6px 8px 6px 0;
+            transition: background 0.2s;
+        }
+        .download-btn:hover { background: #0077ed; }
+        .download-btn.secondary {
+            background: #e8e8ed;
+            color: #1d1d1f;
+        }
+        .download-btn.secondary:hover { background: #d2d2d7; }
+        code {
+            background: #f0f0f3;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: "SF Mono", Menlo, monospace;
+        }
+        .kbd {
+            display: inline-block;
+            background: #e8e8ed;
+            border: 1px solid #d2d2d7;
+            border-radius: 4px;
+            padding: 1px 6px;
+            font-size: 13px;
+            font-family: "SF Mono", Menlo, monospace;
+        }
+        .step-num {
+            display: inline-block;
+            background: #0071e3;
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .step-content { flex: 1; }
+        .note {
+            background: #fff8e1;
+            border-left: 3px solid #f5a623;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .format-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .format-table th, .format-table td {
+            text-align: left;
+            padding: 8px 12px;
+            border-bottom: 1px solid #e8e8ed;
+        }
+        .format-table th {
+            font-weight: 600;
+            color: #86868b;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hyper Grader</h1>
+        <p class="subtitle">App Review Resources &amp; Testing Guide</p>
+
+        <!-- Download Files -->
+        <div class="card">
+            <h2>Sample Files</h2>
+            <p>Download these files to test the app's import features:</p>
+            <div style="margin-top: 16px;">
+                <a href="SampleRubric.csv" download class="download-btn">Download Sample Rubric CSV</a>
+                <a href="SampleData.hyper" download class="download-btn secondary">Download Sample Library (.hyper)</a>
+            </div>
+        </div>
+
+        <!-- Quick Start -->
+        <div class="card">
+            <h2>Testing Guide</h2>
+
+            <h3>1. First Launch</h3>
+            <div class="step">
+                <span class="step-num">1</span>
+                <div class="step-content">Launch the app. A 3-page onboarding walkthrough appears. Click <strong>Next</strong> through all pages, then <strong>Get Started</strong>.</div>
+            </div>
+
+            <h3>2. Create a Course &amp; Assessment</h3>
+            <div class="step">
+                <span class="step-num">2</span>
+                <div class="step-content">Click the <strong>+</strong> button in the sidebar to create a course. Click the <strong>+</strong> next to the course name to add an assessment.</div>
+            </div>
+
+            <h3>3. Import a Rubric</h3>
+            <div class="step">
+                <span class="step-num">3</span>
+                <div class="step-content">Go to <strong>File &rarr; Import Rubric&hellip;</strong> (<span class="kbd">&#8679;&#8984;I</span>) and select the <code>SampleRubric.csv</code> you downloaded above. The rubric loads with 4 criteria.</div>
+            </div>
+
+            <h3>4. Grade a Student</h3>
+            <div class="step">
+                <span class="step-num">4</span>
+                <div class="step-content">Type a student name, click rating pills for each criterion, optionally record voice notes via the microphone button, then click <strong>Generate</strong> to produce AI feedback.</div>
+            </div>
+
+            <div class="note">
+                <strong>AI Model:</strong> On-device AI requires macOS 15.1+ with Apple Intelligence enabled. Alternatively, enter a Claude API key in <strong>Preferences</strong> (<span class="kbd">&#8984;,</span>). The app is fully functional for rubric import, grading, and export without AI.
+            </div>
+
+            <h3>5. Navigate &amp; Export</h3>
+            <div class="step">
+                <span class="step-num">5</span>
+                <div class="step-content">Use <span class="kbd">&#8984;&rarr;</span> / <span class="kbd">&#8984;&larr;</span> to move between students. Click <strong>Export CSV</strong> in the toolbar to export grades.</div>
+            </div>
+
+            <h3>6. Import/Export Library</h3>
+            <div class="step">
+                <span class="step-num">6</span>
+                <div class="step-content"><strong>File &rarr; Export Library&hellip;</strong> (<span class="kbd">&#8679;&#8984;E</span>) saves all data as a <code>.hyper</code> file. <strong>File &rarr; Import Data&hellip;</strong> (<span class="kbd">&#8679;&#8984;O</span>) restores from a <code>.hyper</code> or <code>.json</code> file. You can test with the <code>SampleData.hyper</code> file above.</div>
+            </div>
+        </div>
+
+        <!-- CSV Format Reference -->
+        <div class="card">
+            <h2>Rubric CSV Format</h2>
+            <p>Each row defines one criterion. Columns repeat in groups of 3 for each rating level:</p>
+            <table class="format-table">
+                <tr>
+                    <th>Column</th>
+                    <th>Content</th>
+                </tr>
+                <tr><td>1</td><td>Rubric name</td></tr>
+                <tr><td>2</td><td>Criterion name</td></tr>
+                <tr><td>3</td><td>Criterion description</td></tr>
+                <tr><td>4</td><td>(empty)</td></tr>
+                <tr><td>5, 6, 7</td><td>Rating name, description, points</td></tr>
+                <tr><td>8, 9, 10</td><td>Next rating name, description, points</td></tr>
+                <tr><td>&hellip;</td><td>Repeat for additional rating levels</td></tr>
+            </table>
+            <p style="margin-top: 8px; font-size: 14px; color: #86868b;">The sample CSV includes 4 criteria with 5 rating levels each (Excellent through Unsatisfactory).</p>
+        </div>
+
+        <!-- Features Summary -->
+        <div class="card">
+            <h2>All Features</h2>
+            <ul>
+                <li>Course and assessment organization</li>
+                <li>Rubric import from CSV</li>
+                <li>Voice note recording with on-device transcription</li>
+                <li>AI feedback generation (on-device Apple Intelligence or Claude API)</li>
+                <li>Student navigation and grading history</li>
+                <li>Batch student queue management</li>
+                <li>Student performance profiles and trajectory tracking</li>
+                <li>Assessment statistics (mean, median, per-criterion)</li>
+                <li>Comparative grading (side-by-side student comparison)</li>
+                <li>Feedback consistency checker</li>
+                <li>Feedback customization (tone, length, format, focus, voice)</li>
+                <li>Tone calibration sliders</li>
+                <li>CSV grade export</li>
+                <li>Library export/import (.hyper and .json)</li>
+                <li>Keyboard shortcuts throughout</li>
+            </ul>
+        </div>
+
+        <!-- Privacy -->
+        <div class="card">
+            <h2>Privacy &amp; Data</h2>
+            <ul>
+                <li>No account or login required</li>
+                <li>On-device AI mode: no data leaves the Mac</li>
+                <li>API key stored in macOS Keychain</li>
+                <li>Student names anonymized in AI prompts</li>
+                <li>Speech transcription is on-device only</li>
+                <li>Microphone access requested at first recording</li>
+            </ul>
+        </div>
+
+        <p style="text-align: center; color: #86868b; font-size: 13px; margin-top: 24px;">
+            Hyper Grader &copy; 2026
+        </p>
+    </div>
+</body>
+</html>

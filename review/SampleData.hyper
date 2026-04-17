@@ -1,0 +1,303 @@
+{
+  "appVersion": "1.0.0",
+  "courses": [
+    {
+      "assessments": [
+        {
+          "createdAt": "2026-03-15T10:00:00Z",
+          "feedbackConfig": {
+            "customInstruction": "",
+            "selectedPresetIDs": [
+              "tone.balanced",
+              "length.medium",
+              "format.prose",
+              "voice.second_person",
+              "focus.improvement"
+            ]
+          },
+          "gradingRecords": [
+            {
+              "feedbackGenerated": "Your thesis on social media's impact on adolescent mental health is clear, specific, and sets up a compelling argument. The use of the Twenge study demonstrates strong engagement with course readings, and your real-world examples effectively illustrate the data. Your essay is well-organized overall, though the transition between your third and fourth paragraphs could be smoother. In your introduction, watch for passive voice constructions (\"it was found that\" \u2192 \"researchers found that\"). Your citations are formatted correctly throughout. For your next essay, take more time with the conclusion\u2014currently it feels somewhat rushed compared to the development in your body paragraphs.",
+              "gradedAt": "2026-04-10T14:30:00Z",
+              "gradingDurationSeconds": 185,
+              "id": "DEMO-RECORD-EMMA-8888-888888888888",
+              "selections": {
+                "DEMO-CRIT-EVID-5555-5555-555555555555": "DEMO-RATE-EVID-5-5555555555555",
+                "DEMO-CRIT-ORG-6666-6666-666666666666": "DEMO-RATE-ORG-4-44444444444444",
+                "DEMO-CRIT-STYLE-7777-7777-777777777777": "DEMO-RATE-STYLE-4-4444444444444",
+                "DEMO-CRIT-THESIS-4444-444444444444": "DEMO-RATE-THESIS-4-444444444444"
+              },
+              "studentName": "Emma Johnson",
+              "totalPoints": 26,
+              "transcript": "Really strong thesis here. The argument about social media and mental health is clear and specific. Good use of the Twenge study from the readings. I like how she connects the data to real-world examples. Organization is solid but the transition between paragraphs 3 and 4 is a bit abrupt. Watch passive voice in the intro. Citation format is perfect. Conclusion could be stronger - feels a bit rushed."
+            },
+            {
+              "feedbackGenerated": "Your essay addresses technology in education, but the thesis needs to be more specific and take a clearer argumentative position. Rather than stating that \"technology affects education,\" specify how and why, and make an arguable claim. Your evidence is limited\u2014draw more substantially from course readings rather than relying on outside blog sources. When you do cite sources, push your analysis deeper; explain not just what the source says, but why it matters for your argument. Your organizational structure is solid with a clear introduction, body paragraphs, and conclusion. For the next draft, review comma usage and watch for sentence fragments. Your citation format is correct\u2014continue using it consistently.",
+              "gradedAt": "2026-04-10T14:35:00Z",
+              "gradingDurationSeconds": 210,
+              "id": "DEMO-RECORD-LIAM-9999-999999999999",
+              "selections": {
+                "DEMO-CRIT-EVID-5555-5555-555555555555": "DEMO-RATE-EVID-2-2222222222222",
+                "DEMO-CRIT-ORG-6666-6666-666666666666": "DEMO-RATE-ORG-4-44444444444444",
+                "DEMO-CRIT-STYLE-7777-7777-777777777777": "DEMO-RATE-STYLE-3-3333333333333",
+                "DEMO-CRIT-THESIS-4444-444444444444": "DEMO-RATE-THESIS-3-333333333333"
+              },
+              "studentName": "Liam Chen",
+              "totalPoints": 22,
+              "transcript": "Thesis is there but it's pretty vague. Says technology affects education but doesn't specify how or take a clear position. Needs more evidence from the readings - only cites one source and it's from a random blog. The analysis of that source is superficial. Organization is actually pretty good though. Clear intro, body paragraphs, conclusion. Some grammar issues - missing commas, a few fragments. Citations are in the right format at least."
+            },
+            {
+              "feedbackGenerated": "This is excellent work. Your thesis on climate policy is sophisticated and takes a nuanced position that you sustain throughout the essay. You integrate multiple course sources seamlessly, and your counterargument section is particularly strong\u2014you acknowledge opposing perspectives and refute them convincingly. Your organizational structure is flawless, with natural transitions that guide readers smoothly through your argument. The writing is clear, engaging, and nearly error-free (I noted only two minor typos). This represents A-level work. For your next essay, continue building on this approach and consider pushing your analysis even further in places where you summarize source material.",
+              "gradedAt": "2026-04-10T14:42:00Z",
+              "gradingDurationSeconds": 195,
+              "id": "DEMO-RECORD-SOPHIA-AAAA-AAAAAAAAAAAA",
+              "selections": {
+                "DEMO-CRIT-EVID-5555-5555-555555555555": "DEMO-RATE-EVID-5-5555555555555",
+                "DEMO-CRIT-ORG-6666-6666-666666666666": "DEMO-RATE-ORG-5-55555555555555",
+                "DEMO-CRIT-STYLE-7777-7777-777777777777": "DEMO-RATE-STYLE-4-4444444444444",
+                "DEMO-CRIT-THESIS-4444-444444444444": "DEMO-RATE-THESIS-5-555555555555"
+              },
+              "studentName": "Sophia Rodriguez",
+              "totalPoints": 29,
+              "transcript": "Excellent work. Thesis on climate policy is sophisticated and nuanced. Uses multiple sources from the readings and integrates them seamlessly. The counterargument section is particularly strong - acknowledges opposing views and refutes them convincingly. Organization is flawless. Transitions are natural and guide the reader through the argument. Writing style is clear and engaging. Only spotted two minor typos. This is A-level work."
+            },
+            {
+              "feedbackGenerated": "Your thesis needs clarification\u2014I'm not sure what argumentative position you're taking on this topic. In your body paragraphs, ideas jump between topics without clear connections; each paragraph should have one main point that builds toward your overall argument. You include evidence from sources, but much of it is paraphrased without original analysis. Rather than stating \"the author says X,\" explain why X matters and how it supports your claim. Strengthen your organization by ensuring each paragraph builds logically on the previous one. Review your sentences for run-ons, and make your citation format consistent throughout (several are missing page numbers). For your next draft, outline your argument first to ensure a clear through-line from thesis to conclusion.",
+              "gradedAt": "2026-04-10T14:48:00Z",
+              "gradingDurationSeconds": 220,
+              "id": "DEMO-RECORD-NOAH-BBBB-BBBBBBBBBBBB",
+              "selections": {
+                "DEMO-CRIT-EVID-5555-5555-555555555555": "DEMO-RATE-EVID-3-3333333333333",
+                "DEMO-CRIT-ORG-6666-6666-666666666666": "DEMO-RATE-ORG-2-22222222222222",
+                "DEMO-CRIT-STYLE-7777-7777-777777777777": "DEMO-RATE-STYLE-2-2222222222222",
+                "DEMO-CRIT-THESIS-4444-444444444444": "DEMO-RATE-THESIS-2-222222222222"
+              },
+              "studentName": "Noah Patel",
+              "totalPoints": 19,
+              "transcript": "Thesis is unclear - can't tell what position he's actually taking. Body paragraphs jump around between different ideas without clear connections. Evidence is there but it's mostly paraphrased without much original analysis. Lots of \"the author says\" without explaining so what. Organization is weak - paragraphs don't build on each other. Some run-on sentences. Citations are inconsistent - some are formatted right, others are missing page numbers."
+            },
+            {
+              "feedbackGenerated": "Your thesis on income inequality takes a clear position and sets up your argument effectively. You engage with three sources from the syllabus, demonstrating strong preparation. Your analysis is solid, though in several places you tend toward summary rather than deeper critical engagement\u2014ask yourself \"why does this matter?\" and \"what are the implications?\" Your organizational structure is sound, with introduction and conclusion that align well. Some body paragraphs would benefit from stronger topic sentences that explicitly connect to your thesis. The writing is clear with only a few comma splices to address. Your citations are formatted correctly. For the next essay, focus on pushing past summary to offer more original analysis of your sources.",
+              "gradedAt": "2026-04-10T14:55:00Z",
+              "gradingDurationSeconds": 175,
+              "id": "DEMO-RECORD-OLIVIA-CCCC-CCCCCCCCCCCC",
+              "selections": {
+                "DEMO-CRIT-EVID-5555-5555-555555555555": "DEMO-RATE-EVID-3-3333333333333",
+                "DEMO-CRIT-ORG-6666-6666-666666666666": "DEMO-RATE-ORG-4-44444444444444",
+                "DEMO-CRIT-STYLE-7777-7777-777777777777": "DEMO-RATE-STYLE-3-3333333333333",
+                "DEMO-CRIT-THESIS-4444-444444444444": "DEMO-RATE-THESIS-4-444444444444"
+              },
+              "studentName": "Olivia Williams",
+              "totalPoints": 24,
+              "transcript": "Good thesis on income inequality. Clear position. Uses three sources from the syllabus which is great. Analysis is decent but could go deeper in places - tends to summarize rather than analyze. Organization is good. Intro and conclusion match well. Some paragraphs could use better topic sentences. Writing is clear. A few comma splices. Citations look good overall."
+            }
+          ],
+          "id": "DEMO-ASSESS-2222-2222-222222222222",
+          "name": "Essay 1 - Argumentative Writing",
+          "rubric": {
+            "criteria": [
+              {
+                "description": "Clear, compelling thesis with logical argumentation",
+                "id": "DEMO-CRIT-THESIS-4444-444444444444",
+                "name": "Thesis & Argument",
+                "ratings": [
+                  { "description": "Thesis is clear, specific, and arguable. Arguments are sophisticated and well-developed.", "id": "DEMO-RATE-THESIS-5-555555555555", "name": "Excellent", "points": 10 },
+                  { "description": "Thesis is clear and arguable. Arguments are well-developed with minor gaps.", "id": "DEMO-RATE-THESIS-4-444444444444", "name": "Very Good", "points": 8 },
+                  { "description": "Thesis is present but could be more specific. Arguments are adequate.", "id": "DEMO-RATE-THESIS-3-333333333333", "name": "Good", "points": 6 },
+                  { "description": "Thesis is unclear or not arguable. Arguments lack development.", "id": "DEMO-RATE-THESIS-2-222222222222", "name": "Needs Work", "points": 4 },
+                  { "description": "No clear thesis. Arguments are undeveloped or missing.", "id": "DEMO-RATE-THESIS-1-111111111111", "name": "Unsatisfactory", "points": 0 }
+                ]
+              },
+              {
+                "description": "Use of relevant evidence with thoughtful analysis",
+                "id": "DEMO-CRIT-EVID-5555-5555-555555555555",
+                "name": "Evidence & Analysis",
+                "ratings": [
+                  { "description": "Evidence is highly relevant, well-integrated, and thoroughly analyzed.", "id": "DEMO-RATE-EVID-5-5555555555555", "name": "Excellent", "points": 10 },
+                  { "description": "Evidence is relevant and analyzed, with minor room for deeper engagement.", "id": "DEMO-RATE-EVID-4-4444444444444", "name": "Very Good", "points": 8 },
+                  { "description": "Evidence is present but analysis could be deeper or more specific.", "id": "DEMO-RATE-EVID-3-3333333333333", "name": "Good", "points": 6 },
+                  { "description": "Evidence is weak or poorly analyzed. Sources not well integrated.", "id": "DEMO-RATE-EVID-2-2222222222222", "name": "Needs Work", "points": 4 },
+                  { "description": "Little or no evidence. Analysis is missing or superficial.", "id": "DEMO-RATE-EVID-1-1111111111111", "name": "Unsatisfactory", "points": 0 }
+                ]
+              },
+              {
+                "description": "Logical structure with effective transitions",
+                "id": "DEMO-CRIT-ORG-6666-6666-666666666666",
+                "name": "Organization",
+                "ratings": [
+                  { "description": "Essay is exceptionally well-organized with seamless transitions.", "id": "DEMO-RATE-ORG-5-55555555555555", "name": "Excellent", "points": 5 },
+                  { "description": "Clear organization with effective transitions. Minor structural issues.", "id": "DEMO-RATE-ORG-4-44444444444444", "name": "Very Good", "points": 4 },
+                  { "description": "Adequate organization. Some transitions are weak or unclear.", "id": "DEMO-RATE-ORG-3-33333333333333", "name": "Good", "points": 3 },
+                  { "description": "Organization is confusing. Transitions are missing or ineffective.", "id": "DEMO-RATE-ORG-2-22222222222222", "name": "Needs Work", "points": 2 },
+                  { "description": "No clear organization. Essay is difficult to follow.", "id": "DEMO-RATE-ORG-1-11111111111111", "name": "Unsatisfactory", "points": 0 }
+                ]
+              },
+              {
+                "description": "Clear writing with proper grammar and citations",
+                "id": "DEMO-CRIT-STYLE-7777-7777-777777777777",
+                "name": "Style & Mechanics",
+                "ratings": [
+                  { "description": "Writing is clear, engaging, and error-free. Citations are perfect.", "id": "DEMO-RATE-STYLE-5-5555555555555", "name": "Excellent", "points": 5 },
+                  { "description": "Writing is clear with only minor errors. Citations are correct.", "id": "DEMO-RATE-STYLE-4-4444444444444", "name": "Very Good", "points": 4 },
+                  { "description": "Writing is generally clear. Some grammatical errors or citation issues.", "id": "DEMO-RATE-STYLE-3-3333333333333", "name": "Good", "points": 3 },
+                  { "description": "Writing is unclear in places. Multiple errors or citation problems.", "id": "DEMO-RATE-STYLE-2-2222222222222", "name": "Needs Work", "points": 2 },
+                  { "description": "Writing is unclear with pervasive errors. Citations are missing or incorrect.", "id": "DEMO-RATE-STYLE-1-1111111111111", "name": "Unsatisfactory", "points": 0 }
+                ]
+              }
+            ],
+            "id": "DEMO-RUBRIC-3333-3333-333333333333",
+            "name": "Essay 1 - Argumentative Writing"
+          },
+          "studentQueue": [ "Emma Johnson", "Liam Chen", "Sophia Rodriguez", "Noah Patel", "Olivia Williams", "Ethan Kim", "Ava Martinez", "Mason Thompson" ]
+        },
+        {
+          "createdAt": "2026-03-20T10:00:00Z",
+          "feedbackConfig": {
+            "customInstruction": "Reference specific textual evidence with page numbers.",
+            "selectedPresetIDs": [ "tone.rigorous", "length.detailed", "format.structured", "voice.second_person" ]
+          },
+          "gradingRecords": [
+            {
+              "feedbackGenerated": "Your textual analysis demonstrates strong close reading skills, particularly in tracing the green light motif across chapters. Your use of specific page references grounds your argument effectively. However, your interpretation of the American Dream theme, while competent, follows a well-established critical path. For future literary analysis, challenge yourself to develop more original interpretative angles. Consider what aspects of the text haven't been thoroughly explored in existing criticism, or how you might complicate conventional readings.",
+              "gradedAt": "2026-04-05T16:20:00Z",
+              "gradingDurationSeconds": 240,
+              "id": "DEMO-RECORD-MID-EMMA-DDDDDDDDDDDD",
+              "selections": { "DEMO-CRIT-ANALYSIS-555555555555": "DEMO-RATE-ANALYSIS-4-44444444444", "DEMO-CRIT-INTERPRETATION-66666666666": "DEMO-RATE-INTERP-3-333333333333" },
+              "studentName": "Emma Johnson",
+              "totalPoints": 25,
+              "transcript": "Strong analysis of symbolism in The Great Gatsby. Good attention to the green light motif across chapters. Uses specific page references. Interpretation is a bit conventional though - the American Dream angle has been done many times. Would like to see more original thinking."
+            },
+            {
+              "feedbackGenerated": "This is excellent work. Your analysis of class anxiety through spatial descriptions offers an original and productive interpretative lens. Your quotations are purposefully chosen and analyzed with precision\u2014the close reading of the Buchanan house in chapter one is particularly strong, demonstrating sophisticated attention to Fitzgerald's language. This essay shows real critical thinking and engagement with the text beyond surface-level readings. Continue developing this level of analytical sophistication in your future work.",
+              "gradedAt": "2026-04-05T16:35:00Z",
+              "gradingDurationSeconds": 195,
+              "id": "DEMO-RECORD-MID-SOPHIA-EEEEEEEEEEEE",
+              "selections": { "DEMO-CRIT-ANALYSIS-555555555555": "DEMO-RATE-ANALYSIS-5-55555555555", "DEMO-CRIT-INTERPRETATION-66666666666": "DEMO-RATE-INTERP-4-444444444444" },
+              "studentName": "Sophia Rodriguez",
+              "totalPoints": 27,
+              "transcript": "Excellent analysis. Her reading of class anxiety through the lens of spatial descriptions is original and well-supported. Every quotation is purposefully chosen. The close reading of the Buchanan house description in chapter 1 is particularly strong. This shows real critical thinking."
+            }
+          ],
+          "id": "DEMO-ASSESS-MIDTERM-333333333333",
+          "name": "Midterm Essay - Literary Analysis",
+          "rubric": {
+            "criteria": [
+              {
+                "description": "Close reading with specific textual evidence",
+                "id": "DEMO-CRIT-ANALYSIS-555555555555",
+                "name": "Textual Analysis",
+                "ratings": [
+                  { "description": "Sophisticated close reading with well-chosen quotations and insightful analysis", "id": "DEMO-RATE-ANALYSIS-5-55555555555", "name": "Excellent", "points": 15 },
+                  { "description": "Strong close reading with appropriate evidence and good analysis", "id": "DEMO-RATE-ANALYSIS-4-44444444444", "name": "Very Good", "points": 12 },
+                  { "description": "Adequate close reading with some textual evidence", "id": "DEMO-RATE-ANALYSIS-3-33333333333", "name": "Good", "points": 9 },
+                  { "description": "Limited close reading or weak textual evidence", "id": "DEMO-RATE-ANALYSIS-2-22222222222", "name": "Needs Work", "points": 6 },
+                  { "description": "No close reading or textual evidence", "id": "DEMO-RATE-ANALYSIS-1-11111111111", "name": "Unsatisfactory", "points": 0 }
+                ]
+              },
+              {
+                "description": "Original argument about the text's meaning",
+                "id": "DEMO-CRIT-INTERPRETATION-66666666666",
+                "name": "Interpretation",
+                "ratings": [
+                  { "description": "Original, nuanced interpretation supported by evidence", "id": "DEMO-RATE-INTERP-5-555555555555", "name": "Excellent", "points": 15 },
+                  { "description": "Clear interpretation with good support", "id": "DEMO-RATE-INTERP-4-444444444444", "name": "Very Good", "points": 12 },
+                  { "description": "Adequate interpretation, somewhat conventional", "id": "DEMO-RATE-INTERP-3-333333333333", "name": "Good", "points": 9 },
+                  { "description": "Weak or unclear interpretation", "id": "DEMO-RATE-INTERP-2-222222222222", "name": "Needs Work", "points": 6 },
+                  { "description": "No clear interpretation or misreading", "id": "DEMO-RATE-INTERP-1-111111111111", "name": "Unsatisfactory", "points": 0 }
+                ]
+              }
+            ],
+            "id": "DEMO-RUBRIC-MIDTERM-44444444444",
+            "name": "Literary Analysis Rubric"
+          },
+          "studentQueue": []
+        }
+      ],
+      "createdAt": "2026-03-15T09:00:00Z",
+      "id": "DEMO-COURSE-1111-1111-111111111111",
+      "name": "English 101 - Composition"
+    },
+    {
+      "assessments": [
+        {
+          "createdAt": "2026-04-01T09:00:00Z",
+          "feedbackConfig": {
+            "customInstruction": "Focus on specific errors in work shown.",
+            "selectedPresetIDs": [ "tone.direct", "length.brief", "format.bullets", "voice.second_person" ]
+          },
+          "gradingRecords": [
+            {
+              "feedbackGenerated": "\u2022 Correctly identified integration by parts\n\u2022 u and dv selections are optimal\n\u2022 All algebraic steps are correct\n\u2022 Included constant of integration\n\nFull marks. Excellent work.",
+              "gradedAt": "2026-04-12T11:15:00Z",
+              "gradingDurationSeconds": 90,
+              "id": "DEMO-RECORD-ALEX-KKKKKKKKKKKK",
+              "selections": { "DEMO-CRIT-ANSWER-JJJJJJJJJJJJ": "DEMO-RATE-ANS-2-22222222222222", "DEMO-CRIT-EXECUTION-IIIIIIIIIIII": "DEMO-RATE-EXEC-5-5555555555555", "DEMO-CRIT-SETUP-HHHHHHHHHHHH": "DEMO-RATE-SETUP-3-333333333333" },
+              "studentName": "Alex Zhang",
+              "totalPoints": 10,
+              "transcript": "Perfect. Correctly identified integration by parts. Set up u and dv correctly. All algebra is right. Included the constant of integration. Full marks."
+            },
+            {
+              "feedbackGenerated": "\u2022 Correct method (integration by parts)\n\u2022 Sign error in step 2: negative became positive incorrectly\n\u2022 Error propagated to final answer\n\u2022 Missing constant of integration (+C)\n\nReview sign handling when distributing negative terms. Always include +C for indefinite integrals.",
+              "gradedAt": "2026-04-12T11:20:00Z",
+              "gradingDurationSeconds": 120,
+              "id": "DEMO-RECORD-MAYA-LLLLLLLLLLLL",
+              "selections": { "DEMO-CRIT-ANSWER-JJJJJJJJJJJJ": "DEMO-RATE-ANS-1-11111111111111", "DEMO-CRIT-EXECUTION-IIIIIIIIIIII": "DEMO-RATE-EXEC-3-3333333333333", "DEMO-CRIT-SETUP-HHHHHHHHHHHH": "DEMO-RATE-SETUP-3-333333333333" },
+              "studentName": "Maya Singh",
+              "totalPoints": 6,
+              "transcript": "Right method but made a sign error in the second step. Negative became positive when it should have stayed negative. That carried through to the wrong final answer. Also forgot the constant of integration."
+            }
+          ],
+          "id": "DEMO-ASSESS-QUIZ3-FFFFFFFFFFFFF",
+          "name": "Quiz 3 - Integration Techniques",
+          "rubric": {
+            "criteria": [
+              {
+                "description": "Correct identification of integration method",
+                "id": "DEMO-CRIT-SETUP-HHHHHHHHHHHH",
+                "name": "Problem Setup",
+                "ratings": [
+                  { "description": "Correctly identifies appropriate method", "id": "DEMO-RATE-SETUP-3-333333333333", "name": "Correct", "points": 3 },
+                  { "description": "Method identified with minor errors", "id": "DEMO-RATE-SETUP-2-222222222222", "name": "Partially Correct", "points": 2 },
+                  { "description": "Wrong method or no clear approach", "id": "DEMO-RATE-SETUP-1-111111111111", "name": "Incorrect", "points": 0 }
+                ]
+              },
+              {
+                "description": "Correct application of integration technique",
+                "id": "DEMO-CRIT-EXECUTION-IIIIIIIIIIII",
+                "name": "Execution",
+                "ratings": [
+                  { "description": "Work is correct throughout", "id": "DEMO-RATE-EXEC-5-5555555555555", "name": "Correct", "points": 5 },
+                  { "description": "Minor algebraic errors", "id": "DEMO-RATE-EXEC-3-3333333333333", "name": "Mostly Correct", "points": 3 },
+                  { "description": "Significant mistakes in execution", "id": "DEMO-RATE-EXEC-1-1111111111111", "name": "Major Errors", "points": 1 }
+                ]
+              },
+              {
+                "description": "Correct final answer with constant of integration",
+                "id": "DEMO-CRIT-ANSWER-JJJJJJJJJJJJ",
+                "name": "Final Answer",
+                "ratings": [
+                  { "description": "Answer is correct with +C", "id": "DEMO-RATE-ANS-2-22222222222222", "name": "Correct", "points": 2 },
+                  { "description": "Answer is wrong or missing +C", "id": "DEMO-RATE-ANS-1-11111111111111", "name": "Incorrect", "points": 0 }
+                ]
+              }
+            ],
+            "id": "DEMO-RUBRIC-QUIZ3-GGGGGGGGGGGG",
+            "name": "Quiz 3 Rubric"
+          },
+          "studentQueue": [ "Alex Zhang", "Maya Singh", "Carlos Rivera" ]
+        }
+      ],
+      "createdAt": "2026-02-01T08:00:00Z",
+      "id": "DEMO-COURSE-MATH-2222-222222222222",
+      "name": "Calculus II"
+    },
+    {
+      "assessments": [],
+      "createdAt": "2026-04-01T10:00:00Z",
+      "id": "DEMO-COURSE-EMPTY-3333-333333333333",
+      "name": "Philosophy 201"
+    }
+  ],
+  "exportDate": "2026-04-17T00:00:00Z",
+  "formatVersion": 1
+}
