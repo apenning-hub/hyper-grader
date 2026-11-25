@@ -244,3 +244,12 @@ footer p { margin: 0; }
   .drollery { grid-column: 1 / -1; grid-row: auto; margin-top: 32px; }
   .nav .page-ring-label { display: none; }
 }
+
+/* more Garamond: section headings in the statement serif */
+h2 { font-family: "ALP Serif", "Apple Garamond", Garamond, "Times New Roman", serif; font-weight: 300; font-style: italic; letter-spacing: -0.02em; line-height: 1.02; font-size: clamp(38px, 5vw, 72px); }
+.statement { align-items: end; row-gap: 24px; }
+.statement p { grid-column: 1 / span 7; align-self: center; }
+.statement figure { grid-column: 9 / span 4; margin: 0; }
+.statement figure img { border-radius: var(--alp-radius); width: 100%; }
+.statement figcaption { text-align: left; }
+@media (max-width: 900px) { .statement p, .statement figure { grid-column: 1 / -1; } }
