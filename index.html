@@ -31,8 +31,27 @@
   <p class="lead">Rate each criterion, talk through what you see, and Hyper Grader writes the feedback in your words. When the class is done, marks and comments go straight back to Canvas.</p>
   <p class="actions"><a class="button" href="#beta">join the beta</a> <a class="text-link" href="#today">see how it works</a></p>
   <figure class="device wide">
-    <img src="images/mac-dashboard.webp" width="2400" height="1579" alt="Hyper Grader on a MacBook Pro, showing today's marking plan: a progress ring at 4 of 10, the three assessments to mark today in order of urgency, and a list of every assessment with its status and deadline.">
+    <video class="demo" src="images/mac-marking-demo.mp4" poster="images/mac-marking-demo-poster.webp"
+           width="2400" height="1580" autoplay muted loop playsinline preload="auto"
+           aria-label="Hyper Grader marking one student in real time: spoken notes, ums included, appear as they're said; grade bands are picked for each criterion and the total updates; then Generate writes the feedback."></video>
+    <figcaption>Recorded in real time. One student, start to finish, in about thirty seconds.</figcaption>
   </figure>
+</section>
+
+<section class="words grid" id="words">
+  <p class="label">your words, ums and all</p>
+  <h2>you ramble, they read feedback</h2>
+  <div class="said">
+    <p class="kicker">what you said</p>
+    <p class="transcript">Okay, Hana. <i>Um,</i> so the concept's really strong, <i>like,</i> the house as a, <i>uh,</i> a workshop that opens up to the street, <i>that's… yeah,</i> that's great. And the long section is honestly the best drawing in the set. <i>Um.</i> Development kind of stalls after, <i>what,</i> week six? The plan barely changes from the crit. Representation's clean, but the, <i>ah,</i> the model photos are really dark, you can't see the timber at all. Presentation's fine. <i>So, yeah, um,</i> push the material story and show the plan evolving.</p>
+  </div>
+  <div class="reads">
+    <p class="kicker">what Hana reads</p>
+    <p>Hana, your concept is the strongest part of this project: a house that works as a workshop and opens itself to the street is a generous, clear idea, and your long section shows it beautifully.</p>
+    <p>The design development doesn't keep pace with that idea. From week six the plan barely changes, so the iterations we discussed in the crit don't show up in the final drawings. Representation is clean, but the model photographs are too dark to show the timber you describe.</p>
+    <p>For the portfolio, show how the plan evolved and re-shoot the model in daylight. Those two changes would lift this into Distinction territory.</p>
+  </div>
+  <p class="note">Same points, same judgement, same voice. Hyper Grader keeps what you meant, drops the ums, and turns "push the material story" into something a student can act on. You can edit every word before it goes anywhere.</p>
 </section>
 
 <section class="feature grid" id="today">
@@ -44,7 +63,7 @@
     <p>Running behind? Take something off today's plan, or push its deadline when you've given an extension.</p>
   </div>
   <figure class="device">
-    <img src="images/mac-board.webp" width="2400" height="1579" loading="lazy" alt="The board view: assessments in Overdue, Due this week, Coming up and Done columns, each card with its progress and today's target.">
+    <img src="images/mac-dashboard.webp" width="2400" height="1579" loading="lazy" alt="Hyper Grader's start screen: a progress ring at 4 of 10, the three assessments to mark today in order of urgency, and a list of every assessment with its status and deadline.">
   </figure>
 </section>
 
@@ -53,7 +72,7 @@
     <p class="label">marking</p>
     <h2>talk, don't type</h2>
     <p>Pick a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands. Your total and grade update as you go.</p>
-    <p>Hit Record and say what you think while you look at the work. Dictation runs on your Mac. Generate turns your notes into feedback that sounds like you, and you can edit every word.</p>
+    <p>Hit Record and say what you think while you look at the work. Dictation runs on your Mac.</p>
     <p>If a total sits just under the next grade, Hyper Grader points it out so you can decide whether it should go up.</p>
   </div>
   <figure class="device">
@@ -125,5 +144,11 @@
   <p class="credit">Device frames via Apple Design Resources. Screenshots use fictional classes and students.</p>
 </footer>
 
+<script>
+  // Respect reduced motion: show the finished frame with controls instead of autoplaying.
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    for (const v of document.querySelectorAll('video.demo')) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+  }
+</script>
 </body>
 </html>

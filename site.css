@@ -114,6 +114,21 @@ a:hover { background: var(--alp-highlight); }
 figure { margin: 0; }
 .device img { width: 100%; }
 
+/* the demo video */
+.device video { display: block; width: 100%; height: auto; }
+figcaption { font: 400 var(--alp-caption)/1.35 var(--alp-micro); color: var(--alp-quiet); margin-top: 8px; text-align: center; }
+@media (prefers-reduced-motion: reduce) { .demo { animation: none; } }
+
+/* your words → their feedback */
+.words { padding-top: clamp(48px, 8vw, 128px); padding-bottom: clamp(24px, 4vw, 48px); row-gap: 24px; }
+.words .said { grid-column: 1 / span 5; }
+.words .reads { grid-column: 7 / span 6; }
+.words .note { grid-column: 1 / span 7; margin-top: 16px; }
+.kicker { font: 500 var(--alp-label)/1.35 var(--alp-micro); letter-spacing: var(--alp-track-label); color: var(--alp-quiet); border-top: 1px solid var(--alp-ink); padding-top: 12px; margin-bottom: 16px; }
+.transcript { font-family: var(--alp-text); font-size: 19px; line-height: 1.55; }
+.transcript i { font-style: normal; background: var(--alp-highlight); padding: 0 0.15em; border-radius: 2px; }
+.reads p:not(.kicker) { font-family: var(--alp-display); font-weight: 500; font-size: 21px; line-height: 1.35; letter-spacing: -0.01em; }
+
 /* feature rows: copy on 4 columns, image on 8 */
 .feature { padding: clamp(48px, 8vw, 128px) var(--alp-margin); align-items: center; row-gap: 32px; }
 .feature .copy { grid-column: 1 / span 4; }
@@ -150,6 +165,7 @@ footer p { margin: 0; }
 
 /* narrow screens: everything stacks */
 @media (max-width: 900px) {
+  .words .said, .words .reads, .words .note,
   .hero h1, .hero .lead, .beta .lead,
   .feature .copy, .feature .device, .feature.flip .copy, .feature.flip .device,
   .feature.ipad .copy, .feature.ipad .device, .private .copy, .private .device,
