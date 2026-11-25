@@ -17,6 +17,10 @@
 <header class="nav">
   <a class="brand" href="./"><img src="images/icon.webp" width="32" height="32" alt=""> hyper grader</a>
   <nav>
+    <span class="page-ring" aria-hidden="true" title="Reading progress">
+      <svg viewBox="0 0 36 36" width="28" height="28"><circle class="dot" cx="18" cy="18" r="12"/><circle class="track" cx="18" cy="18" r="14"/><circle class="fill" cx="18" cy="18" r="14" pathLength="100"/><path class="tick" d="M12.5 18.5l3.8 3.8 7.4-8"/></svg>
+      <span class="page-ring-label">marked</span>
+    </span>
     <a href="#today">features</a>
     <a href="#private">privacy</a>
     <a class="button small" href="#beta">join the beta</a>
@@ -26,9 +30,9 @@
 <main>
 
 <section class="hero grid">
-  <p class="label">a marking app for mac and ipad</p>
+  <p class="label">a marking app for mac and ipad · it all runs on your device</p>
   <h1>say it, mark it, move on.</h1>
-  <p class="lead">Rate each criterion, talk through what you see, and Hyper Grader writes the feedback in your words. When the class is done, marks and comments go straight back to Canvas.</p>
+  <p class="lead">Rate each criterion, talk through what you see, and Hyper Grader writes the feedback in your words, right there on your Mac or iPad. When the class is done, marks and comments go straight back to Canvas.</p>
   <p class="actions"><a class="button" href="#beta">join the beta</a> <a class="text-link" href="#today">see how it works</a></p>
   <figure class="device wide">
     <video class="demo" src="images/mac-marking-demo.mp4" poster="images/mac-marking-demo-poster.webp"
@@ -36,6 +40,10 @@
            aria-label="Hyper Grader marking one student in real time: spoken notes, ums included, appear as they're said; grade bands are picked for each criterion and the total updates; then Generate writes the feedback."></video>
     <figcaption>Recorded from the app. Speech sped up to fit ten seconds.</figcaption>
   </figure>
+</section>
+
+<section class="statement grid">
+  <p>Marking shouldn't feel like a chore.</p>
 </section>
 
 <section class="words grid" id="words">
@@ -50,7 +58,8 @@
     <p>Hana, your concept is the strongest part of this project: a house that opens itself to the street as a workshop, and your section shows it beautifully.</p>
     <p>Development slows after week six, so the plan barely changes. Re-shoot the model in daylight so the timber reads, and show how the plan evolved. Those two changes would lift this into Distinction territory.</p>
   </div>
-  <p class="note">Same points, same judgement, same voice. Hyper Grader keeps what you meant, drops the ums, and turns "way too dark" into something a student can act on. You can edit every word before it goes anywhere.</p>
+  <p class="ums-toggle"><button type="button" class="button small" aria-pressed="false">drop the ums</button></p>
+  <p class="note">Same points, same judgement, same voice. Hyper Grader keeps what you meant, drops the ums, and turns "way too dark" into something a student can act on. It's written on your Mac by Apple's on-device model, and you can edit every word before it goes anywhere.</p>
 </section>
 
 <section class="feature grid" id="today">
@@ -71,7 +80,7 @@
     <p class="label">marking</p>
     <h2>talk, don't type</h2>
     <p>Pick a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands. Your total and grade update as you go.</p>
-    <p>Hit Record and say what you think while you look at the work. Dictation runs on your Mac.</p>
+    <p>Hit Record and say what you think while you look at the work. Dictation uses Apple's on-device speech recognition, so nothing you say is uploaded.</p>
     <p>If a total sits just under the next grade, Hyper Grader points it out so you can decide whether it should go up.</p>
   </div>
   <figure class="device">
@@ -97,7 +106,7 @@
     <h2>marking away from the desk</h2>
     <p>At a crit, on the train, on the couch. Tap a band, then High, Mid or Low with a finger. The total and grade sit at the bottom of the screen, with the same nudge when a student is just under the next grade.</p>
     <p>Tap the mic and talk through what you see. Dictation runs on the iPad, so student work never leaves it.</p>
-    <p>Add a rubric from a CSV or paste it from a spreadsheet, paste in your class list, and Continue Marking brings up the next student.</p>
+    <p>The same Today plan as the Mac opens first, with the ring, the most urgent class and how many to mark. Add a rubric from a CSV or a spreadsheet and paste in your class list.</p>
     <p class="quiet">Writing feedback and sending to Canvas stay on the Mac. Syncing the two is being built now.</p>
   </div>
   <figure class="device">
@@ -106,17 +115,22 @@
            aria-label="Hyper Grader on an iPad Pro: four criteria are rated by tapping a band and a step, the total climbs to 81.67, then rambling notes are dictated."></video>
   </figure>
   <figure class="device">
-    <img src="images/ipad-home-black.webp" width="1226" height="1600" loading="lazy" alt="The iPad home screen: a Continue Marking card at the top, then each course's assessments with progress bars.">
+    <img src="images/ipad-dashboard.webp" width="1226" height="1600" loading="lazy" alt="The Today plan on iPad: a progress ring at 4 of 10, the three assessments to mark today, and every assessment with its status and deadline.">
   </figure>
 </section>
 
 <section class="private" id="private">
   <div class="grid">
     <div class="copy">
-      <p class="label">privacy</p>
-      <h2>private by default</h2>
-      <p>Student work stays on your Mac or iPad. Feedback is written by Apple's on-device model and dictation never leaves the device. There are no accounts, servers or analytics.</p>
-      <p>If you'd rather use Claude for feedback, Hyper Grader asks first, swaps student names for placeholders before anything is sent, and lets you stop sharing at any time.</p>
+      <p class="label">on your device</p>
+      <h2>it all happens on your mac or ipad</h2>
+      <ul class="zeros">
+        <li><b>0</b> uploads</li>
+        <li><b>0</b> accounts</li>
+        <li><b>0</b> servers</li>
+      </ul>
+      <p>Dictation uses Apple's on-device speech recognition. Feedback is written by Apple's on-device model. Your students' work, your notes and your marks never leave the device.</p>
+      <p>Bring your own model if you like. Add a Claude API key and Hyper Grader asks before anything is sent, swaps student names for placeholders, and lets you stop sharing at any time.</p>
       <p><a href="privacy.html">Read the privacy policy</a></p>
     </div>
     <figure class="device">
@@ -141,6 +155,10 @@
   <h2>join the beta</h2>
   <p class="lead">Hyper Grader is in TestFlight for macOS 26 and later. If you mark rubric-based work and want to try it, send me a note.</p>
   <p class="actions"><a class="button" href="mailto:me@apenning.is?subject=Hyper%20Grader%20beta">request access</a></p>
+  <figure class="drollery">
+    <img src="images/violinist.svg" width="320" height="320" loading="lazy" alt="A hunched masked violinist in a feathered hat, playing.">
+    <figcaption><span>Everyone marked? Go and play something.</span>Jacques Callot, <i>Varie Figure Gobbi</i>, 1616–22, via the Met.</figcaption>
+  </figure>
 </section>
 
 </main>
@@ -152,6 +170,25 @@
 </footer>
 
 <script>
+  // The reading ring in the nav: fills as you scroll, turns green with a tick at the end.
+  const ring = document.querySelector('.page-ring');
+  const onScroll = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = max > 0 ? Math.min(1, scrollY / max) : 1;
+    ring.style.setProperty('--p', p);
+    ring.classList.toggle('done', p > 0.985);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Drop the ums: fade the fillers out of the transcript, and back.
+  const umsButton = document.querySelector('.ums-toggle button');
+  umsButton.addEventListener('click', () => {
+    const on = umsButton.getAttribute('aria-pressed') !== 'true';
+    umsButton.setAttribute('aria-pressed', on);
+    umsButton.textContent = on ? 'put them back' : 'drop the ums';
+    document.querySelector('.transcript').classList.toggle('tidy', on);
+  });
+
   // Respect reduced motion: show the finished frame with controls instead of autoplaying.
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
     for (const v of document.querySelectorAll('video.demo')) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
