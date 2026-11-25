@@ -253,3 +253,9 @@ h2 { font-family: "ALP Serif", "Apple Garamond", Garamond, "Times New Roman", se
 .statement figure img { border-radius: var(--alp-radius); width: 100%; }
 .statement figcaption { text-align: left; }
 @media (max-width: 900px) { .statement p, .statement figure { grid-column: 1 / -1; } }
+
+/* review guide */
+.files, .steps { list-style: none; padding: 0; margin: 0 0 16px; }
+.files li, .steps li { border-top: 1px solid var(--alp-highlight); padding: 14px 0; }
+.files a { display: block; font-weight: 500; margin-bottom: 4px; }
+.steps b { font: 700 22px/1 var(--alp-display); margin-right: 10px; }

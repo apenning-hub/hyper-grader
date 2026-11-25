@@ -1,0 +1,16 @@
+Student,ID,SIS User ID,SIS Login ID,Integration ID,Section,Project 1 - Site Study (91001),Project 2 - Pavilion (91002),Current Score,Final Grade
+,,,,,,Manual Posting,,,
+    Points Possible,,,,,,30.00,70.00,(read only),(read only)
+"Morgan, Ava",60101,3000101,z3000101,,"LE01 ARCH_1010 Lecture (70100) and ST01 ARCH_1010 Studio (70101)",,,,
+"Okafor, Ben",60102,3000102,z3000102,,"LE01 ARCH_1010 Lecture (70100) and ST01 ARCH_1010 Studio (70101)",,,,
+"Tran, Chloe",60103,3000103,z3000103,,"LE01 ARCH_1010 Lecture (70100) and ST01 ARCH_1010 Studio (70101)",,,,
+"Reyes, Daniel",60104,3000104,z3000104,,"LE01 ARCH_1010 Lecture (70100) and ST01 ARCH_1010 Studio (70101)",,,,
+"Fischer, Ella",60105,3000105,z3000105,,"LE01 ARCH_1010 Lecture (70100) and ST01 ARCH_1010 Studio (70101)",,,,
+"Murphy, Finn",60106,3000106,z3000106,,"LE01 ARCH_1010 Lecture (70100) and ST01 ARCH_1010 Studio (70101)",,,,
+"Liu, Grace",60107,3000107,z3000107,,"LE01 ARCH_1010 Lecture (70100) and ST02 ARCH_1010 Studio (70102)",,,,
+"Patel, Harry",60108,3000108,z3000108,,"LE01 ARCH_1010 Lecture (70100) and ST02 ARCH_1010 Studio (70102)",,,,
+"Kowalski, Isla",60109,3000109,z3000109,,"LE01 ARCH_1010 Lecture (70100) and ST02 ARCH_1010 Studio (70102)",,,,
+"Bennett, Jack",60110,3000110,z3000110,,"LE01 ARCH_1010 Lecture (70100) and ST02 ARCH_1010 Studio (70102)",,,,
+"Singh, Kiara",60111,3000111,z3000111,,"LE01 ARCH_1010 Lecture (70100) and ST02 ARCH_1010 Studio (70102)",,,,
+"Romano, Leo",60112,3000112,z3000112,,"LE01 ARCH_1010 Lecture (70100) and ST02 ARCH_1010 Studio (70102)",,,,
+"student, Test",60999,,t60999,,"LE01 ARCH_1010 Lecture (70100), ST01 ARCH_1010 Studio (70101) and ST02 ARCH_1010 Studio (70102)",,,,
