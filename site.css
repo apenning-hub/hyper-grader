@@ -141,6 +141,10 @@ figcaption { font: 400 var(--alp-caption)/1.35 var(--alp-micro); color: var(--al
 .stepped b { display: block; font: 700 22px/1.1 var(--alp-display); letter-spacing: -0.02em; margin-bottom: 8px; }
 
 /* beta */
+.price { padding-top: clamp(64px, 9vw, 144px); row-gap: 8px; }
+.price .lead { grid-column: 1 / span 8; margin-bottom: 32px; }
+.price .stepped { margin-bottom: 8px; }
+.price .note { grid-column: 1 / span 7; }
 .beta { padding: clamp(64px, 9vw, 144px) var(--alp-margin); }
 .beta .lead { grid-column: 1 / span 7; }
 
@@ -154,7 +158,7 @@ footer p { margin: 0; }
 /* narrow screens: everything stacks */
 @media (max-width: 900px) {
   .words .said, .words .reads, .words .note,
-  .hero h1, .hero .lead, .beta .lead,
+  .hero h1, .hero .lead, .beta .lead, .price .lead, .price .note,
   .sig, .links, .credit { grid-column: 1 / -1 !important; grid-row: auto !important; }
   .stepped { grid-template-columns: 1fr; }
   .nav nav a:not(.button) { display: none; }

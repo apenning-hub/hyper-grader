@@ -16,35 +16,45 @@
 <main class="policy grid">
   <p class="label">for app review</p>
   <h1>review guide</h1>
-  <p>No account or sign-in is needed. Everything runs on the device, and no network is used unless you choose the optional Claude API. The class, students and marks in these files are fictional.</p>
+  <p class="lead">Hyper Grader is a rubric-marking app for teachers (Mac and iPad). No account or sign-in. All data stays on the device; the Mac and iPad do not sync. No network is used unless you choose the optional Claude API.</p>
 
   <h2>sample files</h2>
-  <p>Download all four. They use Canvas LMS export formats.</p>
+  <p><a class="button" href="files/review-files.zip" download>download all (zip)</a></p>
   <ul class="files">
+    <li><a href="files/Hyper Grader demo library.hyper" download>Hyper Grader demo library.hyper</a> A ready-made library: two demo courses, marked students with notes and feedback, and dates, so the Today plan has content. Mac: File &gt; Import…, then Merge.</li>
     <li><a href="files/2026-11-26T0930_Grades-ARCH_1010.csv" download>2026-11-26T0930_Grades-ARCH_1010.csv</a> Canvas gradebook export: 12 students in two studio sections, plus Canvas’s Test Student, and two assignments.</li>
     <li><a href="files/Project 2 - Pavilion rubric.csv" download>Project 2 - Pavilion rubric.csv</a> The rubric for Project 2, in Canvas’s rubric layout: 4 criteria, 5 grade bands, 70 points.</li>
     <li><a href="files/Project 2 - Pavilion rubric assessments.csv" download>Project 2 - Pavilion rubric assessments.csv</a> Canvas’s rubric assessments download for Project 2, used by Link to Canvas.</li>
-    <li><a href="files/Tutorial ST02 class list.csv" download>Tutorial ST02 class list.csv</a> A plain class list of 6 students, for the iPad or Paste a List.</li>
+    <li><a href="files/Tutorial ST02 class list.csv" download>Tutorial ST02 class list.csv</a> A plain class list of 6 students, for the iPad or the Queue.</li>
+    <li><a href="files/README.txt" download>README.txt</a> What each file is.</li>
   </ul>
 
   <h2>mac</h2>
   <ol class="steps">
-    <li><b>1</b> Import a class. File &gt; Import… (⇧⌘O) and choose 2026-11-26T0930_Grades-ARCH_1010.csv. The review sheet says it found a Canvas gradebook export with 12 students and 2 assignments. Press Import. Course ARCH1010 appears with two assessments; Canvas&#x27;s Test Student is left out.</li>
-    <li><b>2</b> Add the rubric. Select &quot;Project 2 - Pavilion&quot; in the sidebar, then File &gt; Import… and choose &quot;Project 2 - Pavilion rubric.csv&quot;. &quot;Use for&quot; shows Project 2 - Pavilion. Press Import. To see the wrong-file check, import &quot;Project 2 - Pavilion rubric assessments.csv&quot; the same way: the app explains it is for sending marks back, not a rubric.</li>
-    <li><b>3</b> Set dates. Right-click Project 2 - Pavilion &gt; Dates… Set Submitted to a few days ago and close. Click Today at the top of the sidebar: the start screen shows today&#x27;s target, a progress ring and every assessment by urgency. Switch List/Board. Try Delay &gt; Not Today and Delay &gt; Push Deadline.</li>
-    <li><b>4</b> Mark. Open Project 2 - Pavilion. The first student loads. Click a grade band for each criterion, then High, Mid or Low inside it (arrow keys move between bands). The total and grade update live; a total within 2% below a grade boundary shows an orange &quot;below … review&quot; note.</li>
-    <li><b>5</b> Dictate. Press Record (⌘R), allow microphone and speech recognition, and speak. Dictation is on-device only.</li>
-    <li><b>6</b> Generate (⌘↩) writes feedback with Apple Intelligence on the device. It needs Apple Intelligence turned on; otherwise the app says so and you can type feedback directly.</li>
-    <li><b>7</b> Next student: ⇧⌘↩. Mark two or three students. The person icon opens a searchable student list; right-click a student &gt; Delete… (asks first).</li>
-    <li><b>8</b> Send to Canvas. In the … menu at the top right of the assessment, choose Link to Canvas… Add the gradebook export and &quot;Project 2 - Pavilion rubric assessments.csv&quot;, choose the assignment &quot;Project 2 - Pavilion&quot; and press Link. Then … &gt; Send to Canvas… shows each student&#x27;s grade and per-criterion comments and saves two CSV files (gradebook import and rubric import). Nothing is uploaded; teachers upload the files to Canvas themselves.</li>
-    <li><b>9</b> Also: Change &gt; Edit Rubric… (rubric editor); in the … menu, Statistics, Compare Students, Check Feedback Consistency (two or more marked students) and Export Grades (CSV); Preferences (⌘,) for grade bands and marking deadlines.</li>
+    <li><b>1</b> Quick start: File &gt; Import... (Shift-Cmd-O), choose &quot;Hyper Grader demo library.hyper&quot;, press Merge. Two demo courses appear with marked students and dates. Click Today at the top of the sidebar: today&#x27;s plan, List/Board, Delay &gt; Not Today / Push Deadline.</li>
+    <li><b>2</b> Import a class: File &gt; Import..., choose 2026-11-26T0930_Grades-ARCH_1010.csv. The sheet reports a Canvas gradebook export, 12 students, 2 assignments. Import, then Done. Course ARCH1010 gets two assessments (Test Student is left out).</li>
+    <li><b>3</b> Rubric: File &gt; Import..., &quot;Project 2 - Pavilion rubric.csv&quot;; it is set to go to Project 2 - Pavilion. Import. (After step 2: imported together with a new class, a rubric is only saved to the Rubrics tab.) Wrong-file check: import &quot;Project 2 - Pavilion rubric assessments.csv&quot; the same way; the sheet says it is for sending marks back. Class list: &quot;Tutorial ST02 class list.csv&quot;, choosing the assessment beside &quot;Queue for&quot;.</li>
+    <li><b>4</b> Dates: right-click an assessment &gt; Dates..., set Submitted to a few days ago.</li>
+    <li><b>5</b> Mark: open Project 2 - Pavilion. Student name starts empty: Next Student (Cmd-]) fills the first name on the class list (Previous: Cmd-[). Click a band per criterion, then High, Mid or Low (arrow keys move bands). Within 2% below a grade boundary, an orange &quot;below ... review&quot; note shows.</li>
+    <li><b>6</b> Dictate: Record (Cmd-R). macOS asks for Speech Recognition when an assessment first opens and Microphone at the first Record. Dictation is on-device only; if it cannot run, an error says why and you can type in Notes.</li>
+    <li><b>7</b> Feedback: Generate (Cmd-Return) uses Apple Intelligence on the device. If that is off or unsupported, Generate is dimmed, and its tooltip and Preferences &gt; AI Model show the reason (e.g. &quot;Enable Apple Intelligence in System Settings.&quot;). Type feedback in the Feedback box; Next Student (Shift-Cmd-Return) saves it. To read finished feedback, open Studio Report (demo library), person icon, Sana Whitfield.</li>
+    <li><b>8</b> Student finder (person icon): search, switch; right-click &gt; Delete... asks first.</li>
+    <li><b>9</b> Canvas: mark two students, then ... menu (top right) &gt; Link to Canvas... Click a box, choose the gradebook export and the rubric assessments file together, press Link. Then ... &gt; Send to Canvas... lists each grade; comments are optional. Export 2 files... saves two CSVs to a folder you pick. Nothing is uploaded.</li>
+    <li><b>10</b> Rubrics tab (top of sidebar): New Rubric &gt; Build from Scratch. Five steps: Task, Outcomes, Alignment, Levels &amp; Marks, Review. AI drafting needs Apple Intelligence; typing works without.</li>
+    <li><b>11</b> ... menu: Statistics, Compare Students, Export Grades (CSV); Check Feedback Consistency needs Apple Intelligence. Preferences (Cmd-,): Grade scale, Marking Deadlines.</li>
   </ol>
 
   <h2>optional claude api</h2>
-  <p>Preferences &gt; AI Model &gt; Claude API shows a permission prompt explaining what is sent; Don&#x27;t Allow returns to on-device. It needs the user&#x27;s own Anthropic API key; none is required to review the app. Student names are replaced with placeholders before anything is sent.</p>
+  <p>Preferences &gt; AI Model &gt; Claude API asks &quot;Share Grading Data with Anthropic?&quot; (Allow / Don&#x27;t Allow). It needs the user&#x27;s own Anthropic key; none is provided or needed. Student names are not sent.</p>
 
   <h2>ipad</h2>
-  <p>Use + to create a course and assessment, add the rubric CSV from Files (or paste rows from a spreadsheet), and paste the class list from &quot;Tutorial ST02 class list.csv&quot;. Tap a band and a step for each criterion, tap the mic to dictate, and Save &amp; Next. Feedback generation and Canvas export are Mac-only.</p>
+  <p>The iPad version has no Apple Intelligence feedback, rubric builder or Canvas export.</p>
+  <ol class="steps">
+    <li><b>1</b> First launch: Try It with Sample Data (marked students), or Create a Course. Later: + (Cmd-N) New Assessment: choose or create a course, name it, Create.</li>
+    <li><b>2</b> Add Rubric &gt; Choose a CSV File..., &quot;Project 2 - Pavilion rubric.csv&quot;, Add. Top-right ... &gt; Class List... &gt; Import from a File..., &quot;Tutorial ST02 class list.csv&quot;, Save.</li>
+    <li><b>3</b> Tap a band, then High, Mid or Low. Record dictates (same permissions, on-device). Type feedback; Save &amp; Next. The person icon lists students.</li>
+    <li><b>4</b> Home is the marking plan. On an assessment row, Delay &gt; Set Dates... sets Submitted and fills the plan.</li>
+  </ol>
 
   <h2>contact</h2>
   <p><a href="mailto:me@apenning.is">me@apenning.is</a></p>

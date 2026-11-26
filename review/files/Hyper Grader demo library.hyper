@@ -1,0 +1,575 @@
+{
+  "appVersion": "0.4.0",
+  "courses": [
+    {
+      "assessments": [
+        {
+          "createdAt": "2026-10-20T00:00:00Z",
+          "feedbackConfig": "{\"customInstruction\":\"\",\"selectedPresetIDs\":[\"focus.improvement\",\"format.prose\",\"tone.balanced\",\"length.medium\",\"voice.second_person\"]}",
+          "gradingRecords": [
+            {
+              "awardedPoints": [
+                "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                20,
+                "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                17,
+                "84337BF3-7D53-41D3-A916-25D3241BE629",
+                10,
+                "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                8
+              ],
+              "feedbackGenerated": "Your central idea of the courtyard as a shared room is clear and carries through the whole report. The precedents are well chosen and your site analysis backs them up. The structure is tight. For your next report, simplify the layout of sheet three so the drawings have room to breathe.",
+              "gradedAt": "2026-11-20T01:10:00Z",
+              "gradingDurationSeconds": 190,
+              "id": "F6D1E1FE-3323-4FFE-9284-D28C845439EE",
+              "selections": [
+                "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                "8257B6A1-D0CE-41C4-AB5B-BCCF7BD55EB1",
+                "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                "E9E2D903-771F-4632-84D8-F516DBDE9AB1",
+                "84337BF3-7D53-41D3-A916-25D3241BE629",
+                "F4DCBBD3-4376-4830-8014-228FE48D1133",
+                "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                "46C36BF9-6E47-4E5B-A8EA-08C21FFF46CC"
+              ],
+              "studentName": "Sana Whitfield",
+              "totalPoints": 55,
+              "transcript": "Very clear central idea about the courtyard as a shared room. Precedents well chosen and the site analysis is convincing. Structure is tight. Layout a little busy on sheet three."
+            },
+            {
+              "awardedPoints": [
+                "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                17,
+                "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                17,
+                "84337BF3-7D53-41D3-A916-25D3241BE629",
+                8,
+                "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                8
+              ],
+              "feedbackGenerated": "You have a good idea and solid evidence behind it. The argument takes a while to arrive, so open with your central claim and let the precedents support it. The structure and presentation are clean. A sharper opening would lift this to the next grade.",
+              "gradedAt": "2026-11-20T01:25:00Z",
+              "gradingDurationSeconds": 175,
+              "id": "672F3EDF-836C-4B48-9AD0-56C79A3B5758",
+              "selections": [
+                "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                "9F2EFF7C-C4E9-4E32-B67B-6E2D172B1653",
+                "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                "E9E2D903-771F-4632-84D8-F516DBDE9AB1",
+                "84337BF3-7D53-41D3-A916-25D3241BE629",
+                "87FAE4BB-C925-4AFB-A4FC-0E3C0FFAB1E2",
+                "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                "46C36BF9-6E47-4E5B-A8EA-08C21FFF46CC"
+              ],
+              "studentName": "Theo Marchetti",
+              "totalPoints": 50,
+              "transcript": "Good idea but it takes a while to arrive. Evidence is solid. Structure fine. Presentation clean. Close to a high distinction, the argument needs a sharper opening."
+            },
+            {
+              "awardedPoints": [
+                "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                15,
+                "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                13,
+                "84337BF3-7D53-41D3-A916-25D3241BE629",
+                7,
+                "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                6
+              ],
+              "feedbackGenerated": "There is an idea here worth developing. Your evidence is thin: comment on each image and add two or three written sources. The structure is uneven, so plan the order before you draw. Keep your layout consistent from sheet to sheet.",
+              "gradedAt": "2026-11-21T02:00:00Z",
+              "gradingDurationSeconds": 210,
+              "id": "E5D58C7A-9729-43D7-8267-B37E78644FFD",
+              "selections": [
+                "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                "BBAB2B14-FED7-4BE4-B4B8-AC3C304BF809",
+                "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                "D7ED94DD-E779-43C3-9A1D-893B11E439E0",
+                "84337BF3-7D53-41D3-A916-25D3241BE629",
+                "8E0DA3A9-449D-43A3-9D94-484A6A8956FF",
+                "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                "C9FA7917-C746-4281-A75D-1CF336984FF4"
+              ],
+              "studentName": "Priya Nakamura",
+              "totalPoints": 41,
+              "transcript": "Idea is there but underdeveloped. Few sources, mostly images without comment. Structure uneven. Layout inconsistent."
+            }
+          ],
+          "id": "63562DD6-27C1-4F08-83FD-0E34B971B475",
+          "isLocked": false,
+          "name": "Studio Report",
+          "rubric": {
+            "criteria": [
+              {
+                "description": "Clarity and strength of the central idea",
+                "id": "A0E10195-33A5-468E-95FA-B6B28C7C0FF2",
+                "name": "Argument",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "8257B6A1-D0CE-41C4-AB5B-BCCF7BD55EB1",
+                    "name": "High Distinction",
+                    "points": 20
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "9F2EFF7C-C4E9-4E32-B67B-6E2D172B1653",
+                    "name": "Distinction",
+                    "points": 17
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "BBAB2B14-FED7-4BE4-B4B8-AC3C304BF809",
+                    "name": "Credit",
+                    "points": 15
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "B27798BF-CD66-4EC4-A1B7-F228443CFA63",
+                    "name": "Pass",
+                    "points": 13
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "4884AB15-E333-459F-8B56-4F2EF9BF64E2",
+                    "name": "Fail",
+                    "points": 9
+                  }
+                ]
+              },
+              {
+                "description": "Use of precedent, site and sources",
+                "id": "BEABAE87-55A6-4CF7-B082-ECBCC8AF9568",
+                "name": "Evidence",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "FD6B318E-942E-4470-8F00-B0CD08DE148A",
+                    "name": "High Distinction",
+                    "points": 20
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "E9E2D903-771F-4632-84D8-F516DBDE9AB1",
+                    "name": "Distinction",
+                    "points": 17
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "45714FC7-9AA6-468A-BB6D-E17950BAAA76",
+                    "name": "Credit",
+                    "points": 15
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "D7ED94DD-E779-43C3-9A1D-893B11E439E0",
+                    "name": "Pass",
+                    "points": 13
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "BE787650-6762-46F0-AEA2-FF82161B55B0",
+                    "name": "Fail",
+                    "points": 9
+                  }
+                ]
+              },
+              {
+                "description": "Order, pacing and transitions",
+                "id": "84337BF3-7D53-41D3-A916-25D3241BE629",
+                "name": "Structure",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "F4DCBBD3-4376-4830-8014-228FE48D1133",
+                    "name": "High Distinction",
+                    "points": 10
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "87FAE4BB-C925-4AFB-A4FC-0E3C0FFAB1E2",
+                    "name": "Distinction",
+                    "points": 8
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "8E0DA3A9-449D-43A3-9D94-484A6A8956FF",
+                    "name": "Credit",
+                    "points": 7
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "41C2DC9C-0D1C-4C8B-89EB-50F056D88E9F",
+                    "name": "Pass",
+                    "points": 6
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "7CEEB7E3-1A59-4ED0-8312-74B5BFA93779",
+                    "name": "Fail",
+                    "points": 4
+                  }
+                ]
+              },
+              {
+                "description": "Layout, drawings and writing",
+                "id": "A5CE50F0-1CC7-4E3B-8D4A-1715CC5CB085",
+                "name": "Presentation",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "3394FF32-BAB2-40A5-BF1C-F58AECAF702F",
+                    "name": "High Distinction",
+                    "points": 10
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "46C36BF9-6E47-4E5B-A8EA-08C21FFF46CC",
+                    "name": "Distinction",
+                    "points": 8
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "1204569D-B6BF-41C1-8F34-05FF54096E16",
+                    "name": "Credit",
+                    "points": 7
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "C9FA7917-C746-4281-A75D-1CF336984FF4",
+                    "name": "Pass",
+                    "points": 6
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "9EE62B4E-3A05-47E0-978A-27D768386318",
+                    "name": "Fail",
+                    "points": 4
+                  }
+                ]
+              }
+            ],
+            "id": "70DE5EA6-D7B8-438A-A6D5-C8004BD31716",
+            "name": "Studio Report"
+          },
+          "studentQueue": [
+            "Sana Whitfield",
+            "Theo Marchetti",
+            "Priya Nakamura",
+            "Oliver Danso",
+            "Mei Lindqvist",
+            "Rafael Costa",
+            "Hannah Boateng",
+            "Jonah Petrakis"
+          ],
+          "submissionDate": "2026-10-26T00:00:00Z"
+        },
+        {
+          "createdAt": "2026-11-10T00:00:00Z",
+          "feedbackConfig": "{\"customInstruction\":\"\",\"selectedPresetIDs\":[\"focus.improvement\",\"format.prose\",\"tone.balanced\",\"length.medium\",\"voice.second_person\"]}",
+          "gradingRecords": [],
+          "id": "D79CB9A3-AAC6-4B22-9B53-E42EBE172ACD",
+          "isLocked": false,
+          "marksDueOverride": "2027-02-26T00:00:00Z",
+          "name": "Model Portfolio",
+          "rubric": {
+            "criteria": [
+              {
+                "description": "Idea behind the model",
+                "id": "31233498-9389-4002-93AF-79D61A7E2A72",
+                "name": "Concept",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "693588CB-31E8-4EA7-91B5-1525B67C805A",
+                    "name": "High Distinction",
+                    "points": 20
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "EE88AFAC-F52F-473B-ACC7-14DA32DA55C7",
+                    "name": "Distinction",
+                    "points": 17
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "331C06E2-E7D9-4212-9FBE-8FDE9865CAA9",
+                    "name": "Credit",
+                    "points": 15
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "6C5A3284-AD85-4B9D-BD8C-15974CD49CD0",
+                    "name": "Pass",
+                    "points": 13
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "07270210-F1E5-4D65-A946-C3DF20C12D3E",
+                    "name": "Fail",
+                    "points": 9
+                  }
+                ]
+              },
+              {
+                "description": "Precision and finish of the physical model",
+                "id": "913ACB66-CD7D-40B8-9D26-66533698A1B4",
+                "name": "Craft",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "CAD80323-C251-44CD-A29A-C0DB8FD10120",
+                    "name": "High Distinction",
+                    "points": 20
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "B7525AF0-F98F-4715-BFC0-ACA8DF62704C",
+                    "name": "Distinction",
+                    "points": 17
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "650D505A-7A68-4776-A0F9-E2D8DBB3F06A",
+                    "name": "Credit",
+                    "points": 15
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "239A02EF-76DF-4E01-BC1A-65BC4E7379CC",
+                    "name": "Pass",
+                    "points": 13
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "E61EC198-6C69-48EB-8515-BA47011C1F1A",
+                    "name": "Fail",
+                    "points": 9
+                  }
+                ]
+              },
+              {
+                "description": "Photographs, process and captions",
+                "id": "E1E1CD28-4EE3-43AD-9C38-60B77B51F445",
+                "name": "Documentation",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "ECE5B54E-10BF-4476-A403-102B3F890777",
+                    "name": "High Distinction",
+                    "points": 10
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "A31A4C48-1E61-454D-8A88-0A300A94C9A7",
+                    "name": "Distinction",
+                    "points": 8
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "710F48F6-2DA1-41EA-A94B-02273ADB62FF",
+                    "name": "Credit",
+                    "points": 7
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "4738DD24-4E86-480A-84B2-D7E660CDDA52",
+                    "name": "Pass",
+                    "points": 6
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "8561D81A-F7CB-4D96-98A6-936EBD252A41",
+                    "name": "Fail",
+                    "points": 4
+                  }
+                ]
+              }
+            ],
+            "id": "0A731D9A-B4A1-4673-BA2A-7B851809E5EE",
+            "name": "Model Portfolio"
+          },
+          "studentQueue": [
+            "Ines Calderon",
+            "Kofi Mensah",
+            "Lena Vasquez",
+            "Marcus Oyelaran",
+            "Noor Haddad",
+            "Tomas Eriksen"
+          ],
+          "submissionDate": "2026-11-16T00:00:00Z"
+        }
+      ],
+      "createdAt": "2026-10-20T00:00:00Z",
+      "id": "7993BAEE-799E-486C-8446-D109FFE403F2",
+      "name": "DEMO 2020 Studio Practice"
+    },
+    {
+      "assessments": [
+        {
+          "createdAt": "2026-11-01T00:00:00Z",
+          "feedbackConfig": "{\"customInstruction\":\"\",\"selectedPresetIDs\":[\"focus.improvement\",\"format.prose\",\"tone.balanced\",\"length.medium\",\"voice.second_person\"]}",
+          "gradingRecords": [
+            {
+              "awardedPoints": [
+                "529E4995-8B22-4615-A50E-0AAB26BC2709",
+                13,
+                "FDC4F46C-87A8-421E-BBE6-00F15EBCE9A0",
+                11,
+                "79C455BD-75D4-4497-9987-FC63331A4D5B",
+                8
+              ],
+              "feedbackGenerated": "Your reflection on the first model that did not work is honest and useful. Connect it to more of the course readings, you used only two. The writing is clear and careful.",
+              "gradedAt": "2026-11-22T03:30:00Z",
+              "gradingDurationSeconds": 160,
+              "id": "8E58D2E9-2B19-446B-9F70-D9B718D196E6",
+              "selections": [
+                "529E4995-8B22-4615-A50E-0AAB26BC2709",
+                "81894C27-DC19-462F-846E-1D6E8FAE31B7",
+                "FDC4F46C-87A8-421E-BBE6-00F15EBCE9A0",
+                "D9B0F11E-B472-4601-BD13-31CC1A2383F1",
+                "79C455BD-75D4-4497-9987-FC63331A4D5B",
+                "C01BF60F-B556-4DA2-ADA1-E0CEF2039451"
+              ],
+              "studentName": "Alma Rinaldi",
+              "totalPoints": 32,
+              "transcript": "Honest reflection on the failed first model. Readings used but only two. Writing is clear."
+            }
+          ],
+          "id": "4DF91399-7699-4E1E-B8C5-478210202896",
+          "isLocked": false,
+          "name": "Reflective Journal",
+          "rubric": {
+            "criteria": [
+              {
+                "description": "Depth of thinking about own process",
+                "id": "529E4995-8B22-4615-A50E-0AAB26BC2709",
+                "name": "Reflection",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "5635EB16-093A-44FA-8DEC-B5F3E7502D34",
+                    "name": "High Distinction",
+                    "points": 15
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "81894C27-DC19-462F-846E-1D6E8FAE31B7",
+                    "name": "Distinction",
+                    "points": 13
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "55E2D61D-0C59-4982-A169-BF38413143F4",
+                    "name": "Credit",
+                    "points": 11
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "D7F1E3DD-D3A9-4666-BCD5-9E63B715EB5A",
+                    "name": "Pass",
+                    "points": 10
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "9D9A1FE5-D9B3-4403-987A-A112313CAD7C",
+                    "name": "Fail",
+                    "points": 7
+                  }
+                ]
+              },
+              {
+                "description": "Links between practice and the course readings",
+                "id": "FDC4F46C-87A8-421E-BBE6-00F15EBCE9A0",
+                "name": "Connection to readings",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "F0063A4C-6208-4E1F-A617-8CE3CEE4E07D",
+                    "name": "High Distinction",
+                    "points": 15
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "9AF4B5C0-11BF-4569-9158-33BAB7C33406",
+                    "name": "Distinction",
+                    "points": 13
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "D9B0F11E-B472-4601-BD13-31CC1A2383F1",
+                    "name": "Credit",
+                    "points": 11
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "11A69394-8DA4-456D-9761-037802E2C5BF",
+                    "name": "Pass",
+                    "points": 10
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "714C6819-5E31-43BD-9733-3E991BA186AB",
+                    "name": "Fail",
+                    "points": 7
+                  }
+                ]
+              },
+              {
+                "description": "Clarity and care in the writing",
+                "id": "79C455BD-75D4-4497-9987-FC63331A4D5B",
+                "name": "Writing",
+                "ratings": [
+                  {
+                    "description": "Outstanding, independent and resolved",
+                    "id": "AE0953DF-F552-491F-A494-5E26689D1192",
+                    "name": "High Distinction",
+                    "points": 10
+                  },
+                  {
+                    "description": "Strong and well developed",
+                    "id": "C01BF60F-B556-4DA2-ADA1-E0CEF2039451",
+                    "name": "Distinction",
+                    "points": 8
+                  },
+                  {
+                    "description": "Sound, with some gaps",
+                    "id": "9F41A3D0-71C0-4777-88DB-C7D933ED33F2",
+                    "name": "Credit",
+                    "points": 7
+                  },
+                  {
+                    "description": "Meets the basic requirements",
+                    "id": "F63144FB-BF96-4C26-BDA1-3C49538848F7",
+                    "name": "Pass",
+                    "points": 6
+                  },
+                  {
+                    "description": "Doesn't yet meet the requirements",
+                    "id": "5D4DE3F1-A34E-4842-AEF4-18B2CC968DA0",
+                    "name": "Fail",
+                    "points": 4
+                  }
+                ]
+              }
+            ],
+            "id": "82A130F4-2155-40B8-916C-C818628E5F34",
+            "name": "Reflective Journal"
+          },
+          "studentQueue": [
+            "Alma Rinaldi",
+            "Bruno Teixeira",
+            "Cleo Abara",
+            "Dev Ranganathan",
+            "Esther Lindgren"
+          ]
+        }
+      ],
+      "createdAt": "2026-11-01T00:00:00Z",
+      "id": "34713995-4410-436A-B409-043FBDA2EB24",
+      "name": "DEMO 1010 Seminar"
+    }
+  ],
+  "exportDate": "2026-11-26T00:00:00Z",
+  "formatVersion": 1
+}
