@@ -30,7 +30,7 @@
 <main>
 
 <section class="hero grid">
-  <p class="label">a marking app for mac and ipad · it all runs on your device</p>
+  <p class="label">a marking app for Mac and iPad · it all runs on your device</p>
   <h1>say it, mark it, move on.</h1>
   <p class="lead">Rate each criterion, talk through what you see, and Hyper Grader writes the feedback in your words, right there on your Mac or iPad. When the class is done, marks and comments go back to Canvas in two file uploads.</p>
   <p class="actions"><a class="button" href="#beta">join the beta</a> <a class="text-link" href="#today">see how it works</a></p>
@@ -86,8 +86,14 @@
 <section class="marking grid">
   <p class="label">marking</p>
   <h2>the marking screen</h2>
+  <p class="lead">Beside the grading screen of a typical learning system.</p>
+  <figure class="device lms">
+    <img src="images/mac-lms-grader.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a typical learning system's grading screen in a browser: a submission preview, a toolbar of small icons, and a narrow side panel crowded with a rubric table, points boxes, an attempt menu, a grade box and a comment field.">
+    <figcaption><b>a typical learning system</b> The submission, a rubric table of small cells, points boxes and the comment field share one narrow panel. Mock-up.</figcaption>
+  </figure>
   <figure class="device">
-    <img src="images/mac-marking.webp" width="1940" height="1276" loading="lazy" alt="The marking screen: grade bands for each criterion with High, Mid and Low steps, a total of 74 out of 100 flagged as 1% below a Distinction, spoken notes on the left and written feedback on the right.">
+    <img src="images/mac-marking.webp" width="2400" height="1579" loading="lazy" alt="The Hyper Grader marking screen: grade bands for each criterion with High, Mid and Low steps, a total of 74 out of 100 flagged as 1% below a Distinction, spoken notes on the left and written feedback on the right.">
+    <figcaption><b>Hyper Grader</b> One wide band per grade, the total always in view, and room to talk.</figcaption>
   </figure>
   <ol class="numbered">
     <li><b>pick a band</b> Choose a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands, and your total and grade update as you go.</li>
@@ -134,34 +140,34 @@
 </section>
 
 <section class="canvas grid">
-  <p class="label">canvas</p>
-  <h2>works with canvas</h2>
+  <p class="label">Canvas</p>
+  <h2>mark here, upload there</h2>
   <p class="lead">No integration and no API token, so there's nothing for your school or uni to approve. It works with the files Canvas already exports and imports.</p>
-  <div class="flow" aria-label="Three Canvas files go into Hyper Grader; two files come back out for Canvas.">
-    <ul class="files-in">
-      <li><span>gradebook export</span>Grades-ARCH_3010.csv</li>
-      <li><span>rubric</span>Studio Proposal rubric.csv</li>
-      <li><span>class list</span>Tutorial ST02 class list.csv</li>
-    </ul>
-    <div class="arrow" aria-hidden="true"></div>
-    <div class="app"><img src="images/icon.webp" width="72" height="72" alt=""><b>hyper grader</b><span>works out which file is which</span></div>
-    <div class="arrow" aria-hidden="true"></div>
-    <ul class="files-out">
-      <li><span>for the gradebook</span>marks for every student</li>
-      <li><span>for the rubric</span>your comment on every criterion</li>
-    </ul>
-  </div>
+  <figure class="device here">
+    <p class="word">here</p>
+    <img src="images/mac-send.webp" width="2400" height="1579" loading="lazy" alt="Send to Canvas in Hyper Grader: 9 of 24 students ready, a comment under each criterion for Mia Russo, and an Export 2 files button.">
+    <figcaption>On your Mac, Send to Canvas writes the marks and a comment for every criterion into two files.</figcaption>
+  </figure>
+  <ul class="handoff" aria-label="The two files">
+    <li><span>file 1</span>grades.csv</li>
+    <li><span>file 2</span>rubric assessments.csv</li>
+  </ul>
+  <figure class="device there">
+    <p class="word">there</p>
+    <img src="images/mac-lms-import.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a learning system's gradebook import page with both files uploaded and the imported marks listed for review.">
+    <figcaption>In Canvas, upload them to the gradebook and the rubric. Other learning systems will follow. Mock-up.</figcaption>
+  </figure>
   <div class="copy">
-    <p>Drop in your gradebook export, rubric and class list together. Hyper Grader sets up each assignment with its class, and tells you when you've picked the wrong file. When you're finished, Send to Canvas writes two files to upload. Other learning systems will follow.</p>
+    <h3>setting up from Canvas</h3><p>Drop in your gradebook export, rubric and class list together. Hyper Grader sets up each assignment with its class, and tells you when you've picked the wrong file.</p>
   </div>
-  <figure class="device">
+  <figure class="device setup">
     <img src="images/mac-import.webp" width="1940" height="1276" loading="lazy" alt="The import review, headed “Here's what I found”, listing a Canvas gradebook export with three assignments and a rubric file, each with where it will go.">
   </figure>
 </section>
 
 <section class="ipad-section grid" id="ipad">
-  <p class="label">ipad · in testing</p>
-  <h2>marking on ipad</h2>
+  <p class="label">iPad · in testing</p>
+  <h2>marking on iPad</h2>
   <figure class="device">
     <video class="demo" src="images/ipad-marking-demo.mp4" poster="images/ipad-marking-demo-poster.webp"
            width="1200" height="1566" autoplay muted loop playsinline preload="metadata"
@@ -178,7 +184,7 @@
 <section class="private" id="private">
   <div class="grid">
     <p class="label">on your device</p>
-    <h2>it all happens on your mac or ipad</h2>
+    <h2>it all happens on your Mac or iPad</h2>
     <ul class="local">
       <li><b>dictation</b> Apple's on-device speech recognition.</li>
       <li><b>feedback</b> Written by Apple's on-device model.</li>
