@@ -355,19 +355,10 @@ h2 { margin-bottom: 16px; }
 /* the H.264 encode turns white into 253 grey; lift it back so the video has no visible box */
 video.demo { filter: brightness(1.02); }
 
-/* the icon in motion, beside the hero copy */
-.hero .intro { grid-column: 1 / span 7; grid-row: 3; align-self: center; }
+/* hero: the intro under the title */
+.hero .intro { grid-column: 1 / span 7; }
 .hero .intro .lead { margin-top: 32px; }
-.hg-mark-wrap { grid-column: 9 / span 4; grid-row: 3; align-self: center; justify-self: end; width: min(100%, 300px); text-align: center; margin-top: 24px; }
-.hg-mark { display: block; width: 100%; height: auto; }
-.hg-talk-row { margin: 16px 0 0; }
-.hg-talk { cursor: pointer; background: none; color: inherit; font-family: var(--alp-text); }
-.hg-talk[aria-pressed="true"] { background: var(--alp-ink); color: var(--alp-paper); }
-.hg-talk-note { font: 400 var(--alp-caption)/1.35 var(--alp-micro); color: var(--alp-quiet); min-height: 2.7em; margin: 8px 0 0; }
-@media (max-width: 900px) {
-  .hero .intro { grid-column: 1 / -1; grid-row: auto; }
-  .hg-mark-wrap { grid-column: 1 / -1; grid-row: auto; justify-self: center; width: min(70%, 260px); margin-top: 24px; }
-}
+@media (max-width: 900px) { .hero .intro { grid-column: 1 / -1; } }
 
 /* planning: the list beside the start screen */
 .today { padding: clamp(48px, 6vw, 96px) var(--alp-margin); align-items: start; row-gap: 16px; }
