@@ -373,3 +373,9 @@ video.demo { filter: brightness(1.02); }
 @media (max-width: 900px) {
   .today .copy, .today .switch, .today .device { grid-column: 1 / -1; grid-row: auto; }
 }
+
+/* the line under the statement */
+.statement > p:first-child { grid-row: 1; }
+.statement .statement-note { grid-column: 1 / span 6; grid-row: 2; align-self: start; font: 400 19px/1.5 var(--alp-text); font-style: normal; letter-spacing: 0; margin: 8px 0 0; }
+.statement figure { grid-row: 1 / span 2; }
+@media (max-width: 900px) { .statement .statement-note, .statement figure { grid-column: 1 / -1; grid-row: auto; } }
