@@ -65,6 +65,51 @@
   <p class="note">The feedback makes your points with your judgement. Hyper Grader drops the ums and turns "way too dark" into advice a student can act on. It's written on your Mac by Apple's on-device model, and you can edit every word before it goes anywhere. Turn on Improvement focus and each piece of feedback ends with specific next steps, so it feeds forward into the next task.</p>
 </section>
 
+<section class="voice grid" id="voice" aria-labelledby="voice-h">
+  <p class="label">watch it work</p>
+  <h2 id="voice-h">talk, and the marks follow</h2>
+  <p class="intro">Say what you see. Each phrase lands on a criterion, the total moves as you go, and the feedback writes itself in your words.</p>
+  <div class="stage" role="group" aria-label="Animation of Hana's spoken notes becoming ratings. Concept is High Distinction, Mid, 23 of 25. Development is Credit, Low, 17. Representation is Pass, High, 15. Presentation is Distinction, Mid, 19. The total is 74 out of 100, a Credit, then the written feedback appears.">
+    <div class="say">
+      <div class="kicker-row"><p class="kicker">what you say</p><span class="status" aria-hidden="true">written</span></div>
+      <div class="meter" aria-hidden="true"></div>
+      <p class="transcript"><span data-p data-crit="0">Okay, Hana. <i>Um,</i> the concept's really strong, <i>like,</i> a workshop that opens to the street.</span> <span data-p>Love the section.</span> <span data-p data-crit="1"><i>Uh,</i> development stalls after week six.</span> <span data-p data-crit="2">The model photos are, <i>ah,</i> way too dark.</span> <span data-p data-crit="3">Presentation's fine.</span></p>
+    </div>
+    <div class="marks">
+      <p class="kicker">what it marks</p>
+      <ul class="crits">
+        <li class="crit lit" data-band="0" data-step="1" data-pts="23">
+          <span class="sr-only">concept: High Distinction, Mid, 23 out of 25.</span>
+          <div class="ct" aria-hidden="true"><b>concept</b><span class="steps"><span>High</span><span class="on">Mid</span><span>Low</span></span><span class="pts"><b>23</b>/25</span></div>
+          <div class="bands" aria-hidden="true"><b class="on" data-s="HD">High Distinction</b><b data-s="D">Distinction</b><b data-s="C">Credit</b><b data-s="P">Pass</b><b data-s="F">Fail</b></div>
+        </li>
+        <li class="crit lit" data-band="2" data-step="2" data-pts="17">
+          <span class="sr-only">development: Credit, Low, 17 out of 25.</span>
+          <div class="ct" aria-hidden="true"><b>development</b><span class="steps"><span>High</span><span>Mid</span><span class="on">Low</span></span><span class="pts"><b>17</b>/25</span></div>
+          <div class="bands" aria-hidden="true"><b data-s="HD">High Distinction</b><b data-s="D">Distinction</b><b class="on" data-s="C">Credit</b><b data-s="P">Pass</b><b data-s="F">Fail</b></div>
+        </li>
+        <li class="crit lit" data-band="3" data-step="0" data-pts="15">
+          <span class="sr-only">representation: Pass, High, 15 out of 25.</span>
+          <div class="ct" aria-hidden="true"><b>representation</b><span class="steps"><span class="on">High</span><span>Mid</span><span>Low</span></span><span class="pts"><b>15</b>/25</span></div>
+          <div class="bands" aria-hidden="true"><b data-s="HD">High Distinction</b><b data-s="D">Distinction</b><b data-s="C">Credit</b><b class="on" data-s="P">Pass</b><b data-s="F">Fail</b></div>
+        </li>
+        <li class="crit lit" data-band="1" data-step="1" data-pts="19">
+          <span class="sr-only">presentation: Distinction, Mid, 19 out of 25.</span>
+          <div class="ct" aria-hidden="true"><b>presentation</b><span class="steps"><span>High</span><span class="on">Mid</span><span>Low</span></span><span class="pts"><b>19</b>/25</span></div>
+          <div class="bands" aria-hidden="true"><b data-s="HD">High Distinction</b><b class="on" data-s="D">Distinction</b><b data-s="C">Credit</b><b data-s="P">Pass</b><b data-s="F">Fail</b></div>
+        </li>
+      </ul>
+      <span class="sr-only">Total 74 out of 100, a Credit, 1% below a Distinction.</span>
+      <div class="total" aria-hidden="true"><span class="num">74</span><span class="of">/ 100</span><b class="grade">Credit</b><span class="flag">1% below a Distinction</span></div>
+    </div>
+    <div class="written">
+      <div class="kicker-row"><p class="kicker">what Hana reads</p></div>
+      <p class="fb">Hana, your concept is the strongest part of this project: a house that opens itself to the street as a workshop, and your section shows it beautifully. Development slows after week six, so the plan barely changes. Re-shoot the model in daylight so the timber reads, and show how the plan evolved. Those two changes would lift this into Distinction territory.</p>
+    </div>
+    <p class="replay"><button type="button" class="button small">replay</button></p>
+  </div>
+</section>
+
 <section class="today grid" id="today">
   <div class="copy">
     <p class="label">planning</p>
@@ -105,6 +150,33 @@
     <li><b>say what you see</b> Hit Record and talk while you look at the work. Dictation uses Apple's on-device speech recognition, so nothing you say is uploaded.</li>
     <li><b>check the line</b> A total within 2% below the next grade gets flagged, so you can decide whether it should go up.</li>
   </ol>
+</section>
+
+<section class="fastgood grid" id="fast" aria-labelledby="fast-h">
+  <p class="label">generation · on your device</p>
+  <h2 id="fast-h">fast, and good</h2>
+  <p class="intro">Your notes go in. Written feedback comes out, on your own Mac, and it still sounds like you.</p>
+  <!-- The real figure is being measured; replace the text of this element with it. Do not invent a number. -->
+  <p class="stat"><span data-placeholder="gen-seconds">[measured seconds]</span><span class="unit">seconds, from your notes to written feedback</span></p>
+  <div class="pair" role="group" aria-label="Your notes on the left, with the ums and uhs dropped and your judgement and specifics kept, and the written feedback on the right, ending with next steps.">
+    <div class="card">
+      <p class="kicker">your notes</p>
+      <p class="transcript fnotes">Okay, Hana. <i>Um,</i> <mark>the concept's really strong,</mark> <i>like,</i> <mark>a workshop that opens to the street.</mark> <mark>Love the section.</mark> <i>Uh,</i> <mark>development stalls after week six.</mark> <mark>The model photos are,</mark> <i>ah,</i> <mark>way too dark.</mark> Presentation's fine.</p>
+    </div>
+    <div class="gen" aria-hidden="true"><span class="bar"><span></span></span><span class="status">written</span></div>
+    <div class="card">
+      <p class="kicker">what Hana reads</p>
+      <p class="fs">Hana, your concept is the strongest part of this project: a house that opens itself to the street as a workshop, and your section shows it beautifully.</p>
+      <p class="fs">Development slows after week six, so the plan barely changes.</p>
+      <p class="fs"><span class="tag">next steps</span>Re-shoot the model in daylight so the timber reads, and show how the plan evolved. Those two changes would lift this into Distinction territory.</p>
+    </div>
+  </div>
+  <div class="gk">
+    <div><h3>what it keeps</h3><ul><li>Your judgement: the concept is the strongest part.</li><li>Your specifics: the section, week six, the model photos.</li></ul></div>
+    <div><h3>what it drops</h3><ul><li>The ums, uhs, ahs and likes.</li><li>The half sentences, so "way too dark" becomes advice.</li></ul></div>
+    <div><h3>how it ends</h3><ul><li>With specific next steps a student can act on, when Improvement focus is on.</li><li>You can edit every word before it goes anywhere.</li></ul></div>
+  </div>
+  <p class="caveat">The animation is illustrative, not to scale. The measured time is the figure above.</p>
 </section>
 
 <section class="rubrics" id="rubrics">
@@ -219,10 +291,11 @@
   <p class="label">price · to be announced</p>
   <h2>in beta. pricing to be announced.</h2>
   <p class="lead">Hyper Grader is in <span class="beta-word">beta</span>, and free to try while it’s in testing. Pricing will be announced at launch.</p>
-  <ul class="stepped" aria-label="Time back on a class of 30">
-    <li><b>1 minute a student</b> half an hour back on a class of 30.</li>
-    <li><b>2 minutes a student</b> an hour back on every class, about twelve hours over a semester.</li>
-    <li><b>4 minutes a student</b> two hours back on every class.</li>
+  <p class="kicker tl-k">time back on a class of 30, one student at a time</p>
+  <ul class="stepped tally-list" aria-label="Time back on a class of 30">
+    <li data-min="1"><b>1 minute a student</b> half an hour back on a class of 30.</li>
+    <li data-min="2"><b>2 minutes a student</b> an hour back on every class, about twelve hours over a semester.</li>
+    <li data-min="4"><b>4 minutes a student</b> two hours back on every class.</li>
   </ul>
   <p class="note">Most AI marking tools send student work to a cloud model. Hyper Grader’s AI runs on your Mac or iPad, so nothing leaves your device.</p>
 </section>
@@ -245,6 +318,7 @@
   <p class="credit">Device frames via Apple Design Resources. Screenshots use fictional classes and students.</p>
 </footer>
 
+<script src="motion.js" defer></script>
 <script>
   // Drop the ums: fade the fillers out of the transcript, and back.
   const umsButton = document.querySelector('.ums-toggle button');
