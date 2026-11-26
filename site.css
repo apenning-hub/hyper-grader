@@ -480,3 +480,56 @@ html:not(.motion) .replay { display: none; }
   .ct { flex-wrap: wrap; }
   .pts { min-width: 0; }
 }
+
+/* install panel: opened by "join on TestFlight" */
+html:has(.install[open]) { overflow: hidden; }
+.install {
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 1px solid var(--alp-ink);
+  border-radius: 16px;
+  background: var(--alp-paper);
+  color: var(--alp-ink);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+.install::backdrop { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.install[open] { animation: install-in 240ms ease-out; }
+@keyframes install-in { from { opacity: 0; transform: translateY(12px) scale(0.98); } }
+@media (prefers-reduced-motion: reduce) { .install[open] { animation: none; } }
+.install-body { position: relative; padding: 32px; }
+.install-close { position: absolute; top: 16px; right: 16px; margin: 0; }
+.install-close button {
+  width: 36px; height: 36px; padding: 0;
+  font: 400 22px/1 var(--alp-text); color: var(--alp-ink);
+  background: none; border: 1px solid var(--alp-ink); border-radius: 50%;
+  cursor: pointer; transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+.install-close button:hover { background: var(--alp-ink); color: var(--alp-paper); }
+.install-app { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; padding-right: 44px; }
+.install-app img { width: 64px; height: 64px; flex: none; }
+.install-app .label { margin-bottom: 6px; }
+.install h2 { font-size: clamp(28px, 4vw, 36px); margin: 0; }
+.install-iphone { display: none; background: var(--alp-frame); border-radius: var(--alp-radius); padding: 12px 16px; margin-bottom: 20px; }
+.install.on-iphone .install-iphone { display: block; }
+.install-steps { list-style: none; counter-reset: n; margin: 0; padding: 0; }
+.install-steps li {
+  counter-increment: n;
+  display: grid; grid-template-columns: 44px 1fr; column-gap: 16px; align-items: start;
+  border-top: 1px solid var(--alp-ink); padding: 16px 0 20px;
+}
+.install-steps li::before { content: counter(n); grid-row: 1 / span 3; font: 700 40px/0.9 var(--alp-display); letter-spacing: -0.04em; }
+.install-steps li > * { grid-column: 2; justify-self: start; }
+.install-steps b { font: 700 20px/1.1 var(--alp-display); letter-spacing: -0.02em; margin-bottom: 6px; }
+.install-steps p { margin: 0; }
+.install-steps .install-store, .install-steps .button { margin-top: 12px; }
+.install-note { font: 400 var(--alp-caption)/1.45 var(--alp-micro); color: var(--alp-quiet); border-top: 1px solid var(--alp-frame); padding-top: 16px; margin: 0; }
+.install-note a { color: var(--alp-ink); }
+@media (max-width: 600px) {
+  .install-body { padding: 24px 20px; }
+  .install-steps li { grid-template-columns: 32px 1fr; column-gap: 12px; }
+  .install-steps li::before { font-size: 30px; }
+}
+.install-body:focus { outline: none; }
+.install-close button:focus-visible, .install a:focus-visible { outline: 2px solid var(--alp-ink); outline-offset: 2px; }

@@ -305,7 +305,7 @@
 <section class="beta grid" id="beta">
   <h2>join the beta</h2>
   <p class="lead">Hyper Grader is in TestFlight for Mac and iPad, on macOS 26 and iPadOS 26 or later. Open the link on the device you mark on, and TestFlight will walk you through the install.</p>
-  <p class="actions"><a class="button" href="https://testflight.apple.com/join/DnvdCEXS">join on TestFlight</a> <a class="text-link" href="mailto:me@apenning.is?subject=Hyper%20Grader%20beta">questions? send me a note</a></p>
+  <p class="actions"><a class="button" href="https://testflight.apple.com/join/DnvdCEXS" data-install aria-haspopup="dialog">join on TestFlight</a> <a class="text-link" href="mailto:me@apenning.is?subject=Hyper%20Grader%20beta">questions? send me a note</a></p>
   <figure class="drollery">
     <img src="images/violinist.svg" width="320" height="320" loading="lazy" alt="A hunched masked violinist in a feathered hat, playing.">
     <figcaption><span>Everyone marked? Go and play something.</span>Jacques Callot, <i>Varie Figure Gobbi</i>, 1616–22, via the Met.</figcaption>
@@ -313,6 +313,37 @@
 </section>
 
 </main>
+
+<dialog class="install" id="install" aria-labelledby="install-h">
+<div class="install-body" tabindex="-1" autofocus>
+  <form method="dialog" class="install-close"><button aria-label="Close">×</button></form>
+  <header class="install-app">
+    <img src="images/icon.webp" width="64" height="64" alt="">
+    <div>
+      <p class="label">in <span class="beta-word">beta</span> · Mac and iPad</p>
+      <h2 id="install-h">install Hyper Grader</h2>
+    </div>
+  </header>
+  <p class="install-iphone">You’re on an iPhone. Hyper Grader runs on iPad and Mac, so open this page there to install it.</p>
+  <ol class="install-steps">
+    <li>
+      <b>get TestFlight</b>
+      <p>Apple’s free app for trying apps before they’re released. Install it on the Mac or iPad you mark on.</p>
+      <a class="install-store" href="https://apps.apple.com/app/testflight/id899247664" target="_blank" rel="noopener">TestFlight on the App Store</a>
+    </li>
+    <li>
+      <b>open the invite</b>
+      <p>On that same Mac or iPad, open the Hyper Grader invite. It opens straight in TestFlight.</p>
+      <a class="button" href="https://testflight.apple.com/join/DnvdCEXS" target="_blank" rel="noopener">open the invite</a>
+    </li>
+    <li>
+      <b>accept, then install</b>
+      <p>Hyper Grader joins your other apps. TestFlight installs each new build as it comes out.</p>
+    </li>
+  </ol>
+  <p class="install-note">Needs macOS 26.2 or iPadOS 26.2 or later. Places are limited while it’s in testing. Questions? <a href="mailto:me@apenning.is?subject=Hyper%20Grader%20beta">Send me a note</a>.</p>
+</div>
+</dialog>
 
 <footer class="grid">
   <p class="sig">andrew lymn-penning · 2026</p>
@@ -336,6 +367,18 @@
     for (const o of document.querySelectorAll('.switch button')) o.setAttribute('aria-pressed', o === b);
     for (const img of document.querySelectorAll('.swap img')) img.classList.toggle('off', img.dataset.view !== b.dataset.show);
   });
+
+  // Join on TestFlight: open the install panel (the link still works without script).
+  const install = document.getElementById('install');
+  if (install.showModal) {
+    if (/iPhone|iPod/.test(navigator.userAgent)) install.classList.add('on-iphone');
+    for (const a of document.querySelectorAll('[data-install]')) a.addEventListener('click', e => {
+      e.preventDefault();
+      install.showModal();
+    });
+    // a click on the dimmed backdrop closes it
+    install.addEventListener('click', e => { if (e.target === install) install.close(); });
+  }
 
   // Respect reduced motion: show the finished frame with controls instead of autoplaying.
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
