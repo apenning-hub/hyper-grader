@@ -55,14 +55,17 @@
   <div class="said">
     <p class="kicker">what you said</p>
     <p class="transcript">Okay, Hana. <i>Um,</i> the concept's really strong, <i>like,</i> a workshop that opens to the street. Love the section. <i>Uh,</i> development stalls after week six. The model photos are, <i>ah,</i> way too dark. Presentation's fine.</p>
+    <p class="ums-toggle"><button type="button" class="button small" aria-pressed="false">drop the ums</button></p>
   </div>
   <div class="reads">
     <p class="kicker">what Hana reads</p>
     <p>Hana, your concept is the strongest part of this project: a house that opens itself to the street as a workshop, and your section shows it beautifully.</p>
     <p>Development slows after week six, so the plan barely changes. Re-shoot the model in daylight so the timber reads, and show how the plan evolved. Those two changes would lift this into Distinction territory.</p>
   </div>
-  <p class="ums-toggle"><button type="button" class="button small" aria-pressed="false">drop the ums</button></p>
-  <p class="note">The feedback makes your points with your judgement. Hyper Grader drops the ums and turns "way too dark" into advice a student can act on. It's written on your Mac by Apple's on-device model, and you can edit every word before it goes anywhere. Turn on Improvement focus and each piece of feedback ends with specific next steps, so it feeds forward into the next task.</p>
+  <div class="aside">
+    <p class="kicker">what changes</p>
+    <p>The feedback makes your points with your judgement. Hyper Grader drops the ums and turns "way too dark" into advice a student can act on. It's written on your Mac by Apple's on-device model, and you can edit every word before it goes anywhere. Turn on Improvement focus and each piece of feedback ends with specific next steps, so it feeds forward into the next task.</p>
+  </div>
 </section>
 
 <section class="voice grid" id="voice" aria-labelledby="voice-h">
@@ -133,7 +136,7 @@
   </figure>
 </section>
 
-<section class="marking grid">
+<section class="marking grid pairs">
   <p class="label">marking</p>
   <h2>the marking screen</h2>
   <p class="lead">Beside the grading screen of a typical learning system.</p>
@@ -159,20 +162,19 @@
   <!-- Measured 26 Nov 2026: the app's own on-device generation path, median of 10 runs on a MacBook Pro (M5 Pro).
        First words 0.6 s (0.56-0.72), full paragraph 2.7 s (2.3-3.4), first run after launch about 5 s.
        docs/business notes: scratchpad genbench/results.md. Re-measure before changing these figures. -->
-  <p class="stat"><span class="figure">3</span><span class="unit">seconds, from your notes to written feedback. The first words appear in under one.</span></p>
   <div class="pair" role="group" aria-label="Your notes on the left, with the ums and uhs dropped and your judgement and specifics kept, and the written feedback on the right, ending with next steps.">
     <div class="card">
       <p class="kicker">your notes</p>
       <p class="transcript fnotes">Okay, Hana. <i>Um,</i> <mark>the concept's really strong,</mark> <i>like,</i> <mark>a workshop that opens to the street.</mark> <mark>Love the section.</mark> <i>Uh,</i> <mark>development stalls after week six.</mark> <mark>The model photos are,</mark> <i>ah,</i> <mark>way too dark.</mark> Presentation's fine.</p>
     </div>
-    <div class="gen" aria-hidden="true"><span class="bar"><span></span></span><span class="status">written</span></div>
     <div class="card">
-      <p class="kicker">what Hana reads</p>
+      <div class="kicker-row"><p class="kicker">what Hana reads</p><span class="gen" aria-hidden="true"><span class="bar"><span></span></span><span class="status">written</span></span></div>
       <p class="fs">Hana, your concept is the strongest part of this project: a house that opens itself to the street as a workshop, and your section shows it beautifully.</p>
       <p class="fs">Development slows after week six, so the plan barely changes.</p>
       <p class="fs"><span class="tag">next steps</span>Re-shoot the model in daylight so the timber reads, and show how the plan evolved. Those two changes would lift this into Distinction territory.</p>
     </div>
   </div>
+  <p class="stat"><span class="figure">3</span><span class="unit">seconds, from your notes to written feedback. The first words appear in under one.</span></p>
   <div class="gk">
     <div><h3>what it keeps</h3><ul><li>Your judgement: the concept is the strongest part.</li><li>Your specifics: the section, week six, the model photos.</li></ul></div>
     <div><h3>what it drops</h3><ul><li>The ums, uhs, ahs and likes.</li><li>The half sentences, so "way too dark" becomes advice.</li></ul></div>
@@ -225,12 +227,13 @@
   <figure class="device here">
     <p class="word">here</p>
     <img src="images/mac-send.webp" width="2400" height="1579" loading="lazy" alt="Send to Canvas in Hyper Grader: 9 of 24 students ready, a comment under each criterion for Mia Russo, and an Export 2 files button.">
-    <figcaption>On your Mac, Send to Canvas writes the marks and a comment for every criterion into two files.</figcaption>
+    <figcaption>On your Mac, Send to Canvas writes the marks and a comment for every criterion into two files.
+      <ul class="handoff" aria-label="The two files">
+        <li><span>file 1</span>grades.csv</li>
+        <li><span>file 2</span>rubric assessments.csv</li>
+      </ul>
+    </figcaption>
   </figure>
-  <ul class="handoff" aria-label="The two files">
-    <li><span>file 1</span>grades.csv</li>
-    <li><span>file 2</span>rubric assessments.csv</li>
-  </ul>
   <figure class="device there">
     <p class="word">there</p>
     <img src="images/mac-lms-import.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a learning system's gradebook import page with both files uploaded and the imported marks listed for review.">
@@ -244,7 +247,7 @@
   </figure>
 </section>
 
-<section class="ipad-section grid" id="ipad">
+<section class="ipad-section grid pairs" id="ipad">
   <p class="label">iPad · in <span class="beta-word">beta</span></p>
   <h2>marking on iPad</h2>
   <figure class="device">
