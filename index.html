@@ -17,10 +17,6 @@
 <header class="nav">
   <a class="brand" href="./"><img src="images/icon.webp" width="32" height="32" alt=""> hyper grader</a>
   <nav>
-    <span class="page-ring" aria-hidden="true" title="Reading progress">
-      <svg viewBox="0 0 36 36" width="28" height="28"><circle class="dot" cx="18" cy="18" r="12"/><circle class="track" cx="18" cy="18" r="14"/><circle class="fill" cx="18" cy="18" r="14" pathLength="100"/><path class="tick" d="M12.5 18.5l3.8 3.8 7.4-8"/></svg>
-      <span class="page-ring-label">marked</span>
-    </span>
     <a href="#today">features</a>
     <a href="#private">privacy</a>
     <a class="button small" href="#beta">join the beta</a>
@@ -229,16 +225,6 @@
 </footer>
 
 <script>
-  // The reading ring in the nav: fills as you scroll, turns green with a tick at the end.
-  const ring = document.querySelector('.page-ring');
-  const onScroll = () => {
-    const max = document.documentElement.scrollHeight - innerHeight;
-    const p = max > 0 ? Math.min(1, scrollY / max) : 1;
-    ring.style.setProperty('--p', p);
-    ring.classList.toggle('done', p > 0.985);
-  };
-  addEventListener('scroll', onScroll, { passive: true }); onScroll();
-
   // Drop the ums: fade the fillers out of the transcript, and back.
   const umsButton = document.querySelector('.ums-toggle button');
   umsButton.addEventListener('click', () => {

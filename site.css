@@ -181,19 +181,6 @@ footer p { margin: 0; }
 .statement { padding-top: clamp(48px, 8vw, 120px); }
 .statement p { grid-column: 1 / span 10; margin: 0; font-family: "ALP Serif", "Apple Garamond", Garamond, "Times New Roman", serif; font-weight: 300; font-style: italic; font-size: clamp(40px, 6.4vw, 104px); line-height: 1.02; letter-spacing: -0.02em; }
 
-/* reading ring in the nav (round caps, like the app's ring) */
-.page-ring { display: inline-flex; align-items: center; gap: 8px; --p: 0; }
-.page-ring svg { transform: rotate(-90deg); }
-.page-ring circle { fill: none; stroke-width: 4; }
-.page-ring .track { stroke: var(--alp-frame); }
-.page-ring .fill { stroke: var(--alp-ink); stroke-linecap: round; stroke-dasharray: calc(var(--p) * 100) 100; transition: stroke 200ms ease-out; }
-.page-ring .tick { fill: none; stroke: var(--alp-paper); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transform: rotate(90deg); transform-origin: 18px 18px; transition: opacity 200ms ease-out; }
-.page-ring-label { font: 500 var(--alp-label)/1 var(--alp-micro); letter-spacing: var(--alp-track-label); color: #34C759; opacity: 0; transition: opacity 200ms ease-out; }
-.page-ring.done .fill { stroke: #34C759; stroke-dasharray: 100 100; }
-.page-ring .dot { fill: transparent; stroke: none; transition: fill 200ms ease-out; }
-.page-ring.done .dot { fill: #34C759; }
-.page-ring.done .tick, .page-ring.done .page-ring-label { opacity: 1; }
-
 /* drop the ums */
 .transcript i { transition: opacity 200ms ease-out, background-color 200ms ease-out; }
 .transcript.tidy i { opacity: 0.12; background: transparent; }
@@ -211,7 +198,6 @@ footer p { margin: 0; }
 @media (max-width: 900px) {
   .statement p, .ums-toggle, .beta h2, .beta .lead, .beta .actions { grid-column: 1 / -1; }
   .drollery { grid-column: 1 / -1; grid-row: auto; margin-top: 32px; }
-  .nav .page-ring-label { display: none; }
 }
 
 /* more Garamond: section headings in the statement serif */
