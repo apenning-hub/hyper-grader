@@ -66,63 +66,93 @@
   <p class="note">The feedback makes your points with your judgement. Hyper Grader drops the ums and turns "way too dark" into advice a student can act on. It's written on your Mac by Apple's on-device model, and you can edit every word before it goes anywhere. Turn on Improvement focus and each piece of feedback ends with specific next steps, so it feeds forward into the next task.</p>
 </section>
 
-<section class="feature grid" id="today">
+<section class="today grid" id="today">
+  <div class="numeral" aria-hidden="true">14</div>
   <div class="copy">
     <p class="label">today</p>
-    <h2>today's marking plan</h2>
+    <h2>days from submission to marks due</h2>
     <p>Add the date students submit and Hyper Grader sets the marking deadline fourteen days later (you can change that), then spreads each class over the working days left.</p>
-    <p>The start screen tells you how many to mark today, most urgent first, and how long that should take at your usual pace. The ring fills as you go. Switch to the board to see everything at once.</p>
-    <p>Running behind? Take something off today's plan, or push its deadline when you've given an extension.</p>
+    <p>The start screen says how many to mark today, most urgent first, and how long that should take at your usual pace. Running behind? Take something off today's plan, or push its deadline when you've given an extension.</p>
   </div>
-  <figure class="device">
-    <img src="images/mac-dashboard.webp" width="2400" height="1579" loading="lazy" alt="Hyper Grader's start screen: a progress ring at 4 of 10, the three assessments to mark today in order of urgency, and a list of every assessment with its status and deadline.">
+  <div class="switch" role="group" aria-label="Start screen view">
+    <button type="button" aria-pressed="true" data-show="list">today</button><button type="button" aria-pressed="false" data-show="board">board</button>
+  </div>
+  <figure class="device swap">
+    <img data-view="list" src="images/mac-dashboard.webp" width="2400" height="1579" loading="lazy" alt="Hyper Grader's start screen: a progress ring at 4 of 10, the three assessments to mark today in order of urgency, and a list of every assessment with its status and deadline.">
+    <img data-view="board" src="images/mac-board.webp" width="2400" height="1579" loading="lazy" class="off" alt="The board view: every assessment as a card in columns for overdue, due this week, coming up and done.">
   </figure>
 </section>
 
-<section class="feature grid flip">
-  <div class="copy">
-    <p class="label">marking</p>
-    <h2>the marking screen</h2>
-    <p>Pick a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands. Your total and grade update as you go.</p>
-    <p>Hit Record and say what you think while you look at the work. Dictation uses Apple's on-device speech recognition, so nothing you say is uploaded.</p>
-    <p>A total within 2% below the next grade gets flagged, so you can decide whether it should go up.</p>
-  </div>
+<section class="marking grid">
+  <p class="label">marking</p>
+  <h2>the marking screen</h2>
   <figure class="device">
-    <img src="images/mac-marking.webp" width="2400" height="1579" loading="lazy" alt="The marking screen: grade bands for each criterion with High, Mid and Low steps, a total of 74 out of 100 flagged as 1% below a Distinction, spoken notes on the left and written feedback on the right.">
+    <img src="images/mac-marking.webp" width="1940" height="1276" loading="lazy" alt="The marking screen: grade bands for each criterion with High, Mid and Low steps, a total of 74 out of 100 flagged as 1% below a Distinction, spoken notes on the left and written feedback on the right.">
   </figure>
+  <ol class="numbered">
+    <li><b>pick a band</b> Choose a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands, and your total and grade update as you go.</li>
+    <li><b>say what you see</b> Hit Record and talk while you look at the work. Dictation uses Apple's on-device speech recognition, so nothing you say is uploaded.</li>
+    <li><b>check the line</b> A total within 2% below the next grade gets flagged, so you can decide whether it should go up.</li>
+  </ol>
 </section>
 
-<section class="feature grid" id="rubrics">
-  <div class="copy">
-    <p class="label">rubrics</p>
+<section class="rubrics" id="rubrics">
+  <div class="grid">
+    <p class="label">rubrics · built on constructive alignment</p>
     <h2>the rubric builder</h2>
-    <p>It starts where constructive alignment starts: with your course. Paste the course objectives and learning outcomes from your outline, then map each criterion to the CLOs it assesses. The grid shows how much of the task's marks goes to each CLO, and flags any outcome the rubric doesn't reach.</p>
-    <p>Then every criterion gets a descriptor for each grade band, from High Distinction to Fail, so the rubric is criterion-referenced before you mark a single piece of work. A guide beside each step explains what makes it good and offers fixes as you go.</p>
+    <p class="intro">It starts where constructive alignment starts: with your course. Five steps take you from the task to a criterion-referenced rubric, with a guide beside each one that explains what makes it good and offers fixes as you go.</p>
+    <ol class="steps-row">
+      <li><span>1</span><b>task</b> Type, level, weight and student hours, plus what students should be able to show.</li>
+      <li><span>2</span><b>CLOs</b> Paste the course objectives and learning outcomes from your outline.</li>
+      <li><span>3</span><b>alignment</b> Map each criterion to the CLOs it assesses, and see each CLO's share of the marks.</li>
+      <li><span>4</span><b>levels</b> A descriptor for every grade band, High Distinction to Fail.</li>
+      <li><span>5</span><b>review</b> Coverage, Bloom's taxonomy and policy, checked before you mark.</li>
+    </ol>
+    <figure class="device wide">
+      <img src="images/mac-rubric-alignment.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Alignment step: course objectives and four CLOs above a grid of criteria ticked against the CLOs they assess, with each CLO's share of the marks, and a guide panel flagging that CLO4 isn't assessed in this task.">
+      <figcaption>Step 3. CLO4 isn't assessed by any criterion, so the guide offers to add one or mark it as assessed in another task.</figcaption>
+    </figure>
   </div>
-  <figure class="device">
-    <img src="images/mac-rubric-alignment.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Alignment step: course objectives and four CLOs above a grid of criteria ticked against the CLOs they assess, with each CLO's share of the marks, and a guide panel flagging that CLO4 isn't assessed in this task.">
-  </figure>
+  <div class="grid review">
+    <figure class="device">
+      <img src="images/mac-rubric-review.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Review step: each CLO with its share of the marks and the criteria assessing it, then the quality checks, with a guide panel of remaining fixes.">
+    </figure>
+    <div class="copy">
+      <h3>before you mark a single piece of work</h3>
+      <ul class="checks">
+        <li>Every CLO assessed here or in another task</li>
+        <li>No CLO carrying more than half the marks</li>
+        <li>A spread of Bloom's levels, so students create and evaluate rather than only remember</li>
+        <li>A descriptor for every level, describing quality rather than quantity</li>
+        <li>Course weight between 5 and 60%</li>
+        <li>Three to six criteria</li>
+        <li>Group work at no more than 30%, and hurdles flagged</li>
+        <li>Student hours against the workload guideline</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<section class="feature grid flip">
-  <div class="copy">
-    <p class="label">assessment review</p>
-    <h2>the assessment review</h2>
-    <p>The last step brings it together: how the rubric covers each CLO, and the spread of Bloom's taxonomy levels your criteria ask for, so you can see whether students are being asked to create and evaluate or only to remember.</p>
-    <p>It flags levels without a descriptor and uneven weighting, estimates student hours against a workload guideline, and checks common assessment policy: course weight between 5 and 60%, three to six criteria, group work at no more than 30%, and hurdle requirements.</p>
+<section class="canvas grid">
+  <p class="label">canvas</p>
+  <h2>works with canvas</h2>
+  <p class="lead">No integration and no API token, so there's nothing for your school or uni to approve. It works with the files Canvas already exports and imports.</p>
+  <div class="flow" aria-label="Three Canvas files go into Hyper Grader; two files come back out for Canvas.">
+    <ul class="files-in">
+      <li><span>gradebook export</span>Grades-ARCH_3010.csv</li>
+      <li><span>rubric</span>Studio Proposal rubric.csv</li>
+      <li><span>class list</span>Tutorial ST02 class list.csv</li>
+    </ul>
+    <div class="arrow" aria-hidden="true"></div>
+    <div class="app"><img src="images/icon.webp" width="72" height="72" alt=""><b>hyper grader</b><span>works out which file is which</span></div>
+    <div class="arrow" aria-hidden="true"></div>
+    <ul class="files-out">
+      <li><span>for the gradebook</span>marks for every student</li>
+      <li><span>for the rubric</span>your comment on every criterion</li>
+    </ul>
   </div>
-  <figure class="device">
-    <img src="images/mac-rubric-review.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Review step: each CLO with its share of the marks and the criteria assessing it, then the quality checks, with a guide panel of remaining fixes.">
-  </figure>
-</section>
-
-<section class="feature grid">
   <div class="copy">
-    <p class="label">canvas</p>
-    <h2>works with canvas</h2>
-    <p>Drop in your Canvas gradebook export, rubric and class list together. Hyper Grader works out which file is which, sets up each assignment with its class, and tells you when you've picked the wrong file.</p>
-    <p>When you're finished, Send to Canvas writes two files: one for the gradebook and one for the rubric, with your comment on every criterion. Upload them in Canvas.</p>
-    <p>There's no integration and no API token, so it doesn't need special approval from your school or uni. It just works with the files Canvas already exports and imports. Other learning systems will follow.</p>
+    <p>Drop in your gradebook export, rubric and class list together. Hyper Grader sets up each assignment with its class, and tells you when you've picked the wrong file. When you're finished, Send to Canvas writes two files to upload. Other learning systems will follow.</p>
   </div>
   <figure class="device">
     <img src="images/mac-import.webp" width="1940" height="1276" loading="lazy" alt="The import review, headed “Here's what I found”, listing a Canvas gradebook export with three assignments and a rubric file, each with where it will go.">
@@ -130,36 +160,35 @@
 </section>
 
 <section class="ipad-section grid" id="ipad">
-  <div class="copy">
-    <p class="label">ipad · in testing</p>
-    <h2>marking on ipad</h2>
-    <p>For marking away from the desk: tap a band, then High, Mid or Low with a finger. The total and grade sit at the bottom of the screen, with the same nudge when a student is just under the next grade.</p>
-    <p>Tap the mic and talk through what you see. Dictation runs on the iPad, so student work never leaves it.</p>
-    <p>The same Today plan as the Mac opens first, with the ring, the most urgent class and how many to mark. Add a rubric from a CSV or a spreadsheet and paste in your class list.</p>
-    <p class="quiet">Writing feedback and sending to Canvas stay on the Mac. Syncing the two is being built now.</p>
-  </div>
+  <p class="label">ipad · in testing</p>
+  <h2>marking on ipad</h2>
   <figure class="device">
     <video class="demo" src="images/ipad-marking-demo.mp4" poster="images/ipad-marking-demo-poster.webp"
            width="1200" height="1566" autoplay muted loop playsinline preload="metadata"
            aria-label="Hyper Grader on an iPad Pro: four criteria are rated by tapping a band and a step, the total climbs to 81.67, then rambling notes are dictated."></video>
+    <figcaption><b>away from the desk</b> Tap a band, then High, Mid or Low. Tap the mic and talk; dictation runs on the iPad.</figcaption>
   </figure>
   <figure class="device">
     <img src="images/ipad-dashboard.webp" width="1226" height="1600" loading="lazy" alt="The Today plan on iPad: a progress ring at 4 of 10, the three assessments to mark today, and every assessment with its status and deadline.">
+    <figcaption><b>the same plan</b> The Today plan from the Mac opens first, with the ring and the most urgent class.</figcaption>
   </figure>
+  <p class="quiet">Writing feedback and sending to Canvas stay on the Mac. Syncing the two is being built now.</p>
 </section>
 
 <section class="private" id="private">
   <div class="grid">
-    <div class="copy">
-      <p class="label">on your device</p>
-      <h2>it all happens on your mac or ipad</h2>
-      <p>Dictation uses Apple's on-device speech recognition. Feedback is written by Apple's on-device model. Your students' work, your notes and your marks never leave the device.</p>
-      <p>Bring your own model if you like. Add a Claude API key and Hyper Grader asks before anything is sent, swaps student names for placeholders, and lets you stop sharing at any time.</p>
-      <p><a href="privacy.html">Read the privacy policy</a></p>
-    </div>
-    <figure class="device">
+    <p class="label">on your device</p>
+    <h2>it all happens on your mac or ipad</h2>
+    <ul class="local">
+      <li><b>dictation</b> Apple's on-device speech recognition.</li>
+      <li><b>feedback</b> Written by Apple's on-device model.</li>
+      <li><b>student work</b> Your notes and marks never leave the device.</li>
+      <li><b>your own model</b> Add a Claude API key if you like. Hyper Grader asks before anything is sent, swaps student names for placeholders, and lets you stop at any time.</li>
+    </ul>
+    <figure class="device wide">
       <img src="images/mac-marking-dark.webp" width="2400" height="1579" loading="lazy" alt="The marking screen in dark mode on a Space Black MacBook Pro.">
     </figure>
+    <p class="policy-link"><a href="privacy.html">Read the privacy policy</a></p>
   </div>
 </section>
 
@@ -211,6 +240,12 @@
     umsButton.setAttribute('aria-pressed', on);
     umsButton.textContent = on ? 'put them back' : 'drop the ums';
     document.querySelector('.transcript').classList.toggle('tidy', on);
+  });
+
+  // Today or board: swap the start-screen shot.
+  for (const b of document.querySelectorAll('.switch button')) b.addEventListener('click', () => {
+    for (const o of document.querySelectorAll('.switch button')) o.setAttribute('aria-pressed', o === b);
+    for (const img of document.querySelectorAll('.swap img')) img.classList.toggle('off', img.dataset.view !== b.dataset.show);
   });
 
   // Respect reduced motion: show the finished frame with controls instead of autoplaying.
