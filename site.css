@@ -120,8 +120,10 @@ section > .intro { margin-bottom: var(--gap); }
 .hero .intro .lead { margin: 0; }
 .hero .device { grid-column: 1 / -1; }
 
-/* speed */
-.speed .source { grid-column: 1 / span 8; margin-top: 0; }
+/* why, speed */
+.why .intro { margin-bottom: 0; }
+.why .source, .speed .source { grid-column: 1 / span 8; }
+.speed .source { margin-top: 0; }
 
 /* your words: thirds — what you said, what Hana reads, what changes */
 .words { align-items: start; }
