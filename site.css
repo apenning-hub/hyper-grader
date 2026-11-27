@@ -30,6 +30,9 @@
   --alp-margin: clamp(16px, 4vw, 48px);
   --alp-max: 1600px;
   --alp-radius: 8px;
+  /* the app's grade-band colours (Models.swift ratingColors) and their 25% tints */
+  --hd: #34C759; --d: #007AFF; --c: #5856D6; --p: #FF9500; --f: #FF3B30;
+  --hd-t: #CCF1D6; --d-t: #BFDEFF; --c-t: #DEDDF7; --p-t: #FFE5BF;
   /* rhythm: every section uses the same three spaces */
   --sec: clamp(56px, 7vw, 112px);   /* between sections */
   --gap: clamp(28px, 3.5vw, 48px);  /* section head to its content */
@@ -83,6 +86,12 @@ a:hover { background: var(--alp-highlight); }
 /* ===== figures ===== */
 .device img, .device video { display: block; width: 100%; height: auto; }
 figcaption { font: 400 var(--alp-caption)/1.35 var(--alp-micro); color: var(--alp-quiet); margin-top: 12px; }
+/* a caption with a bold title reads as body text */
+.marking figcaption, .ipad-section figcaption, .canvas figcaption { font: 400 15px/1.4 var(--alp-text); color: var(--alp-ink); }
+figcaption b { display: block; font: 700 20px/1.1 var(--alp-display); letter-spacing: -0.02em; margin-bottom: 6px; }
+/* figures side by side share rows (subgrid), so the screens sit on one line and the captions start on one line */
+.pairs > .device { display: grid; grid-template-rows: subgrid; grid-row: span 2; }
+.pairs > .device > img, .pairs > .device > video { align-self: end; }
 video.demo { filter: brightness(1.02); } /* the H.264 encode turns white into 253 grey */
 
 /* ===== nav ===== */
@@ -112,7 +121,7 @@ section > .intro { margin-bottom: var(--gap); }
 .numbered li { counter-increment: n; }
 .numbered li::before { content: counter(n); display: block; font: 700 48px/0.9 var(--alp-display); letter-spacing: -0.04em; margin-bottom: 12px; }
 
-/* hero: the why, then the app working */
+/* hero: the tagline, what it does, the app working */
 .hero { padding-top: clamp(32px, 5vw, 72px); }
 .hero .label { grid-column: 1 / -1; }
 .hero h1 { grid-column: 1 / span 10; }
@@ -125,15 +134,109 @@ section > .intro { margin-bottom: var(--gap); }
 .why .source, .speed .source { grid-column: 1 / span 8; }
 .speed .source { margin-top: 0; }
 
-/* your words: thirds — what you said, what Hana reads, what changes */
+/* why: the argument on 1–8, the painting on 9–12 */
+.why { align-items: start; }
+.why .copy { grid-column: 1 / span 8; }
+.why h2 { margin-bottom: 16px; }
+.why figure { grid-column: 9 / span 4; }
+.why figure img { border-radius: var(--alp-radius); width: 100%; }
+
+/* speed and the numbered steps: big numbers in the band colours */
+.speed .thirds li:nth-child(1) .big, .numbered li:nth-child(1)::before { color: var(--hd); }
+.speed .thirds li:nth-child(2) .big, .numbered li:nth-child(2)::before { color: var(--d); }
+.speed .thirds li:nth-child(3) .big, .numbered li:nth-child(3)::before { color: var(--c); }
+
+/* your words: five spoken notes; thirds — what you said, what they read, what good feedback needs */
 .words { align-items: start; }
+.words .pager { grid-column: 1 / span 8; grid-row: 4; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+.pager .button { font-size: 15px; }
+.pager .button span { color: var(--alp-quiet); margin-left: 4px; }
+.pager .button[aria-pressed="true"] { background: var(--alp-ink); color: var(--alp-paper); }
+.pager .button[aria-pressed="true"] span { color: var(--alp-highlight); }
 .words .said { grid-column: 1 / span 4; }
 .words .reads { grid-column: 5 / span 4; }
-.words .aside { grid-column: 9 / span 4; }
-.words .said, .words .reads, .words .aside { grid-row: 4; }
+.words .aside { grid-column: 9 / span 4; grid-row: 5; }
+.words .said, .words .reads { grid-row: 5; }
+.stack { display: grid; }
+.stack > .ex { grid-area: 1 / 1; visibility: hidden; margin: 0; }
+.stack > .ex.active { visibility: visible; }
 .transcript { font: 400 19px/1.55 var(--alp-text); }
-.transcript i { font-style: normal; background: var(--alp-highlight); padding: 0 0.15em; border-radius: 2px; }
-.reads p:not(.kicker) { font: 500 21px/1.35 var(--alp-display); letter-spacing: -0.01em; }
+.transcript i { font-style: normal; color: var(--alp-quiet); }
+.reads .ex p { font: 500 21px/1.35 var(--alp-display); letter-spacing: -0.01em; margin: 0 0 14px; }
+mark { color: inherit; padding: 0.04em 0.12em; border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone; transition: background-color 200ms ease-out; }
+.k-good { background: var(--hd-t); }
+.k-spec { background: var(--d-t); }
+.k-fix { background: var(--p-t); }
+.k-next { background: var(--c-t); }
+.key { list-style: none; margin: 0 0 16px; padding: 0; }
+.key li { padding: 0 0 12px; }
+.key mark { display: inline-block; font: 700 17px/1.2 var(--alp-display); letter-spacing: -0.01em; margin-bottom: 4px; }
+.key li mark { display: table; }
+/* while it plays: words fade in, a highlight shows once its first word lands, the feedback follows */
+.words.animating .said .w { opacity: 0; transition: opacity 140ms ease-out; }
+.words.animating .said .w.on { opacity: 1; }
+.words.animating .said mark:not(:has(.w.on)) { background: transparent; }
+.words.animating .reads .ex p { opacity: 0; transition: opacity 250ms ease-out; }
+.words.animating .reads .ex p.on { opacity: 1; }
+
+/* today: the list on 1–4, the switch and the start screen on 5–12 */
+.today { align-items: start; row-gap: 16px; grid-template-rows: auto 1fr; }
+.today .copy { grid-column: 1 / span 4; grid-row: 1 / span 2; }
+.today .switch { grid-column: 5 / span 8; grid-row: 1; justify-self: start; }
+.today .device { grid-column: 5 / span 8; grid-row: 2; display: grid; }
+.today .intro { font: 500 21px/1.3 var(--alp-display); margin-bottom: 20px; }
+.plan { list-style: none; margin: 0; padding: 0; }
+.plan li { border-top: 1px solid var(--alp-ink); padding: 10px 0 12px; font-size: 15px; line-height: 1.4; }
+.plan b { display: block; font: 700 18px/1.15 var(--alp-display); letter-spacing: -0.02em; margin-bottom: 2px; }
+.switch { display: inline-flex; border: 1px solid var(--alp-ink); border-radius: var(--alp-radius); overflow: hidden; }
+.switch button { font: 500 15px/1 var(--alp-text); padding: 10px 22px; border: 0; background: none; color: inherit; cursor: pointer; }
+.switch button[aria-pressed="true"] { background: var(--alp-ink); color: var(--alp-paper); }
+.swap img { grid-area: 1 / 1; transition: opacity 300ms ease-out; }
+.swap img.off { opacity: 0; pointer-events: none; }
+
+/* marking: the usual screen on 1–4 beside ours on 5–12, three numbered points in thirds under them */
+.marking .device.lms { grid-column: 1 / span 4; }
+.marking .device:not(.lms) { grid-column: 5 / span 8; }
+.marking .numbered { margin-top: var(--row); }
+
+/* rubrics: blush ground; the five steps on 1–4 beside the builder on 5–12, then the review shot on 1–8 beside its checklist on 9–12 */
+.rubrics { background: #FFC4D3; padding-bottom: var(--sec); margin-top: var(--sec); }
+.rubrics .grid { align-items: start; }
+.rubrics .label { color: var(--alp-ink); opacity: 0.6; }
+.rubrics figcaption { color: var(--alp-ink); opacity: 0.7; }
+.steps-row { grid-column: 1 / span 4; grid-row: 4; list-style: none; margin: 0; padding: 0; }
+.steps-row li { display: grid; grid-template-columns: 28px 1fr; column-gap: 12px; border-top: 1px solid var(--alp-ink); padding: 12px 0 14px; font-size: 15px; line-height: 1.4; }
+.steps-row li > * { grid-column: 2; }
+.steps-row span { grid-column: 1 !important; grid-row: 1 / span 2; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--alp-ink); color: #FFC4D3; font: 700 14px/1 var(--alp-display); }
+.steps-row b { display: block; font: 700 20px/1.1 var(--alp-display); letter-spacing: -0.02em; margin: 3px 0 4px; }
+.rubrics .device.wide { grid-column: 5 / span 8; grid-row: 4; }
+.rubrics .review { margin-top: var(--row); }
+.rubrics .review .device { grid-column: 1 / span 8; grid-row: 1; }
+.rubrics .review .copy { grid-column: 9 / span 4; grid-row: 1; }
+.checks { list-style: none; margin: 0; padding: 0; }
+.checks li { position: relative; padding: 10px 0 10px 34px; border-top: 1px solid rgba(0,0,0,0.25); }
+.checks li::before { content: ""; position: absolute; left: 0; top: 11px; width: 22px; height: 22px; border-radius: 50%; background: #34C759 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath d='M6.5 11.5l3 3 6-6.5' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 22px no-repeat; }
+
+/* canvas: here and there as a pair on halves (word, screen, caption share rows); setup below as 1–4 + 5–12 */
+.canvas { align-items: start; }
+.canvas .here, .canvas .there { display: grid; grid-template-rows: subgrid; grid-row: 4 / span 3; }
+.canvas .here { grid-column: 1 / span 6; }
+.canvas .there { grid-column: 7 / span 6; }
+.canvas .here img, .canvas .there img { align-self: end; }
+.word { font-family: var(--alp-serif); font-weight: 300; font-style: italic; font-size: clamp(44px, 5.5vw, 84px); line-height: 1; letter-spacing: -0.02em; margin: 0 0 8px; }
+.handoff { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.handoff li { border: 1px solid #007AFF; border-radius: var(--alp-radius); padding: 8px 12px; font: 400 13px/1.3 var(--alp-text); }
+.handoff li span { display: block; font: 500 var(--alp-label)/1.35 var(--alp-micro); letter-spacing: var(--alp-track-label); color: var(--alp-quiet); margin-bottom: 2px; }
+.canvas .copy { grid-column: 1 / span 4; grid-row: 7; margin-top: var(--row); border-top: 1px solid var(--alp-ink); padding-top: 16px; }
+.canvas .setup { grid-column: 5 / span 8; grid-row: 7; margin-top: var(--row); }
+
+/* iPad: thirds — two iPads, then the note */
+.ipad-section { align-items: start; }
+.ipad-section h2 { margin-bottom: var(--gap); }
+.ipad-section .device:nth-of-type(1) { grid-column: 1 / span 4; }
+.ipad-section .device:nth-of-type(2) { grid-column: 5 / span 4; }
+.ipad-section .quiet { grid-column: 9 / span 4; grid-row: 3; margin: 0; border-top: 1px solid var(--alp-ink); padding-top: 12px; }
+
 
 /* private: black ground; the four points on 1–4 beside the dark Mac on 5–12 */
 .private { background: var(--alp-ink); color: var(--alp-paper); padding-bottom: var(--sec); margin-top: var(--sec); }
@@ -166,13 +269,19 @@ footer .credit { grid-column: 9 / span 4; font: 400 var(--alp-caption)/1.35 var(
 @media (max-width: 1180px) and (min-width: 901px) {
   .words .said { grid-column: 1 / span 6; }
   .words .reads { grid-column: 7 / span 6; }
-  .words .aside { grid-column: 1 / span 8; grid-row: 5; margin-top: var(--gap); }
+  .words .aside { grid-column: 1 / span 8; grid-row: 6; margin-top: var(--gap); }
+  .today .copy { grid-column: 1 / span 5; }
+  .today .switch, .today .device { grid-column: 6 / span 7; }
 }
 
 /* ===== narrow: everything stacks on 1–12 ===== */
 @media (max-width: 900px) {
-  .grid > * { grid-column: 1 / -1 !important; grid-row: auto !important; }
-  .words .reads, .words .aside, .private .device { margin-top: var(--gap); }
+  .grid > *, .grid > * > * { grid-column: 1 / -1 !important; grid-row: auto !important; }
+  .pairs > .device, .canvas .here, .canvas .there { display: block; }
+  .words .reads, .words .aside, .private .device, .why figure, .marking .device + .device, .canvas .there, .canvas .setup,
+  .rubrics .device.wide, .rubrics .review .copy, .ipad-section .quiet, .today .switch { margin-top: var(--gap); }
+  .ipad-section .device:nth-of-type(1) { grid-column: 1 / span 6 !important; }
+  .ipad-section .device:nth-of-type(2) { grid-column: 7 / span 6 !important; }
   .thirds { grid-template-columns: 1fr; }
   .thirds li { padding-bottom: 20px; }
   .drollery { margin-top: 32px; }

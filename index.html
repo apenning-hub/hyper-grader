@@ -41,10 +41,16 @@
 </section>
 
 <section class="why grid" id="why">
-  <p class="label">why</p>
-  <h2>marking shouldn’t decide what you set</h2>
-  <p class="intro">Nearly a quarter of Australian secondary teachers spend ten or more hours a week marking. So we set work that’s quicker to mark. Hyper Grader makes marking fast enough that you can set the work you think is worth doing.</p>
-  <p class="source">AITSL, Australian Teacher Workforce Survey, 2023: 24% of secondary and 11% of primary teachers mark for 10 or more hours a week.</p>
+  <div class="copy">
+    <p class="label">why</p>
+    <h2>marking shouldn’t decide what you set</h2>
+    <p class="intro">Nearly a quarter of Australian secondary teachers spend ten or more hours a week marking. So we set work that’s quicker to mark. Hyper Grader makes marking fast enough that you can set the work you think is worth doing.</p>
+    <p class="source">AITSL, Australian Teacher Workforce Survey, 2023: 24% of secondary and 11% of primary teachers mark for 10 or more hours a week.</p>
+  </div>
+  <figure>
+    <img src="images/hammershoi-sunlit-room.webp" width="800" height="864" loading="lazy" alt="A quiet room in afternoon sun: light falls across a pale wall, a small table with a potted plant, a sideboard with a bowl and a lamp.">
+    <figcaption>Vilhelm Hammershøi (1864–1916), interior with sunlight, via SOCKS.</figcaption>
+  </figure>
 </section>
 
 <section class="speed grid" id="speed">
@@ -60,33 +66,169 @@
   <p class="source">Measured on a MacBook Pro with M5 Pro: a paragraph of about 85 words in 2.7 seconds, first words in 0.6 (median of 10). Older Macs take longer, and the first one after opening the app takes about 5 seconds.</p>
 </section>
 
-<section class="how grid" id="how">
-  <p class="label">how it works</p>
-  <h2>three steps for each student</h2>
-  <ol class="thirds numbered">
-    <li><b>pick a band</b> Choose a grade band for each criterion, then High, Mid or Low within it. Your total and grade update as you go, and a total just under the next grade gets flagged.</li>
-    <li><b>say what you see</b> Hit Record and talk while you look at the work. Dictation runs on the device, so nothing you say is uploaded.</li>
-    <li><b>send it to Canvas</b> Marks and a comment for every criterion go into two files that Canvas already imports. There’s no integration for your school or uni to approve.</li>
-  </ol>
-</section>
-
 <section class="words grid" id="words">
   <p class="label">your words</p>
   <h2>feedback that still sounds like you</h2>
   <p class="intro">Pasting student work into ChatGPT, or picking lines from a comment bank, gets you feedback that could be about anyone. The best critique comes from looking at the work and reacting to it. Hyper Grader keeps your reaction and tidies it up.</p>
+  <div class="pager" role="group" aria-label="Examples">
+    <button type="button" class="button small" data-ex="0" aria-pressed="true">Hana <span>studio</span></button>
+    <button type="button" class="button small" data-ex="1" aria-pressed="false">Jack <span>English</span></button>
+    <button type="button" class="button small" data-ex="2" aria-pressed="false">Priya <span>chemistry</span></button>
+    <button type="button" class="button small" data-ex="3" aria-pressed="false">Tom <span>history</span></button>
+    <button type="button" class="button small" data-ex="4" aria-pressed="false">Mia <span>art</span></button>
+  </div>
   <div class="said">
     <p class="kicker">what you said</p>
-    <p class="transcript">Okay, Hana. <i>Um,</i> the concept's really strong, <i>like,</i> a workshop that opens to the street. Love the section. <i>Uh,</i> development stalls after week six. The model photos are, <i>ah,</i> way too dark. Presentation's fine.</p>
+    <div class="stack">
+      <p class="transcript ex active" data-i="0" data-name="Hana">Okay, Hana. <i>Um,</i> <mark class="k-good">the concept&#x27;s really strong,</mark> <i>like,</i> <mark class="k-spec">a workshop that opens to the street.</mark> <mark class="k-good">Love the section.</mark> <i>Uh,</i> <mark class="k-fix">development stalls after week six.</mark> <mark class="k-fix">The model photos are,</mark> <i>ah,</i> <mark class="k-fix">way too dark.</mark> Presentation&#x27;s fine.</p>
+      <p class="transcript ex" data-i="1" data-name="Jack">Right, Jack. Phones in schools. <i>Um,</i> <mark class="k-good">your opening&#x27;s got real bite,</mark> <mark class="k-spec">that bit about the lunch queue going dead quiet,</mark> love that. But then, <i>uh,</i> <mark class="k-fix">the middle sort of just... says it again?</mark> <mark class="k-fix">Paragraphs two and three are the same point.</mark> And <i>um,</i> <mark class="k-fix">there&#x27;s no evidence anywhere,</mark> it&#x27;s all vibes. Ending&#x27;s fine.</p>
+      <p class="transcript ex" data-i="2" data-name="Priya">Priya, titration prac. So, <mark class="k-good">the method&#x27;s really clear,</mark> I could actually redo this. <mark class="k-spec">Three trials, nice,</mark> and <i>um,</i> <mark class="k-spec">you flagged the one that was off.</mark> But the discussion, <i>hmm,</i> <mark class="k-fix">it says &#x27;error&#x27; like five times and never says which error.</mark> Oh, and <mark class="k-fix">no units on the axes.</mark> Again.</p>
+      <p class="transcript ex" data-i="3" data-name="Tom">Okay, Tom, Federation. <i>Um,</i> honestly, <mark class="k-good">you know this stuff,</mark> <mark class="k-spec">the Barton material is great.</mark> But, <i>uh,</i> <mark class="k-fix">it&#x27;s just telling me what happened.</mark> I got to the end and <mark class="k-fix">I still don&#x27;t know what you think.</mark> <i>Ah,</i> and <mark class="k-fix">the referencing is all over the place,</mark> some footnotes, some not.</p>
+      <p class="transcript ex" data-i="4" data-name="Mia">Mia, folio. <i>Ooh.</i> <mark class="k-good">The charcoal studies are gorgeous,</mark> <mark class="k-spec">the hands especially.</mark> <i>Um,</i> but <mark class="k-fix">the final piece doesn&#x27;t really use any of that?</mark> <mark class="k-fix">Feels like it came from somewhere else.</mark> And, <i>ah,</i> <mark class="k-fix">the annotations mostly just describe what&#x27;s there.</mark> Yeah.</p>
+    </div>
   </div>
   <div class="reads">
-    <p class="kicker">what Hana reads</p>
-    <p>Hana, your concept is the strongest part of this project: a house that opens itself to the street as a workshop, and your section shows it beautifully.</p>
-    <p>Development slows after week six, so the plan barely changes. Re-shoot the model in daylight so the timber reads, and show how the plan evolved. Those two changes would lift this into Distinction territory.</p>
+    <p class="kicker">what <span class="who">Hana</span> reads</p>
+    <div class="stack">
+      <div class="ex active" data-i="0"><p>Hana, <mark class="k-good">your concept is the strongest part of this project</mark>: <mark class="k-spec">a house that opens itself to the street as a workshop</mark>, and <mark class="k-good">your section shows it beautifully</mark>.</p><p><mark class="k-fix">Development slows after week six, so the plan barely changes.</mark> <mark class="k-next">Re-shoot the model in daylight so the timber reads, and show how the plan evolved.</mark> Those two changes would lift this into Distinction territory.</p></div>
+      <div class="ex" data-i="1"><p>Jack, <mark class="k-good">your opening grabs the reader</mark>, and <mark class="k-spec">the image of the lunch queue going quiet</mark> does a lot of work.</p><p><mark class="k-fix">Paragraphs two and three make the same point, and neither has evidence behind it.</mark> <mark class="k-next">Cut one, and back the other with a statistic or a quote from someone it affects.</mark></p></div>
+      <div class="ex" data-i="2"><p>Priya, <mark class="k-good">your method is clear enough to repeat</mark>, and <mark class="k-spec">running three trials and flagging the outlier</mark> is exactly what a good prac does.</p><p><mark class="k-fix">The discussion names error without saying which one, and the graph is missing units.</mark> <mark class="k-next">Pick the biggest source of error, explain how it moved your result, and label both axes.</mark></p></div>
+      <div class="ex" data-i="3"><p>Tom, <mark class="k-good">you clearly know this period</mark>, and <mark class="k-spec">your use of the Barton material</mark> is a highlight.</p><p><mark class="k-fix">The essay retells events rather than arguing a position, and the referencing is inconsistent.</mark> <mark class="k-next">State your argument in the first paragraph, make each paragraph prove part of it, and footnote every source the same way.</mark></p></div>
+      <div class="ex" data-i="4"><p>Mia, <mark class="k-good">your charcoal studies are the strongest work here</mark>, <mark class="k-spec">the studies of hands in particular</mark>.</p><p><mark class="k-fix">The final piece doesn&#x27;t draw on them, so the folio doesn&#x27;t show how you got there, and the annotations describe rather than reflect.</mark> <mark class="k-next">Bring the hands into the final work, and use the annotations to say why you made each choice.</mark></p></div>
+    </div>
   </div>
   <div class="aside">
-    <p class="kicker">what changes</p>
-    <p>Your judgement and your specifics stay: the concept, the section, week six, the photos. The ums go, and “way too dark” becomes something Hana can act on. You can edit every word before it goes anywhere.</p>
+    <p class="kicker">what good feedback needs</p>
+    <ul class="key">
+      <li><mark class="k-good">what’s working</mark> Name the strength, so they keep doing it.</li>
+      <li><mark class="k-spec">specifics</mark> Point at the work itself, so they know exactly what you mean.</li>
+      <li><mark class="k-fix">what to fix</mark> Say plainly what isn’t working yet.</li>
+      <li><mark class="k-next">next steps</mark> Turn “way too dark” into something they can do.</li>
+    </ul>
+    <p class="quiet">The ums go. You can edit every word before it goes anywhere.</p>
   </div>
+</section>
+
+<section class="marking grid pairs" id="how">
+  <p class="label">how it works</p>
+  <h2>the marking screen</h2>
+  <p class="lead">Beside the grading screen of a typical learning system.</p>
+  <figure class="device lms">
+    <img src="images/mac-lms-grader.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a typical learning system's grading screen in a browser: a submission preview, a toolbar of small icons, and a narrow side panel crowded with a rubric table, points boxes, an attempt menu, a grade box and a comment field.">
+    <figcaption><b>a typical learning system</b> The submission, a rubric table of small cells, points boxes and the comment field share one narrow panel. Mock-up.</figcaption>
+  </figure>
+  <figure class="device">
+    <img src="images/mac-marking.webp" width="2400" height="1579" loading="lazy" alt="The Hyper Grader marking screen: grade bands for each criterion with High, Mid and Low steps, a total of 74 out of 100 flagged as 1% below a Distinction, spoken notes on the left and written feedback on the right.">
+    <figcaption><b>Hyper Grader</b> One wide band per grade, the total always in view, and room to talk.</figcaption>
+  </figure>
+  <ol class="thirds numbered">
+    <li><b>pick a band</b> Choose a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands, and your total and grade update as you go.</li>
+    <li><b>say what you see</b> Hit Record and talk while you look at the work. Dictation uses Apple's on-device speech recognition, so nothing you say is uploaded.</li>
+    <li><b>check the line</b> A total within 2% below the next grade gets flagged, so you can decide whether it should go up.</li>
+  </ol>
+</section>
+
+<section class="today grid" id="today">
+  <div class="copy">
+    <p class="label">planning</p>
+    <h2>stop putting it off</h2>
+    <p class="intro">Hyper Grader breaks the pile into a number for today and keeps track while you work through it.</p>
+    <ul class="plan">
+      <li><b>a deadline for every class</b> Marks are due fourteen days after students submit, or whenever you choose, spread over the working days left.</li>
+      <li><b>today's number</b> How many to mark today, most urgent first, and how long that should take at your pace.</li>
+      <li><b>focus and breaks</b> A pomodoro timer: 25 minutes of marking, then a 5-minute break, or lengths that suit you.</li>
+      <li><b>your pace</b> A timer for each student shows your average and how long the rest of the class will take.</li>
+      <li><b>room to slip</b> Take something off today's plan, or push its deadline when you've given an extension.</li>
+      <li><b>small wins</b> A note when you're halfway, down to the last five, and all marked.</li>
+    </ul>
+  </div>
+  <div class="switch" role="group" aria-label="Start screen view">
+    <button type="button" aria-pressed="true" data-show="list">today</button><button type="button" aria-pressed="false" data-show="board">board</button>
+  </div>
+  <figure class="device swap">
+    <img data-view="list" src="images/mac-dashboard.webp" width="2400" height="1579" loading="lazy" alt="Hyper Grader's start screen: a progress ring at 4 of 10, the three assessments to mark today in order of urgency, and a list of every assessment with its status and deadline.">
+    <img data-view="board" src="images/mac-board.webp" width="2400" height="1579" loading="lazy" class="off" alt="The board view: every assessment as a card in columns for overdue, due this week, coming up and done.">
+  </figure>
+</section>
+
+<section class="rubrics" id="rubrics">
+  <div class="grid">
+    <p class="label">rubrics · built on constructive alignment</p>
+    <h2>the rubric builder</h2>
+    <p class="intro">It starts where constructive alignment starts: with your course. Five steps take you from the task to a criterion-referenced rubric, with a guide beside each one that explains what makes it good and offers fixes as you go.</p>
+    <ol class="steps-row">
+      <li><span>1</span><b>task</b> Type, level, weight and student hours, plus what students should be able to show.</li>
+      <li><span>2</span><b>outcomes</b> Paste the course objectives and learning outcomes from your course outline.</li>
+      <li><span>3</span><b>alignment</b> Map each criterion to the outcomes it assesses, and see each outcome's share of the marks.</li>
+      <li><span>4</span><b>levels</b> A descriptor for every grade band, High Distinction to Fail.</li>
+      <li><span>5</span><b>review</b> Coverage, Bloom's taxonomy and policy, checked before you mark.</li>
+    </ol>
+    <figure class="device wide">
+      <img src="images/mac-rubric-alignment.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Alignment step: course objectives and four learning outcomes above a grid of criteria ticked against the outcomes they assess, with each outcome's share of the marks, and a guide panel flagging that LO4 isn't assessed in this task.">
+      <figcaption>Step 3. LO4 isn't assessed by any criterion, so the guide offers to add one or mark it as assessed in another task.</figcaption>
+    </figure>
+  </div>
+  <div class="grid review">
+    <figure class="device">
+      <img src="images/mac-rubric-review.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Review step: each learning outcome with its share of the marks and the criteria assessing it, then the quality checks, with a guide panel of remaining fixes.">
+    </figure>
+    <div class="copy">
+      <h3>before you mark a single piece of work</h3>
+      <ul class="checks">
+        <li>Every learning outcome assessed here or in another task</li>
+        <li>No outcome carrying more than half the marks</li>
+        <li>A spread of Bloom's levels, so students create and evaluate rather than only remember</li>
+        <li>A descriptor for every level, describing quality rather than quantity</li>
+        <li>Course weight between 5 and 60%</li>
+        <li>Three to six criteria</li>
+        <li>Group work at no more than 30%, and hurdles flagged</li>
+        <li>Student hours against the workload guideline</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="canvas grid">
+  <p class="label">Canvas</p>
+  <h2>mark here, upload there</h2>
+  <p class="lead">No integration and no API token, so there's nothing for your school or uni to approve. It works with the files Canvas already exports and imports.</p>
+  <figure class="device here">
+    <p class="word">here</p>
+    <img src="images/mac-send.webp" width="2400" height="1579" loading="lazy" alt="Send to Canvas in Hyper Grader: 9 of 24 students ready, a comment under each criterion for Mia Russo, and an Export 2 files button.">
+    <figcaption>On your Mac, Send to Canvas writes the marks and a comment for every criterion into two files.
+      <ul class="handoff" aria-label="The two files">
+        <li><span>file 1</span>grades.csv</li>
+        <li><span>file 2</span>rubric assessments.csv</li>
+      </ul>
+    </figcaption>
+  </figure>
+  <figure class="device there">
+    <p class="word">there</p>
+    <img src="images/mac-lms-import.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a learning system's gradebook import page with both files uploaded and the imported marks listed for review.">
+    <figcaption>In Canvas, upload them to the gradebook and the rubric. Other learning systems will follow. Mock-up.</figcaption>
+  </figure>
+  <div class="copy">
+    <h3>setting up from Canvas</h3><p>Drop in your gradebook export, rubric and class list together. Hyper Grader sets up each assignment with its class, and tells you when you've picked the wrong file.</p>
+  </div>
+  <figure class="device setup">
+    <img src="images/mac-import.webp" width="1940" height="1276" loading="lazy" alt="The import review, headed “Here's what I found”, listing a Canvas gradebook export with three assignments and a rubric file, each with where it will go.">
+  </figure>
+</section>
+
+<section class="ipad-section grid pairs" id="ipad">
+  <p class="label">iPad · in <span class="beta-word">beta</span></p>
+  <h2>marking on iPad</h2>
+  <figure class="device">
+    <video class="demo" src="images/ipad-marking-demo.mp4" poster="images/ipad-marking-demo-poster.webp"
+           width="1200" height="1566" autoplay muted loop playsinline preload="metadata"
+           aria-label="Hyper Grader on an iPad Pro: four criteria are rated by tapping a band and a step, the total climbs to 81.67, then rambling notes are dictated."></video>
+    <figcaption><b>away from the desk</b> Tap a band, then High, Mid or Low. Tap the mic and talk; dictation runs on the iPad.</figcaption>
+  </figure>
+  <figure class="device">
+    <img src="images/ipad-dashboard.webp" width="1226" height="1600" loading="lazy" alt="The Today plan on iPad: a progress ring at 4 of 10, the three assessments to mark today, and every assessment with its status and deadline.">
+    <figcaption><b>the same plan</b> The Today plan from the Mac opens first, with the ring and the most urgent class.</figcaption>
+  </figure>
+  <p class="quiet">Writing feedback and sending to Canvas stay on the Mac. Syncing the two is being built now.</p>
 </section>
 
 <section class="private" id="private">
@@ -106,16 +248,15 @@
   </div>
 </section>
 
-<section class="more grid" id="more">
-  <p class="label">also in the app</p>
-  <h2>the rest of the marking job</h2>
+<section class="more grid">
+  <h2>other features</h2>
   <ul class="thirds">
-    <li><b>today’s number</b> Deadlines spread over the days left, so you know how many to mark today.</li>
-    <li><b>rubric builder</b> Five steps from your course outcomes to a criterion-referenced rubric, checked before you mark.</li>
-    <li><b>set up from Canvas</b> Drop in the gradebook export, rubric and class list. Each assignment is set up with its class.</li>
-    <li><b>on iPad</b> Mark and dictate away from the desk. Writing feedback and Canvas stay on the Mac for now.</li>
-    <li><b>consistency check</b> Read across a cohort’s feedback for mismatched scores and tone.</li>
-    <li><b>student profiles</b> Each student’s marks and feedback across assessments.</li>
+    <li><b>student finder</b> Search your class by name, open anyone's marking, or delete a record you no longer need.</li>
+    <li><b>consistency check</b> Read across a whole cohort's feedback for mismatched scores and tone.</li>
+    <li><b>student profiles</b> See each student's marks and feedback across assessments.</li>
+    <li><b>your grade scale</b> Standard Adelaide bands, or import your own marking scheme.</li>
+    <li><b>keyboard first</b> Next student with ⇧⌘↩, generate with ⌘↩, record with ⌘R.</li>
+    <li><b>dark mode</b> For marking after hours.</li>
   </ul>
 </section>
 
@@ -169,6 +310,68 @@
 </footer>
 
 <script>
+  // Today or board: swap the start-screen shot.
+  for (const b of document.querySelectorAll('.switch button')) b.addEventListener('click', () => {
+    for (const o of document.querySelectorAll('.switch button')) o.setAttribute('aria-pressed', o === b);
+    for (const img of document.querySelectorAll('.swap img')) img.classList.toggle('off', img.dataset.view !== b.dataset.show);
+  });
+
+  // What you said: five spoken notes, each typed in word by word, then the written feedback.
+  (() => {
+    const sec = document.getElementById('words');
+    const saids = [...sec.querySelectorAll('.said .ex')], reads = [...sec.querySelectorAll('.reads .ex')];
+    const btns = [...sec.querySelectorAll('.pager button')], who = sec.querySelector('.who');
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window);
+    // wrap every word in a span; marks and ums keep their spans inside them
+    const wrap = node => {
+      for (const n of [...node.childNodes]) {
+        if (n.nodeType === 1) { wrap(n); continue; }
+        const f = document.createDocumentFragment();
+        for (const part of n.textContent.split(/(\s+)/)) {
+          if (!part) continue;
+          if (/^\s+$/.test(part)) { f.append(part); continue; }
+          const s = document.createElement('span'); s.className = 'w'; s.textContent = part; f.append(s);
+        }
+        n.replaceWith(f);
+      }
+    };
+    saids.forEach(wrap);
+    let cur = 0, run = 0, visible = false;
+    const show = i => {
+      cur = i;
+      saids.forEach((p, k) => p.classList.toggle('active', k === i));
+      reads.forEach((d, k) => d.classList.toggle('active', k === i));
+      btns.forEach((b, k) => b.setAttribute('aria-pressed', k === i));
+      who.textContent = saids[i].dataset.name;
+    };
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+    const play = async i => {
+      const me = ++run;
+      show(i);
+      const words = [...saids[i].querySelectorAll('.w')], paras = [...reads[i].querySelectorAll('p')];
+      if (still) { words.forEach(w => w.classList.add('on')); paras.forEach(p => p.classList.add('on')); return; }
+      words.forEach(w => w.classList.remove('on')); paras.forEach(p => p.classList.remove('on'));
+      sec.classList.add('animating');
+      await sleep(400);
+      for (const w of words) {
+        if (me !== run) return;
+        w.classList.add('on');
+        // a speaking rhythm: uneven, with a breath after punctuation
+        await sleep(/[.,?!…]$/.test(w.textContent) ? 260 + Math.random() * 220 : 90 + Math.random() * 90);
+      }
+      await sleep(700);
+      for (const p of paras) { if (me !== run) return; p.classList.add('on'); await sleep(500); }
+      await sleep(5000);
+      if (me === run && visible) play((i + 1) % saids.length);
+    };
+    btns.forEach((b, k) => b.addEventListener('click', () => play(k)));
+    if (still) { play(0); return; }
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting;
+      if (visible) play(cur); else run++;
+    }, { threshold: 0.4 }).observe(sec.querySelector('.said')); // the spoken notes, not the whole (tall) section
+  })();
+
   // Join on TestFlight: open the install panel (the link still works without script).
   const install = document.getElementById('install');
   if (install.showModal) {
