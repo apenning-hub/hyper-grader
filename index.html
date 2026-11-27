@@ -65,6 +65,66 @@
   <p class="source">Measured on a MacBook Pro with M5 Pro: a paragraph of about 85 words in 2.7 seconds, first words in 0.6 (median of 10). Older Macs take longer, and the first one after opening the app takes about 5 seconds.</p>
 </section>
 
+<section class="private" id="private">
+  <div class="grid">
+    <p class="label">on your device</p>
+    <h2>student work stays on your Mac or iPad</h2>
+    <p class="intro">Most AI marking tools upload student work to their servers and pay for every request, which is why they charge you every month. Hyper Grader listens and writes on the Mac or iPad you already own, so student work never leaves it.</p>
+    <figure class="compare cloud">
+      <p class="kicker">most AI marking tools</p>
+      <svg viewBox="0 0 600 340" role="img" aria-labelledby="cloud-t">
+        <title id="cloud-t">A laptop sends student work up to a company's cloud servers and gets feedback back; the servers cost money on every request, billed to you every month.</title>
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#86868B"/></marker></defs>
+        <!-- laptop -->
+        <rect x="50" y="176" width="190" height="120" rx="9" class="ln"/>
+        <rect x="30" y="296" width="230" height="12" rx="5" class="ln"/>
+        <rect x="112" y="194" width="66" height="84" rx="3" class="ln thin"/>
+        <path d="M124 212h42M124 226h42M124 240h30M124 254h38" class="ln thin"/>
+        <!-- cloud with servers -->
+        <path d="M372 150h150a38 38 0 0 0 4-76a52 52 0 0 0-98-14a40 40 0 0 0-60 34a28 28 0 0 0 4 56z" class="ln"/>
+        <rect x="418" y="92" width="58" height="14" rx="3" class="ln thin"/><rect x="418" y="112" width="58" height="14" rx="3" class="ln thin"/>
+        <circle cx="428" cy="99" r="2" class="dot"/><circle cx="428" cy="119" r="2" class="dot"/>
+        <text x="440" y="176" class="t" text-anchor="middle">their servers</text>
+        <!-- up and back -->
+        <path d="M200 168C230 100 290 80 352 92" class="ln dash" marker-end="url(#ah)"/>
+        <text x="30" y="104" class="t">student work, uploaded</text>
+        <path d="M396 192C380 240 330 262 270 254" class="ln dash" marker-end="url(#ah)"/>
+        <text x="344" y="282" class="t">feedback</text>
+        <!-- the bill -->
+        <rect x="458" y="214" width="128" height="72" rx="8" class="ln"/>
+        <text x="522" y="248" class="big" text-anchor="middle">$ / mo</text>
+        <text x="522" y="270" class="t" text-anchor="middle">every month</text>
+        <path d="M522 156V210" class="ln thin dash"/>
+      </svg>
+    </figure>
+    <figure class="compare here">
+      <p class="kicker">Hyper Grader</p>
+      <svg viewBox="0 0 600 340" role="img" aria-labelledby="here-t">
+        <title id="here-t">The same laptop, locked: dictation, feedback and student work all stay inside it. Nothing is sent anywhere.</title>
+        <!-- the device boundary -->
+        <rect x="70" y="20" width="460" height="300" rx="22" class="ln dash wide"/>
+        <text x="94" y="50" class="t">your Mac or iPad</text>
+        <!-- laptop -->
+        <rect x="205" y="92" width="190" height="120" rx="9" class="ln"/>
+        <rect x="185" y="212" width="230" height="12" rx="5" class="ln"/>
+        <!-- lock -->
+        <path d="M285 146v-12a15 15 0 0 1 30 0v12" class="ln lock"/>
+        <rect x="276" y="146" width="48" height="40" rx="7" class="lockbody"/>
+        <circle cx="300" cy="162" r="4.5" class="hole"/><path d="M300 165v9" class="ln holeln"/>
+        <!-- what stays inside -->
+        <text x="300" y="268" class="t" text-anchor="middle">dictation · feedback · student work</text>
+        <text x="300" y="292" class="t quiet" text-anchor="middle">nothing uploaded, no servers to pay for</text>
+      </svg>
+    </figure>
+    <ul class="thirds local">
+      <li><b>dictation</b> Apple’s on-device speech recognition. What you say is never uploaded.</li>
+      <li><b>feedback</b> Written by Apple’s on-device model, so nothing leaves your Mac or iPad.</li>
+      <li><b>student work</b> Names, notes and marks are stored on the device, and nowhere else.</li>
+    </ul>
+    <p class="own">Prefer a different model? Add your own Claude API key. Hyper Grader asks before anything is sent, swaps student names for placeholders, and lets you stop at any time. <a href="privacy.html">Read the privacy policy</a></p>
+  </div>
+</section>
+
 <section class="words grid" id="words">
   <p class="label">your words</p>
   <h2>feedback that still sounds like you</h2>
@@ -175,12 +235,23 @@
         <li>No outcome carrying more than half the marks</li>
         <li>A spread of Bloom's levels, so students create and evaluate rather than only remember</li>
         <li>A descriptor for every level, describing quality rather than quantity</li>
-        <li>Course weight between 5 and 60%</li>
-        <li>Three to six criteria</li>
-        <li>Group work at no more than 30%, and hurdles flagged</li>
-        <li>Student hours against the workload guideline</li>
+        <li>No single task worth more than 60% of the course</li>
+        <li>Group work at no more than 30%, and hurdles worth at least 20%</li>
+        <li>Student hours against the workload guideline, about 1.5 hours for every 1% of the course</li>
+        <li>Points that fall from the top level to the bottom, with no blank or repeated descriptors</li>
       </ul>
     </div>
+  </div>
+  <div class="grid builder-more">
+    <h3>more in the builder</h3>
+    <ul class="thirds">
+      <li><b>drafts, on your Mac</b> Draft criteria, draft level descriptors, or suggest which outcomes each criterion assesses. Set how many criteria, the wording, focus and detail, and a teaching approach such as Bloom’s, SOLO, Kolb, UDL or studio critique. Keep or discard each suggestion.</li>
+      <li><b>start from what you have</b> Paste outcomes straight from a course outline, import Canvas Outcomes or a rubric CSV, or paste text copied from Canvas, a syllabus or a PDF and let Hyper Grader sort it into criteria.</li>
+      <li><b>rating scales</b> HD to Fail, Excellent to Unsatisfactory, mastery levels, four proficiency levels or three levels. Apply one to a criterion or to all of them, and share the points equally.</li>
+      <li><b>the thinking it asks for</b> A Bloom’s bar across your outcomes, criteria and descriptors. Vague verbs like “understand” get one-click swaps to explain, apply or analyse, and criteria that ask for less than their outcome are flagged.</li>
+      <li><b>what students will see</b> Preview the grid students get before it goes anywhere, then export it to Canvas as a rubric file.</li>
+      <li><b>your rubric library</b> Every rubric you make is kept in My Rubrics. Duplicate one, start a new one from it, or put it to work with Use for Marking. Change a rubric mid-marking and saved marks carry across.</li>
+    </ul>
   </div>
 </section>
 
@@ -218,30 +289,13 @@
   <p class="quiet">Writing feedback and sending to Canvas stay on the Mac. Syncing the two is being built now.</p>
 </section>
 
-<section class="private" id="private">
-  <div class="grid">
-    <p class="label">on your device</p>
-    <h2>student work stays on your Mac or iPad</h2>
-    <ul class="local">
-      <li><b>dictation</b> Apple's on-device speech recognition.</li>
-      <li><b>feedback</b> Written by Apple's on-device model.</li>
-      <li><b>student work</b> Your notes and marks never leave the device.</li>
-      <li><b>your own model</b> Add a Claude API key if you like. Hyper Grader asks before anything is sent, swaps student names for placeholders, and lets you stop at any time.</li>
-    </ul>
-    <figure class="device">
-      <img src="images/mac-marking-dark.webp" width="2400" height="1579" loading="lazy" alt="The marking screen in dark mode on a Space Black MacBook Pro.">
-    </figure>
-    <p class="policy-link"><a href="privacy.html">Read the privacy policy</a></p>
-  </div>
-</section>
-
 <section class="more grid">
   <h2>other features</h2>
   <ul class="thirds">
     <li><b>student finder</b> Search your class by name, open anyone's marking, or delete a record you no longer need.</li>
     <li><b>consistency check</b> Read across a whole cohort's feedback for mismatched scores and tone.</li>
     <li><b>student profiles</b> See each student's marks and feedback across assessments.</li>
-    <li><b>your grade scale</b> Standard Adelaide bands, or import your own marking scheme.</li>
+    <li><b>any grade scale</b> Paste or import your institution’s scheme in almost any layout, like “HD, 85” or “Credit: 65–74”. Totals and near-miss flags follow it. HD to Fail bands come built in.</li>
     <li><b>keyboard first</b> Next student with ⇧⌘↩, generate with ⌘↩, record with ⌘R.</li>
     <li><b>dark mode</b> For marking after hours.</li>
   </ul>
@@ -339,15 +393,15 @@
       if (still) { words.forEach(w => w.classList.add('on')); paras.forEach(p => p.classList.add('on')); return; }
       words.forEach(w => w.classList.remove('on')); paras.forEach(p => p.classList.remove('on'));
       sec.classList.add('animating');
-      await sleep(400);
+      await sleep(250);
       for (const w of words) {
         if (me !== run) return;
         w.classList.add('on');
         // a speaking rhythm: uneven, with a breath after punctuation
-        await sleep(/[.,?!…]$/.test(w.textContent) ? 260 + Math.random() * 220 : 90 + Math.random() * 90);
+        await sleep(/[.,?!…]$/.test(w.textContent) ? 120 + Math.random() * 100 : 40 + Math.random() * 40);
       }
-      await sleep(700);
-      for (const p of paras) { if (me !== run) return; p.classList.add('on'); await sleep(500); }
+      await sleep(350);
+      for (const p of paras) { if (me !== run) return; p.classList.add('on'); await sleep(300); }
       await sleep(5000);
       if (me === run && visible) play((i + 1) % saids.length);
     };
