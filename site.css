@@ -196,9 +196,9 @@ mark { color: inherit; padding: 0.04em 0.12em; border-radius: 3px; -webkit-box-d
 .swap img { grid-area: 1 / 1; transition: opacity 300ms ease-out; }
 .swap img.off { opacity: 0; pointer-events: none; }
 
-/* marking: the usual screen on 1–4 beside ours on 6–12, three numbered points in thirds under them */
-.marking .device.lms { grid-column: 1 / span 4; }
-.marking .device:not(.lms) { grid-column: 6 / span 7; }
+/* marking: the usual screen beside ours, a true pair, so halves the same size; three numbered points in thirds under them */
+.marking .device.lms { grid-column: 1 / span 6; }
+.marking .device:not(.lms) { grid-column: 7 / span 6; }
 .marking .numbered { margin-top: var(--row); }
 
 /* rubrics: blush ground; the five steps on 1–4 beside the builder on 6–12, then the review shot on 1–7 beside its checklist on 9–12 */
