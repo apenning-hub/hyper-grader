@@ -87,8 +87,6 @@ a:hover { background: var(--alp-highlight); }
 .device img, .device video { display: block; width: 100%; height: auto; }
 figcaption { font: 400 var(--alp-caption)/1.35 var(--alp-micro); color: var(--alp-quiet); margin-top: 12px; }
 /* a caption with a bold title reads as body text */
-.marking figcaption, .ipad-section figcaption, .canvas figcaption { font: 400 15px/1.4 var(--alp-text); color: var(--alp-ink); }
-figcaption b { display: block; font: 700 20px/1.1 var(--alp-display); letter-spacing: -0.02em; margin-bottom: 6px; }
 /* figures side by side share rows (subgrid), so the screens sit on one line and the captions start on one line */
 .pairs > .device { display: grid; grid-template-rows: subgrid; grid-row: span 2; }
 .pairs > .device > img, .pairs > .device > video { align-self: end; }
@@ -124,7 +122,8 @@ section > .intro { margin-bottom: var(--gap); }
 /* hero: the tagline, what it does, the app working */
 .hero { padding-top: clamp(32px, 5vw, 72px); }
 .hero .label { grid-column: 1 / -1; }
-.hero h1 { grid-column: 1 / span 10; }
+.hero h1 { grid-column: 1 / -1; font-family: var(--alp-serif); font-weight: 300; font-style: italic; font-size: clamp(56px, 9.5vw, 150px); line-height: 0.95; letter-spacing: -0.025em; }
+.hero h1 span { white-space: nowrap; } /* it only breaks between the three phrases */
 .hero .intro { margin: 32px 0 var(--gap); font: inherit; }
 .hero .intro .lead { margin: 0; }
 .hero .device { grid-column: 1 / -1; }
@@ -217,18 +216,14 @@ mark { color: inherit; padding: 0.04em 0.12em; border-radius: 3px; -webkit-box-d
 .checks li { position: relative; padding: 10px 0 10px 34px; border-top: 1px solid rgba(0,0,0,0.25); }
 .checks li::before { content: ""; position: absolute; left: 0; top: 11px; width: 22px; height: 22px; border-radius: 50%; background: #34C759 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath d='M6.5 11.5l3 3 6-6.5' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 22px no-repeat; }
 
-/* canvas: here and there as a pair on halves (word, screen, caption share rows); setup below as 1–4 + 5–12 */
-.canvas { align-items: start; }
-.canvas .here, .canvas .there { display: grid; grid-template-rows: subgrid; grid-row: 4 / span 3; }
-.canvas .here { grid-column: 1 / span 6; }
-.canvas .there { grid-column: 7 / span 6; }
-.canvas .here img, .canvas .there img { align-self: end; }
-.word { font-family: var(--alp-serif); font-weight: 300; font-style: italic; font-size: clamp(44px, 5.5vw, 84px); line-height: 1; letter-spacing: -0.02em; margin: 0 0 8px; }
-.handoff { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.handoff li { border: 1px solid #007AFF; border-radius: var(--alp-radius); padding: 8px 12px; font: 400 13px/1.3 var(--alp-text); }
-.handoff li span { display: block; font: 500 var(--alp-label)/1.35 var(--alp-micro); letter-spacing: var(--alp-track-label); color: var(--alp-quiet); margin-bottom: 2px; }
-.canvas .copy { grid-column: 1 / span 4; grid-row: 7; margin-top: var(--row); border-top: 1px solid var(--alp-ink); padding-top: 16px; }
-.canvas .setup { grid-column: 5 / span 8; grid-row: 7; margin-top: var(--row); }
+/* canvas: three steps in thirds, each with its screen */
+.flow li { border-top: 0; padding-top: 0; }
+.flow img { width: 100%; margin-bottom: 16px; }
+.flow b { border-top: 1px solid var(--alp-ink); padding-top: 12px; }
+.flow b span { margin-right: 10px; }
+.flow li:nth-child(1) b span { color: var(--hd); }
+.flow li:nth-child(2) b span { color: var(--d); }
+.flow li:nth-child(3) b span { color: var(--c); }
 
 /* iPad: thirds — two iPads, then the note */
 .ipad-section { align-items: start; }
@@ -277,8 +272,8 @@ footer .credit { grid-column: 9 / span 4; font: 400 var(--alp-caption)/1.35 var(
 /* ===== narrow: everything stacks on 1–12 ===== */
 @media (max-width: 900px) {
   .grid > *, .grid > * > * { grid-column: 1 / -1 !important; grid-row: auto !important; }
-  .pairs > .device, .canvas .here, .canvas .there { display: block; }
-  .words .reads, .words .aside, .private .device, .why figure, .marking .device + .device, .canvas .there, .canvas .setup,
+  .pairs > .device { display: block; }
+  .words .reads, .words .aside, .private .device, .why figure, .marking .device + .device,
   .rubrics .device.wide, .rubrics .review .copy, .ipad-section .quiet, .today .switch { margin-top: var(--gap); }
   .ipad-section .device:nth-of-type(1) { grid-column: 1 / span 6 !important; }
   .ipad-section .device:nth-of-type(2) { grid-column: 7 / span 6 !important; }

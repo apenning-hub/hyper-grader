@@ -27,7 +27,7 @@
 
 <section class="hero grid">
   <p class="label">a marking app for Mac and iPad · in <span class="beta-word">beta</span></p>
-  <h1>say it, mark it, move on.</h1>
+  <h1><span>say it,</span> <span>mark it,</span> <span>move on.</span></h1>
   <div class="intro">
     <p class="lead">Rate each criterion, talk through what you see, and Hyper Grader writes the feedback in your words, right there on your Mac or iPad. When the class is done, marks and comments go back to Canvas in two file uploads.</p>
     <p class="actions"><a class="button" href="https://testflight.apple.com/join/DnvdCEXS" data-install aria-haspopup="dialog">join the <span class="beta-word">beta</span></a> <a href="#how">see how it works</a></p>
@@ -36,7 +36,6 @@
     <video class="demo" src="images/mac-marking-demo.mp4" poster="images/mac-marking-demo-poster.webp"
            width="2400" height="1580" autoplay muted loop playsinline preload="auto"
            aria-label="Hyper Grader marking one student in real time: spoken notes, ums included, appear as they're said; grade bands are picked for each criterion and the total updates; then Generate writes the feedback."></video>
-    <figcaption>Recorded from the app. Speech sped up to fit ten seconds.</figcaption>
   </figure>
 </section>
 
@@ -44,7 +43,7 @@
   <div class="copy">
     <p class="label">why</p>
     <h2>marking shouldn’t decide what you set</h2>
-    <p class="intro">Nearly a quarter of Australian secondary teachers spend ten or more hours a week marking. So we set work that’s quicker to mark. Hyper Grader makes marking fast enough that you can set the work you think is worth doing.</p>
+    <p class="intro">Nearly a quarter of Australian secondary teachers spend ten or more hours a week marking, and university and TAFE teachers know that pile too. So we set work that’s quicker to mark. Hyper Grader makes marking fast enough that you can set the work you think is worth doing.</p>
     <p class="source">AITSL, Australian Teacher Workforce Survey, 2023: 24% of secondary and 11% of primary teachers mark for 10 or more hours a week.</p>
   </div>
   <figure>
@@ -115,11 +114,9 @@
   <p class="lead">Beside the grading screen of a typical learning system.</p>
   <figure class="device lms">
     <img src="images/mac-lms-grader.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a typical learning system's grading screen in a browser: a submission preview, a toolbar of small icons, and a narrow side panel crowded with a rubric table, points boxes, an attempt menu, a grade box and a comment field.">
-    <figcaption><b>a typical learning system</b> The submission, a rubric table of small cells, points boxes and the comment field share one narrow panel. Mock-up.</figcaption>
   </figure>
   <figure class="device">
     <img src="images/mac-marking.webp" width="2400" height="1579" loading="lazy" alt="The Hyper Grader marking screen: grade bands for each criterion with High, Mid and Low steps, a total of 74 out of 100 flagged as 1% below a Distinction, spoken notes on the left and written feedback on the right.">
-    <figcaption><b>Hyper Grader</b> One wide band per grade, the total always in view, and room to talk.</figcaption>
   </figure>
   <ol class="thirds numbered">
     <li><b>pick a band</b> Choose a grade band for each criterion, then High, Mid or Low within it. The arrow keys jump between bands, and your total and grade update as you go.</li>
@@ -165,7 +162,6 @@
     </ol>
     <figure class="device wide">
       <img src="images/mac-rubric-alignment.webp" width="2400" height="1579" loading="lazy" alt="The rubric builder's Alignment step: course objectives and four learning outcomes above a grid of criteria ticked against the outcomes they assess, with each outcome's share of the marks, and a guide panel flagging that LO4 isn't assessed in this task.">
-      <figcaption>Step 3. LO4 isn't assessed by any criterion, so the guide offers to add one or mark it as assessed in another task.</figcaption>
     </figure>
   </div>
   <div class="grid review">
@@ -188,31 +184,24 @@
   </div>
 </section>
 
-<section class="canvas grid">
+<section class="canvas grid" id="canvas">
   <p class="label">Canvas</p>
   <h2>mark here, upload there</h2>
-  <p class="lead">No integration and no API token, so there's nothing for your school or uni to approve. It works with the files Canvas already exports and imports.</p>
-  <figure class="device here">
-    <p class="word">here</p>
-    <img src="images/mac-send.webp" width="2400" height="1579" loading="lazy" alt="Send to Canvas in Hyper Grader: 9 of 24 students ready, a comment under each criterion for Mia Russo, and an Export 2 files button.">
-    <figcaption>On your Mac, Send to Canvas writes the marks and a comment for every criterion into two files.
-      <ul class="handoff" aria-label="The two files">
-        <li><span>file 1</span>grades.csv</li>
-        <li><span>file 2</span>rubric assessments.csv</li>
-      </ul>
-    </figcaption>
-  </figure>
-  <figure class="device there">
-    <p class="word">there</p>
-    <img src="images/mac-lms-import.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a learning system's gradebook import page with both files uploaded and the imported marks listed for review.">
-    <figcaption>In Canvas, upload them to the gradebook and the rubric. Other learning systems will follow. Mock-up.</figcaption>
-  </figure>
-  <div class="copy">
-    <h3>setting up from Canvas</h3><p>Drop in your gradebook export, rubric and class list together. Hyper Grader sets up each assignment with its class, and tells you when you've picked the wrong file.</p>
-  </div>
-  <figure class="device setup">
-    <img src="images/mac-import.webp" width="1940" height="1276" loading="lazy" alt="The import review, headed “Here's what I found”, listing a Canvas gradebook export with three assignments and a rubric file, each with where it will go.">
-  </figure>
+  <p class="lead">No integration and no API token, so there’s nothing for your school or uni to approve. It works with the files Canvas already exports and imports.</p>
+  <ol class="thirds flow">
+    <li>
+      <img src="images/mac-import.webp" width="1940" height="1276" loading="lazy" alt="The import review, headed “Here's what I found”, listing a Canvas gradebook export with three assignments and a rubric file, each with where it will go.">
+      <b><span>1</span>bring your exports</b> Drop in the gradebook export, rubric and class list you download from Canvas. Each assignment is set up with its class.
+    </li>
+    <li>
+      <img src="images/mac-send.webp" width="2400" height="1579" loading="lazy" alt="Send to Canvas in Hyper Grader: 9 of 24 students ready, a comment under each criterion for Mia Russo, and an Export 2 files button.">
+      <b><span>2</span>mark here</b> Mark each student. Send to Canvas writes the marks, and a comment for every criterion, into two files.
+    </li>
+    <li>
+      <img src="images/mac-lms-import.webp" width="2400" height="1579" loading="lazy" alt="A mock-up of a learning system's gradebook import page with both files uploaded and the imported marks listed for review.">
+      <b><span>3</span>upload there</b> Upload the two files to the gradebook and the rubric in Canvas. Other learning systems will follow.
+    </li>
+  </ol>
 </section>
 
 <section class="ipad-section grid pairs" id="ipad">
@@ -222,11 +211,9 @@
     <video class="demo" src="images/ipad-marking-demo.mp4" poster="images/ipad-marking-demo-poster.webp"
            width="1200" height="1566" autoplay muted loop playsinline preload="metadata"
            aria-label="Hyper Grader on an iPad Pro: four criteria are rated by tapping a band and a step, the total climbs to 81.67, then rambling notes are dictated."></video>
-    <figcaption><b>away from the desk</b> Tap a band, then High, Mid or Low. Tap the mic and talk; dictation runs on the iPad.</figcaption>
   </figure>
   <figure class="device">
     <img src="images/ipad-dashboard.webp" width="1226" height="1600" loading="lazy" alt="The Today plan on iPad: a progress ring at 4 of 10, the three assessments to mark today, and every assessment with its status and deadline.">
-    <figcaption><b>the same plan</b> The Today plan from the Mac opens first, with the ring and the most urgent class.</figcaption>
   </figure>
   <p class="quiet">Writing feedback and sending to Canvas stay on the Mac. Syncing the two is being built now.</p>
 </section>
@@ -306,7 +293,7 @@
 <footer class="grid">
   <p class="sig">andrew lymn-penning · 2026</p>
   <p class="links"><a href="privacy.html">privacy</a> <a href="mailto:me@apenning.is">contact</a></p>
-  <p class="credit">Device frames via Apple Design Resources. Screenshots use fictional classes and students.</p>
+  <p class="credit">Device frames via Apple Design Resources. Screenshots use fictional classes and students; learning-system screens are mock-ups.</p>
 </footer>
 
 <script>
